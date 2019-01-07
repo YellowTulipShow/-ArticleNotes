@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>视觉效果</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            text-decoration: none;
+        }
+        body {
+            background-color: #ccc;
+        }
+        .content {
+            width: 100%;
+            height: auto;
+            text-align: center;
+            overflow: hidden;
+        }
+            .content .box {
+                display: inline-block;
+                width: 50%;
+                float: left;
+                height: auto;
+            }
+        .black {
+            background-color: #000;
+        }
+        .white {
+            background-color: #fff;
+        }
+        .bgHui_1 {
+            background-color: #393838 !important;
+        }
+        .bgHui_2 {
+            background-color: #d8d8d8 !important;
+        }
+        .textAlign-left {
+            text-align: left !important;
+        }
+        .textAlign-right {
+            text-align: right !important;
+        }
+
+        .round {
+            background-color: #ddd;
+
+            display: inline-block;
+            margin: 20px 5px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="box textAlign-right black">
+            <div name="round" class="round"></div>
+        </div>
+        <div class="box textAlign-left white">
+            <div name="round" class="round"></div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="box textAlign-right">
+            <div name="round" class="round"></div>
+        </div>
+        <div class="box textAlign-left">
+            <div name="round" class="round"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var rounds = document.getElementsByClassName('round');
+        var state = false;
+        var time = setInterval(function() {
+            state = !state;
+            console.log(state);
+            for (var i = 0; i < rounds.length; i++) {
+                rounds[i].style.backgroundColor = GetColor(state);
+            }
+        }, 500);
+
+        
+        function GetColor(isBlack) {
+            return isBlack ? "#000" : "#fff";
+        }
+    </script>
+</body>
+</html>

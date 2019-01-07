@@ -1,0 +1,12 @@
+# 忽略文件:
+
+# 大容量, 无法编辑的文件
+*.zip
+*.rar
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
