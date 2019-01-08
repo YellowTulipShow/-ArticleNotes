@@ -25,3 +25,13 @@ https://blog.fondme.cn/apidoc/jdk-1.8-google/
 https://blog.fondme.cn/apidoc/jdk-1.8-youdao/
 #### 百度版:
 https://blog.fondme.cn/apidoc/jdk-1.8-baidu/
+
+
+## 参考学习链接:
+```shell
+# Java基础之—反射(非常重要)
+https://blog.csdn.net/sinat_38259539/article/details/71799078
+
+# java反射详解
+http://www.cnblogs.com/rollenholt/archive/2011/09/02/2163758.html
+```

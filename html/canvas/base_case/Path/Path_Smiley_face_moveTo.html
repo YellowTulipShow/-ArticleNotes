@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>笑脸</title>
+    <link rel="stylesheet" type="text/css" href="/css/YTSConfig.css">
+    <link rel="stylesheet" type="text/css" href="/css/Style.css">
+</head>
+<body>
+    <div class="body SuspensionFixationALLWindow">
+        <canvas id="tutorial" class="canvas AbsHorizontalVerticalCenter"
+            style="width: 300px; height: 150px;">
+            <p>不支持类型内容, 这是一个 HTML Canvas 控件</p>
+        </canvas>
+    </div>
+
+    <script type="text/javascript">
+        var canvas = document.getElementById('tutorial');
+        if (!canvas.getContext) {
+            alert('不支持 canvas.getContext 意味: 不支持 canvas 属性');
+        }
+        var ctx = canvas.getContext('2d');
+
+        // 笑脸
+        ctx.beginPath();
+        ctx.arc(75, 75, 50, 0, Math.PI*2, true); // 绘制
+        ctx.moveTo(110, 75);
+        ctx.arc(75, 75, 35, 0, Math.PI, false); // 口(顺时针)
+        ctx.moveTo(65, 65);
+        ctx.arc(60, 65, 5, 0, Math.PI*2, true); // 左眼
+        ctx.moveTo(95, 65);
+        ctx.arc(90, 65, 5, 0, Math.PI*2, true); // 右眼
+        ctx.stroke();
+    </script>
+</body>
+</html>

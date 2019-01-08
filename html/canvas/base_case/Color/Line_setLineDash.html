@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>线段 交接处宽度</title>
+    <link rel="stylesheet" type="text/css" href="/css/YTSConfig.css">
+    <link rel="stylesheet" type="text/css" href="/css/Style.css">
+</head>
+<body>
+    <div class="body SuspensionFixationALLWindow">
+        <canvas id="tutorial" class="canvas AbsHorizontalVerticalCenter"
+            style="width: 300px; height: 150px;">
+            <p>不支持类型内容, 这是一个 HTML Canvas 控件</p>
+        </canvas>
+    </div>
+
+    <script type="text/javascript">
+        var canvas = document.getElementById('tutorial');
+        if (!canvas.getContext) {
+            alert('不支持 canvas.getContext 意味: 不支持 canvas 属性');
+        }
+        var ctx = canvas.getContext('2d');
+
+        var offset = 0;
+        function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.setLineDash([4, 12]);
+            ctx.lineDashOffset = -offset;
+            ctx.strokeRect(10, 10, 100, 100);
+        }
+        function march() {
+            offset++;
+            if (offset > 16) {
+                offset = 0;
+            }
+            draw();
+            setTimeout(march, 20);
+        }
+        march();
+    </script>
+</body>
+</html>

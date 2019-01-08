@@ -1,0 +1,479 @@
+﻿@charset "utf-8";
+/* Init 初始化部分 */
+    * {
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        -webkit-tap-highlight-color: transparent;
+        font-family: "Microsoft YaHei", "微软雅黑", Heiti, "黑体", Arial, Helvetica, STHeiTi, sans-serif;
+
+        -moz-box-sizing: inherit;
+        -webkit-box-sizing: inherit;
+        box-sizing: inherit;
+    }
+    html { -webkit-text-size-adjust: none; overflow-y: scroll; }
+    a { text-decoration: none; }
+    img { max-width: 100%; }
+    h1,h2,h3,h4,h5,h6 { font-size: 100%; font-weight: 500; }
+    li,ol,ul { list-style: none; }
+    em,i { font-style: normal; }
+    del { text-decoration: line-through; }
+    input,select,textarea { font-size: 100%; vertical-align: middle; }
+    input,button,select,textarea { outline: 0; }
+    input { width: 100%; border: 0 none; }
+    textarea { resize: none; }
+    table { border-collapse: collapse; border-spacing: 0; }
+    caption,th { text-align: left; }
+    address,caption,cite,code,dfn,em,th,var { font-style: normal; font-weight: 500; }
+    html { font-size: 50px; }
+    body { font-size: 24px; }
+    html.Hidden,
+    body.Hidden { overflow: hidden; }
+    /* Model ~~~ */
+    .ModelBox_MAX,
+    .ModelBox {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+    }
+    .ModelBox {
+        width: 87%;
+        max-width: 1200px;
+        /* 1200 / 1920 = 0.625 */
+    }
+
+/* 自适应页面设置 */
+    @media screen and (max-width: 320px) { html { font-size: 21.33px; } body { font-size: 9px; } }
+    @media screen and (min-width: 320px) { html { font-size: 21.33px; } body { font-size: 9px; } }
+    @media screen and (min-width: 360px) { html { font-size: 24.00px; } body { font-size: 9.50px; } }
+    @media screen and (min-width: 384px) { html { font-size: 25.60px; } body { font-size: 10.00px; } }
+    @media screen and (min-width: 400px) { html { font-size: 26.67px; } body { font-size: 11.00px; } }
+    @media screen and (min-width: 480px) { html { font-size: 32.00px; } body { font-size: 12.00px; } }
+    @media screen and (min-width: 540px) { html { font-size: 32.00px; } body { font-size: 14.00px; } }
+    @media screen and (min-width: 650px) { html { font-size: 32.00px; } body { font-size: 16.00px; } }
+    @media screen and (min-width: 750px) { html { font-size: 32.00px; } body { font-size: 16.00px; } }
+    @media screen and (min-width: 880px) { html { font-size: 32.00px; } body { font-size: 16.00px; } }
+    @media screen and (min-width: 2000px) { html { font-size: 40.00px; } body { font-size: 19.00px; } .ModelBox { max-width: 1250px; } }
+    @media screen and (min-width: 2200px) { html { font-size: 48.00px; } body { font-size: 22.00px; } .ModelBox { max-width: 1375px; } }
+    @media screen and (min-width: 2700px) { html { font-size: 50.00px; } body { font-size: 25.00px; } .ModelBox { max-width: 1687px; } }
+    @media screen and (min-width: 3200px) { html { font-size: 56.00px; } body { font-size: 28.00px; } .ModelBox { max-width: 2000px; } }
+    @media screen and (min-width: 3750px) { html { font-size: 70.00px; } body { font-size: 35.00px; } .ModelBox { max-width: 2343px; } }
+    @media screen and (min-width: 4500px) { html { font-size: 80.00px; } body { font-size: 40.00px; } .ModelBox { max-width: 2812px; } }
+    @media screen and (min-width: 5200px) { html { font-size: 90.00px; } body { font-size: 45.00px; } .ModelBox { max-width: 3250px; } }
+    @media screen and (min-width: 6000px) { html { font-size: 110.00px; } body { font-size: 55.00px; } .ModelBox { max-width: 3750px; } }
+
+/* Tools */
+    /* box-sizing */
+        .boxSizing_borderbox {
+            -moz-box-sizing: border-box !important;
+            -webkit-box-sizing: border-box !important;
+            box-sizing: border-box !important;
+        }
+        .boxSizing_contentbox {
+            -moz-box-sizing: content-box !important;
+            -webkit-box-sizing: content-box !important;
+            box-sizing: content-box;
+        }
+        .boxSizing_inherit {
+            -moz-box-sizing: inherit !important;
+            -webkit-box-sizing: inherit !important;
+            box-sizing: inherit !important;
+        }
+
+    /* font word ~~~ */
+        .font-weight-bold { font-weight: bold !important; }
+
+        .font-size-OneHalf { font-size: 1.5em !important; }
+        .font-size-MIN { font-size: 6px !important; }
+        .font_color_black { color: #000 !important; }
+        .font_color_white { color: #fff !important; }
+        .font_weight_bold { font-weight: bold !important; }
+
+        .whiteSpace_nowrap {
+            white-space: nowrap !important;
+        }
+        /*当文字超出限制的时候隐藏多余文字*/
+        .wbox_flex {
+            -webkit-flex: 1 !important;
+            -webkit-box-flex: 1;
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+
+    /* text ~~~ */
+        /*文字居左显示*/
+        .text-align-left { text-align: left !important; }
+        /*文字居右显示*/
+        .text-align-right { text-align: right !important; }
+        /*文字居中显示*/
+        .text-align-center { text-align: center !important; }
+
+        /*下划线*/
+        .text-decoration-underline { text-decoration: underline !important; }
+        /*顶划线*/
+        .text-decoration-overline { text-decoration: overline !important; }
+        /*删除线*/
+        .text-decoration-line-through { text-decoration: line-through !important; }
+        /*闪烁*/
+        .text-decoration-blink { text-decoration: blink !important; }
+
+        /*字体阴影*/
+        .text_shadow { text-shadow: 1px 1px 1px #000; }
+
+        /*文字内容不可被选中*/
+        .text_noneSelect {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .text_hide {
+            -webkit-user-select: none !important;
+            -moz-user-select: none !important;
+            -ms-user-select: none !important;
+            user-select: none !important;
+
+            filter: alpha(opacity=0) !important;
+            -moz-opacity: 0 !important;
+            opacity: 0 !important;
+        }
+
+    /* cursor ~~~ */
+        .cursor_pointer:hover {
+            cursor: pointer !important;
+        }
+
+    /* margin padding ~~~ */
+        /*外边距-居中*/
+        .margin_center { margin: 0 auto !important; }
+        /*外边距-全部为0*/
+        .margin_0 {     margin: 0 !important; }
+        /*外边距-全部为自动*/
+        .margin_auto { margin: auto !important; }
+
+        /*内边距-全部为0*/
+        .padding_0 {     padding: 0 !important; }
+        /*内边距-全部为自动*/
+        .padding_auto { padding: auto !important; }
+
+        .MarginPaddingTopBottomNull {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+
+        .Margin_Top_0 { margin-top: 0 !important; }
+        .Margin_Top_p5 { margin-top: .5em !important; }
+        .Margin_Top_1 { margin-top: 1em !important; }
+        .Margin_Top_1p5 { margin-top: 1.5em !important; }
+        .Margin_Top_2 { margin-top: 2em !important; }
+        .Margin_Top_2p5 { margin-top: 2.5em !important; }
+        .Margin_Top_3 { margin-top: 3em !important; }
+        .Margin_Top_3p5 { margin-top: 3.5em !important; }
+        .Margin_Top_4 { margin-top: 4em !important; }
+        .Margin_Top_4p5 { margin-top: 4.5em !important; }
+        .Margin_Top_5 { margin-top: 5em !important; }
+
+        .Margin_Bottom_0 { margin-bottom: 0 !important; }
+        .Margin_Bottom_p5 { margin-bottom: .5em !important; }
+        .Margin_Bottom_1 { margin-bottom: 1em !important; }
+        .Margin_Bottom_1p5 { margin-bottom: 1.5em !important; }
+        .Margin_Bottom_2 { margin-bottom: 2em !important; }
+        .Margin_Bottom_2p5 { margin-bottom: 2.5em !important; }
+        .Margin_Bottom_3 { margin-bottom: 3em !important; }
+        .Margin_Bottom_3p5 { margin-bottom: 3.5em !important; }
+        .Margin_Bottom_4 { margin-bottom: 4em !important; }
+        .Margin_Bottom_4p5 { margin-bottom: 4.5em !important; }
+        .Margin_Bottom_5 { margin-bottom: 5em !important; }
+
+    /* width height ~~~ */
+        /*宽度设为自动*/
+        .width_auto { width: auto !important; }
+        /*宽度设为0*/
+        .width_0 { width: 0 !important; }
+        /*宽度设为100%*/
+        .width_100 { width: 100% !important; }
+
+        /*高度设为自动*/
+        .height_auto { height: auto !important; }
+        /*高度设为0*/
+        .height_0 { height: 0 !important; }
+        /*高度设为100%*/
+        .height_100 { height: 100% !important; }
+
+    /* position */
+        .position_relative { position: relative !important; }
+        .position_absolute { position: absolute !important; }
+        .position_fixed { position: fixed !important; }
+        .position_top { top: 0;left: 0; }
+        .position_bottom { bottom: 0;left: 0; }
+
+        /*固定定位*/
+        .fixed { position: fixed !important; }
+        /*绝对定位*/
+        .absolute { position: absolute !important; }
+        /*相对定位*/
+        .relative { position: relative !important; }
+
+        /*上,左为0*/
+        .top-left-0 { left: 0 !important; right: auto !important; top: 0 !important; bottom: auto !important; }
+        /*上,右为0*/
+        .top-right-0 { left: auto !important; right: 0 !important; top: 0 !important; bottom: auto !important; }
+        /*下,左为0*/
+        .bottom-left-0 { left: auto !important; right: 0 !important; top: auto !important; bottom: 0 !important; }
+        /*下,右为0*/
+        .bottom-right-0 { left: 0 !important; right: auto !important; top: auto !important; bottom: 0 !important; }
+
+    /* box-shadow */
+        .box_shadow {
+            -moz-box-shadow: 0px 0px 4px #888888;
+            box-shadow: 0px 0px 4px #888888;
+        }
+        .box_shadow_hover:hover {
+            -moz-box-shadow: 0px 0px 4px #888888;
+            box-shadow: 0px 0px 4px #888888;
+        }
+
+    /* border ~~~ */
+        /*50%圆角*/
+        .border-radius-50 {
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+        }
+
+    /* float ~~~ */
+        /*左浮动*/
+        .fl,.float_left { float: left !important; }
+        /*右浮动*/
+        .fr,.float_right { float: right !important; }
+
+    /* overflow ~~~ */
+        /*overflow-y 属性规定是否对内容的上/下边缘进行裁剪 - 如果溢出元素内容区域的话，则应该提供滚动机制。*/
+        .overtouch { overflow-y: auto; -webkit-overflow-scrolling: touch; }
+        /*盒子内容溢出时: 不进行处理*/
+        .overflow_visible { overflow: visible !important; }
+        /*盒子内容溢出时: 全部隐藏*/
+        .overflow_hidden { overflow: hidden !important; }
+
+    /* z-index ~~~ */
+        .zix-min, .zix-f1 { z-index: -1 !important; }
+        .zix-max, .zix-999 { z-index: 999 !important; }
+        .zix-0 { z-index: 0 !important; }
+        .zix-1 { z-index: 1 !important; }
+        .zix-2 { z-index: 2 !important; }
+        .zix-3 { z-index: 3 !important; }
+        .zix-4 { z-index: 4 !important; }
+        .zix-5 { z-index: 5 !important; }
+        .zix-6 { z-index: 6 !important; }
+        .zix-7 { z-index: 7 !important; }
+        .zix-8 { z-index: 8 !important; }
+        .zix-9 { z-index: 9 !important; }
+        .zix-10 { z-index: 10 !important; }
+        .zix-11 { z-index: 11 !important; }
+        .zix-12 { z-index: 12 !important; }
+        .zix-13 { z-index: 13 !important; }
+        .zix-14 { z-index: 14 !important; }
+        .zix-15 { z-index: 15 !important; }
+        .zix-16 { z-index: 16 !important; }
+        .zix-17 { z-index: 17 !important; }
+        .zix-18 { z-index: 18 !important; }
+        .zix-19 { z-index: 19 !important; }
+
+    /* opacity ~~~ */
+        /*透明度*/
+        .opacity_0 { filter: alpha(opacity=0); -moz-opacity: 0; opacity: 0; }
+        .opacity_1 { filter: alpha(opacity=10); -moz-opacity: .1; opacity: .1; }
+        .opacity_2 { filter: alpha(opacity=20); -moz-opacity: .2; opacity: .2; }
+        .opacity_3 { filter: alpha(opacity=30); -moz-opacity: .3; opacity: .3; }
+        .opacity_4 { filter: alpha(opacity=40); -moz-opacity: .4; opacity: .4; }
+        .opacity_5 { filter: alpha(opacity=50); -moz-opacity: .5; opacity: .5; }
+        .opacity_6 { filter: alpha(opacity=60); -moz-opacity: .6; opacity: .6; }
+        .opacity_7 { filter: alpha(opacity=70); -moz-opacity: .7; opacity: .7; }
+        .opacity_8 { filter: alpha(opacity=80); -moz-opacity: .8; opacity: .8; }
+        .opacity_9 { filter: alpha(opacity=90); -moz-opacity: .9; opacity: .9; }
+        .opacity_10 { filter: alpha(opacity=100); -moz-opacity: 1; opacity: 1; }
+
+    /* transition ~~~ */
+        /*过渡样式*/
+        .Transition_all1s {
+            -webkit-transition: all 1s ease-in-out 0s;
+            -moz-transition: all 1s ease-in-out 0s;
+            -ms-transition: all 1s ease-in-out 0s;
+            -o-transition: all 1s ease-in-out 0s;
+            transition: all 1s ease-in-out 0s;
+        }
+
+    /* transform ~~~ */
+        /*旋转*/
+        .rotate_0 {
+            -ms-transform:rotate(0deg);
+            -moz-transform:rotate(0deg);
+            -webkit-transform:rotate(0deg);
+            -o-transform:rotate(0deg);
+            transform:rotate(0deg);
+        }
+        .rotate_90 {
+            -ms-transform:rotate(90deg);
+            -moz-transform:rotate(90deg);
+            -webkit-transform:rotate(90deg);
+            -o-transform:rotate(90deg);
+            transform:rotate(90deg);
+        }
+        .rotate_180 {
+            -ms-transform:rotate(180deg);
+            -moz-transform:rotate(180deg);
+            -webkit-transform:rotate(180deg);
+            -o-transform:rotate(180deg);
+            transform:rotate(180deg);
+        }
+        .rotate_270 {
+            -ms-transform:rotate(270deg);
+            -moz-transform:rotate(270deg);
+            -webkit-transform:rotate(270deg);
+            -o-transform:rotate(270deg);
+            transform:rotate(270deg);
+        }
+        .rotate_360 {
+            -ms-transform:rotate(360deg);
+            -moz-transform:rotate(360deg);
+            -webkit-transform:rotate(360deg);
+            -o-transform:rotate(360deg);
+            transform:rotate(360deg);
+        }
+
+        /*水平翻转*/
+        .flipx {
+            -moz-transform:scaleX(-1);
+            -webkit-transform:scaleX(-1);
+            -o-transform:scaleX(-1);
+            transform:scaleX(-1);
+            filter:FlipH;/*IE*/
+        }
+        /*垂直翻转*/
+        .flipy {
+            -moz-transform:scaleY(-1);
+            -webkit-transform:scaleY(-1);
+            -o-transform:scaleY(-1);
+            transform:scaleY(-1);
+            filter:FlipV;/*IE*/
+        }
+
+/* Theme Style 主题样式 ~~~ */
+    .ThemeColor_font_cyan { color: #00b6b7 !important; }
+    .ThemeColor_font_red { color: #b80000 !important; }
+    .ThemeColor_font_gray { color: #818b8f !important; }
+
+    .ThemeColor_font_yellow,
+    .ThemeColorHover_font_yellow:hover,
+    .ThemeColorBefore_font_yellow:before { color: #edc573 !important; }
+
+    .ThemeColor_bg_default { background-color: rgb(240,240,240) !important; }
+    .ThemeColor_bg_default { background-color: #fff !important; }
+
+    .ThemeColor_bg_black { background-color: #000 !important; }
+    .ThemeColor_bg_white { background-color: #fff !important; }
+    .ThemeColor_bg_cyan { background-color: #00b6b7 !important; }
+    .ThemeColor_bg_red { background-color: #b80000 !important; }
+    .ThemeColor_bg_yellow_Hover,
+    .ThemeColor_bg_yellow { background-color: #edc573 !important; }
+    .ThemeColor_bg_yellow_Hover:hover { background-color: #f5a700 !important; }
+
+    .ThemeColor_border_cyan { border-color: #00b6b7 !important; }
+    .ThemeColor_border_yellow { border-color: #edc573 !important; }
+    .ThemeColor_border_red { border-color: #b80000 !important; }
+
+/* Global Public */
+    .body {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* 详细信息的扩展 */
+        .DetailsExpanded .UpperLayer {
+            position: relative;
+            z-index: 100 !important;
+        }
+        .DetailsExpanded.Show .Summary::before {
+            display: block;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 99;
+            cursor: default;
+            content: " ";
+            background: transparent;
+        }
+    /* 悬浮固定 */
+        .SuspensionFixationALLWindow {
+            content: " " !important;
+            display: block !important;
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            bottom: 0 !important;
+
+            z-index: 0;
+            cursor: default;
+            background: transparent;
+        }
+    /* 绝对定位-水平垂直居中 */
+        .AbsHorizontalVerticalCenter {
+            display: block !important;
+            top: 50% !important;
+            left: 50% !important;
+            -webkit-transform: translate(-50%, -50%) !important;
+            -ms-transform: translate(-50%, -50%) !important;
+            transform: translate(-50%, -50%) !important;
+
+            position: absolute;
+            z-index: 1;
+        }
+    /* 窗帘黑幕 */
+        .CurtainShady {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+/* ***************************************************华丽的分割线*************************************************** */
+/* 手机端样式 */
+@media screen and (max-width: 1200px) {
+    .Style_IsMobile_Hide { display: none !important; }
+}
+
+/* 电脑端样式 */
+@media screen and (min-width: 1200px) {
+    .Style_IsPC_Hide { display: none !important; }
+    .Style_IsPC_Opacity {
+        filter: alpha(opacity=0) !important;
+        -moz-opacity: 0 !important;
+        opacity: 0 !important;
+    }
+}
+/* ***************************************************华丽的分割线*************************************************** */
+
+.BgImg {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.BgLoading {
+    background-image: url(../images/Loading.png);
+    background-color: #808080;
+    background-size: 30% auto;
+}
+
+
