@@ -19,5 +19,11 @@
 
 
 ## 参考学习链接:
+### 图床
 ```shell
+# 图床 - 百度百科
+https://baike.baidu.com/item/图床
+
+# 贴图库
+http://www.tietuku.com
 ```
