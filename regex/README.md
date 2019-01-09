@@ -82,6 +82,20 @@ this.([\w]+) /= count;
 this.SUMNumberValue.$1 += item.$1;
 ```
 
+## 各语言使用案例:
+### Python
+```python
+strlist = '''
+add
+bundle
+commit
+'''
+import re
+re_model = re.compile(r'([a-zA-Z-]+)\s*', re.I | re.M | re.U)
+result = re_model.findall(strlist)
+# result = ['add', 'bundle', 'commit']
+```
+
 ## 参考学习链接:
 ```shell
 # unicode 编码表查询

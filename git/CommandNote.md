@@ -304,3 +304,63 @@ $ git tag # 可以查看所有标签
 $ git tag <tagname> <commit_id> -a -m "<message>"
 ```
 
+## Git 命令列表:
+### add
+### am
+### apply
+### archive
+### bisect
+### blame
+### branch
+### bundle
+### checkout
+### cherry
+### cherry-pick
+### citool
+### clean
+### clone
+### commit
+### config
+### describe
+### diff
+### difftool
+### fetch
+### flow
+### format-patch
+### fsck
+### gc
+### gitk
+### grep
+### gui
+### help
+### init
+### instaweb
+### lfs
+### log
+### merge
+### mergetool
+### mv
+### notes
+### pull
+### push
+### rebase
+### reflog
+### remote
+### repack
+### replace
+### request-pull
+### reset
+### revert
+### rm
+### send-email
+### shortlog
+### show
+### show-branch
+### stage
+### stash
+### status
+### submodule
+### tag
+### whatchanged
+### worktree
+
