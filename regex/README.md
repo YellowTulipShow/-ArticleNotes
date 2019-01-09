@@ -61,29 +61,9 @@ x|y                 匹配 x 或 y。例如，'z|food' 能匹配 "z" 或 "food"�
 [\w\.]+\.(com|cn|net|site|org|xyz|top)
 ```
 
-
-## 使用的常见案例:
-### 替换:
-要求: `'this.'` 后面加上 `SUMNumberValue` 调用名称, 并更改名称:
-```C#
-( this.bigNum /= count;  =>  this.SUMNumberValue.bigNum += item.bigNum;)
-```
-
-```C#
-this.bigNum /= count;
-this.bigRate /= count;
-this.collectionNum /= count;
-```
-
-```regex
-# 正则表达式 字符串
-this.([\w]+) /= count;
-# 替换替换的最终形态
-this.SUMNumberValue.$1 += item.$1;
-```
-
 ## 各语言使用案例:
 ### Python
+提取长字符串当中的单词
 ```python
 strlist = '''
 add
@@ -94,6 +74,28 @@ import re
 re_model = re.compile(r'([a-zA-Z-]+)\s*', re.I | re.M | re.U)
 result = re_model.findall(strlist)
 # result = ['add', 'bundle', 'commit']
+```
+
+### JavaScript
+修饰符
+```shell
+i   # 执行对大小写不敏感的匹配。
+g   # 执行全局匹配（查找所有匹配而非在找到第一个匹配后停止）。
+m   # 执行多行匹配。
+```
+
+判断是否匹配
+```js
+var isbool
+isbool = /^admin$/gi.test("admin"); // true
+isbool = /^admin$/gi.test("aDmIn"); // true
+isbool = /^admin$/gi.test("aDmDIn"); // false
+isbool = /^admin$/gi.test("1aDmIn"); // false
+```
+
+字符串替换 - 只要数字
+```js
+var result = "2524Ewq533".replace(/[^\d]/g, ""); // "2524533"
 ```
 
 ## 参考学习链接:
