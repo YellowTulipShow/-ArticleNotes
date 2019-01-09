@@ -84,8 +84,22 @@ Alter DataBase YTSDataB
 ```
 
 
+## 运行时间
+```sql
+declare @d datetime
+set @d=getdate()
+/*你的SQL脚本开始*/
+SELECT [TestCase] FROM [TestCaseSelect]
+/*你的SQL脚本结束*/
+select [语句执行花费时间(毫秒)]=datediff(ms,@d,getdate())
+```
+
+
 ## 参考学习链接:
 ```shell
 # SQL中char、varchar、nvarchar的区别
 http://www.cnblogs.com/carekee/articles/2094676.html
+
+# 查看sql语句执行时间/测试sql语句性能
+http://www.cnblogs.com/qanholas/archive/2011/05/06/2038543.html
 ```
