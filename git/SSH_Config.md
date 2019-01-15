@@ -62,6 +62,11 @@ User git
 IdentityFile ~/.ssh/id_rsa_第二个账户的标识
 ```
 
+### 测试是否连通
+```shell
+ssh -T <配置别名Host /或者 服务器域名(github.com)>
+```
+
 
 ## 参考学习链接:
 ```shell
