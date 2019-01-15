@@ -26,12 +26,15 @@ $ ssh-keygen -t rsa -C "<email account>"
 ## 配置 SSH
 创建配置文件: `~/config`
 ```shell
-# 主机地址 (重点标识)
+# 配置别名, 只在本地使用时用于区分
 Host
+
 # 主机名称 (一般都是服务器域名)
 HostName
+
 # 用户名称 (默认git)
 User
+
 # 绑定的标识文件路径名称 (重点标识)
 IdentityFile
 ```
@@ -47,16 +50,16 @@ User git
 IdentityFile ~/.ssh/id_rsa_第一个账户
 
 # gitee(码云) 第一个账户
-Host git@gitee.com/第一个账户
-HostName https://gitee.com
+Host 第一个账户的别名
+HostName gitee.com
 User git
-IdentityFile ~/.ssh/id_rsa_第一个账户
+IdentityFile ~/.ssh/id_rsa_第一个账户的标识
 
 # gitee(码云) 第二个账户
-Host git@gitee.com/第二个账户
-HostName https://gitee.com
+Host 第二个账户的别名
+HostName gitee.com
 User git
-IdentityFile ~/.ssh/id_rsa_第二个账户
+IdentityFile ~/.ssh/id_rsa_第二个账户的标识
 ```
 
 
