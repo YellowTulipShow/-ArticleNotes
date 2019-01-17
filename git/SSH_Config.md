@@ -16,6 +16,11 @@ $ ssh-keygen -t rsa -C "<email account>"
 ![创建新 SSH 时的界面](../assets/images/git/ssh/ssh_new_create.png)
 当然, 红色框部分都可以直接按 Enter 键直接跳过
 
+本人为:
+```shell
+ssh-keygen -t rsa -C "1426689530@qq.com YelloTulipShow"
+```
+
 执行命令结束后在本地创建了两个文件:
 * **~/.ssh/id_rsa**
     秘钥文件 不能给人看, 任何人都不行的文件
