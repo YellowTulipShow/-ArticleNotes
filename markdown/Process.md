@@ -82,26 +82,3 @@ st->op1->sub2->cond
 cond(yes)->io->e
 cond(no)->sub1(right)->op1
 ```
-
-
-```
-graph TD
-A --> B
-```
-
-```
-graph LR
-A --> B
-```
-```
-graph BT
-A --> B
-```
-```
-graph RL
-A --> B
-```
-```
-graph TB
-A --> B
-```
