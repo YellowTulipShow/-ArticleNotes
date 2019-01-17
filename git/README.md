@@ -174,4 +174,10 @@ http://www.open-open.com/lib/view/open1340532874842.html
 
 # Git 一次性 pull push 所有的分支
 https://www.cnblogs.com/zengjfgit/p/6212073.html
+
+# git clone一个github上的仓库，太慢，经常连接失败，但是github官网流畅访问，为什么？
+https://www.zhihu.com/question/27159393
+
+# 解决GitHub下载速度太慢的问题
+https://blog.csdn.net/qing666888/article/details/79123742
 ```
