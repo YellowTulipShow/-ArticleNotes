@@ -1,5 +1,8 @@
 # Java 笔记
 
+## 代码库:
+点击 **[此处](https://github.com/YellowTulipShow/Java)** 跳转代码库:
+
 ## 环境搭建
 ### Eclipse
 点击 **[此处](eclipse.md)** 详细查看编辑器的使用:
