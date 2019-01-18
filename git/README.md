@@ -88,6 +88,22 @@ source ~/.bashrc
 具体的习惯性配置 点击 **[这里](./mintty.md)** 进行查看
 
 
+## 提高访问 GitHub 速度
+更改 `hosts` 文件: (如果没有创建之, 并且注意需要管理员权限)
+
+Window: -> C:\Windows\System32\drivers\etc\hosts
+
+Mac: -> /etc/hosts
+
+```shell
+192.30.253.113      github.com
+151.101.185.194     github.global.ssl.fastly.net
+```
+
+浏览器访问 https://www.ipaddress.com/, 分别输入 `github.com` 和 `github.global.ssl.fastly.net` 以获取对应速度最快的ip写入到配置文件中
+
+最后执行 `ipconfig /flushdns` 命令, 刷新 DNS 缓存
+
 ## 日期英文:
 ### 周:
 ```shell
