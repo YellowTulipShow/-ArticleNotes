@@ -80,6 +80,14 @@ alias grepf='grep -E ".*\.(aspx|html|htm|css|js|xml|md|)$"'
 source ~/.bashrc
 ```
 
+## Git mintty 配置
+对于 `Git` 的操作基本上都是使用 `mintty` 命令行工具来实现
+
+从 `Git` 官网上下载的工具 `Git Bash` 便是 `mintty`
+
+具体的习惯性配置 点击 **[这里](./mintty.md)** 进行查看
+
+
 ## 日期英文:
 ### 周:
 ```shell
