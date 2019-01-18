@@ -22,4 +22,7 @@ http://www.tietuku.com
 
 # 在线音频 & 视频转换器
 https://www.media.io/zh/
+
+# 常用虚拟机软件推荐
+https://blog.csdn.net/tzhuwb/article/details/77410893
 ```
