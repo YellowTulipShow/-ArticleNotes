@@ -25,4 +25,7 @@ https://www.media.io/zh/
 
 # 常用虚拟机软件推荐
 https://blog.csdn.net/tzhuwb/article/details/77410893
+
+# 开源许可证都有什么区别,一般开源项目用什么许可证?
+https://www.zhihu.com/question/28292322
 ```
