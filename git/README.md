@@ -68,17 +68,22 @@ $ ssh-keygen -t rsa -C "<email account>"
 > - [Linux/mac下的自定义命令alias，并保存别名使其永久生效（重启不会失效)](http://blog.csdn.net/jianglei421/article/details/8510723)
 > - [linux下.bashrc文件 /PATH环境变量修改 /提示符修改](http://shunfengwei.blog.163.com/blog/static/17522511720122299241143/)
 
-### `~/.bashrc` 则每次打开新的终端时，都要被读取
+`~/.bashrc` 则每次打开新的终端时，都要被读取
+
+`~/.bash_profile` 只在会话开始时被读取一次
+
+### 生效配置文件
+```shell
+# 使用 .bashrc 文件
+source ~/.bashrc
+```
+
+### 文件类型
 ```shell
 # 匹配 Web 上传更新文件类型
 alias grepf='grep -E ".*\.(aspx|html|htm|css|js|xml|md|)$"'
 ```
 
-### `~/.bash_profile` 只在会话开始时被读取一次
-```shell
-# 使用 .bashrc 文件
-source ~/.bashrc
-```
 
 ## Git mintty 配置
 对于 `Git` 的操作基本上都是使用 `mintty` 命令行工具来实现
