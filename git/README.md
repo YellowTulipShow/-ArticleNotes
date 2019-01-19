@@ -84,6 +84,17 @@ source ~/.bashrc
 alias grepf='grep -E ".*\.(aspx|html|htm|css|js|xml|md|)$"'
 ```
 
+### 检查目录下多个项目库的状态
+```shell
+alias gitchecks='python /c/python_script/statuser.py'
+```
+使用:
+```shell
+$ gitchecks /d/ZRQWork/YTS.ZRQ/
+Git repos with git status: 0
+Not git repos: 0
+```
+
 
 ## Git mintty 配置
 对于 `Git` 的操作基本上都是使用 `mintty` 命令行工具来实现
