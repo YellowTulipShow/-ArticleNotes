@@ -1,14 +1,10 @@
 # window 系统常用命令
 
-
-#### 参考链接:
-> [Win8系统108个运行命令 你能记住多少?](http://win8.zol.com.cn/277/2772193.html)
-
-#### 快捷操作:
+## 快捷操作:
 快速在文件夹目录中打开cmd:
     文件夹空白处按住shift键鼠标右键选择【在此处打开命令窗口】即可
 
-#### 命令集合:
+## 常用应用程序命令:
 ```powershell
 # 远程连接
 > mstsc.exe
@@ -58,3 +54,25 @@
 > Themes
 ```
 
+## 目录相关参数
+```powershell
+@echo off
+echo 当前盘符: %~d0
+echo 当前盘符和路径: %~dp0
+echo 当前批处理全路径: %~f0
+echo 当前盘符和路径的短文件名格式: %~sdp0
+echo 当前CMD默认目录: %cd%
+echo 目录中有空格也可以加入“避免找不到路径
+echo 当前盘符: %~d0
+echo 当前盘符和路径: %~dp0
+echo 当前批处理全路径: %~f0
+echo 当前盘符和路径的短文件名格式: %~sdp0
+echo 当前CMD默认目录: %cd%
+pause
+```
+
+## 参考链接:
+```shell
+# Win8系统108个运行命令 你能记住多少?
+http://win8.zol.com.cn/277/2772193.html
+```
