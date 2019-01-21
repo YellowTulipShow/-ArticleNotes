@@ -16,4 +16,7 @@ https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c
 
 # Python 中文学习大本营
 http://www.pythondoc.com/
+
+# python笔记(一)获取当前目录路径和文件
+https://www.cnblogs.com/Jomini/p/8636129.html
 ```
