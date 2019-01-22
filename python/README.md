@@ -22,4 +22,7 @@ https://www.cnblogs.com/Jomini/p/8636129.html
 
 # python subprocess, Popen (执行 shell 命令)
 http://www.cnblogs.com/nerrissa/articles/5784746.html
+
+# Python：print显示颜色
+http://www.cnblogs.com/ping-y/p/5897018.html
 ```
