@@ -25,4 +25,10 @@ http://www.cnblogs.com/nerrissa/articles/5784746.html
 
 # Python：print显示颜色
 http://www.cnblogs.com/ping-y/p/5897018.html
+
+# python 判断操作系统类型
+https://www.cnblogs.com/snow-backup/p/4151276.html
+
+# python os.path模块
+https://www.cnblogs.com/dkblog/archive/2011/03/25/1995537.html
 ```
