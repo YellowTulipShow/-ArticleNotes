@@ -7,7 +7,7 @@
 
 ## PS:
 ### 查看目录下的 html 演示效果, 快捷方法:
-![复制地址访问](./assets/images/copy_address_access.png)
+![复制地址访问](https://ytsimg.gitee.io/blog/yts_github_io/copy_address_access.png)
 不愿意搭建模板博客, 不自由, 也懒...
 
 

@@ -6,7 +6,7 @@
 
 ## Vim
 键位
-![](../assets/images/linux/keys.jpg)
+![](https://ytsimg.gitee.io/blog/yts_github_io/linux/keys.jpg)
 
 ## 参考学习链接:
 ```shell

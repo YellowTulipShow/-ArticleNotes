@@ -13,7 +13,7 @@ $ ssh-keygen -t rsa -C "<email account>"
     -C 设置注释文字，比如邮箱
     -f 指定密钥文件存储文件名 (不指定时, 默认名称是: id_rsa)
 ```
-![创建新 SSH 时的界面](../assets/images/git/ssh/ssh_new_create.png)
+![创建新 SSH 时的界面](https://ytsimg.gitee.io/blog/yts_github_io/git/ssh/ssh_new_create.png)
 当然, 红色框部分都可以直接按 Enter 键直接跳过
 
 本人为:
