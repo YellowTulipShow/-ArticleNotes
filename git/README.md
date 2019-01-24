@@ -215,4 +215,7 @@ https://www.zhihu.com/question/27159393
 
 # 解决GitHub下载速度太慢的问题
 https://blog.csdn.net/qing666888/article/details/79123742
+
+# 一篇文章搞定Github API 调用 (v3）
+https://segmentfault.com/a/1190000015144126?utm_source=tag-newest
 ```
