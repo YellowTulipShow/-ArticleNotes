@@ -1,5 +1,18 @@
 # window 系统常用命令
 
+## DNS 修复
+静态绑定 `IP` 与网址关联, 配置文件地址为:
+
+`C:\Windows\System32\drivers\etc\host`
+
+文件中如:
+
+```shell
+    192.30.253.113  github.com
+    151.101.185.194 github.global.ssl.fastly.net
+    204.79.197.200 bing.com
+```
+
 ## 快捷操作:
 快速在文件夹目录中打开cmd:
     文件夹空白处按住shift键鼠标右键选择【在此处打开命令窗口】即可
