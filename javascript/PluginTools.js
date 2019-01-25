@@ -207,7 +207,7 @@ function jsonpsuccessbackfunction(a,b,c,d,e,f) {}
             self.QueueAppend(data);
             self.QueueExecute();
         },
-        LocalPost: function(argument_config) {
+        LocalRequest: function() {
             var self = this;
             var config = self.MergeConfig(argument_config);
             if (window.CheckData.IsStringNull(config.url)) {
@@ -215,7 +215,7 @@ function jsonpsuccessbackfunction(a,b,c,d,e,f) {}
             }
             var data = {
                 url: config.url,
-                type: "POST",
+                type: config.type,
                 data: config.data,
                 dataType: "json",
                 async: config.async,
@@ -238,6 +238,17 @@ function jsonpsuccessbackfunction(a,b,c,d,e,f) {}
             } else {
                 $.ajax(data);
             }
+        },
+        LocalGet: function(argument_config) {
+            var self = this;
+            self.LocalRequest($.extend({
+                type: "GET",
+            }, argument_config));
+        },
+        LocalPost: function(argument_config) {
+            self.LocalRequest($.extend({
+                type: "POST",
+            }, argument_config));
         },
         MergeConfig: function(argument_config) {
             var self = this;
