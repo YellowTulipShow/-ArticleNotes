@@ -207,7 +207,7 @@ function jsonpsuccessbackfunction(a,b,c,d,e,f) {}
             self.QueueAppend(data);
             self.QueueExecute();
         },
-        LocalRequest: function() {
+        LocalRequest: function(argument_config) {
             var self = this;
             var config = self.MergeConfig(argument_config);
             if (window.CheckData.IsStringNull(config.url)) {
