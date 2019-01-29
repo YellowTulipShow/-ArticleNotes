@@ -302,9 +302,21 @@ $ git tag # 可以查看所有标签
     -d <tagname>
 ```
 
+常用:
 ```shell
-# 常用:
 $ git tag <tagname> <commit_id> -a -m "<message>"
+```
+
+在Git v1.7.0 之后
+
+可以使用这种语法删除远程分支:
+```shell
+$ git push origin --delete <branchName>
+```
+
+删除tag这么用:
+```shell
+git push origin --delete tag <tagname>
 ```
 
 ## Git 命令列表:

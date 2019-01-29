@@ -218,4 +218,7 @@ https://blog.csdn.net/qing666888/article/details/79123742
 
 # 一篇文章搞定Github API 调用 (v3）
 https://segmentfault.com/a/1190000015144126?utm_source=tag-newest
+
+# Git查看、删除、重命名远程分支和tag
+https://blog.zengrong.net/post/1746.html
 ```
