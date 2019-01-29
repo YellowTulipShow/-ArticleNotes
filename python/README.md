@@ -31,4 +31,7 @@ https://www.cnblogs.com/snow-backup/p/4151276.html
 
 # python os.path模块
 https://www.cnblogs.com/dkblog/archive/2011/03/25/1995537.html
+
+# python3-抛出、捕获异常
+https://blog.csdn.net/qq_33961117/article/details/82108271
 ```
