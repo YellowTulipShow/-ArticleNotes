@@ -15,6 +15,10 @@
 
 最后执行 `ipconfig /flushdns` 命令, 刷新 DNS 缓存
 
+## DNS 修复
+问题: 连上网络但是不能浏览网页,但能Ping通一些常见域名地址
+解决: DHCP问题(重新启动服务), winsock(管理员权限的cmd输入命令: `netsh winsock reset` (说是LSP目录))
+
 ## 快捷操作:
 快速在文件夹目录中打开cmd:
     文件夹空白处按住shift键鼠标右键选择【在此处打开命令窗口】即可
