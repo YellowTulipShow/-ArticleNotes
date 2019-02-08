@@ -34,4 +34,10 @@ https://www.cnblogs.com/dkblog/archive/2011/03/25/1995537.html
 
 # python3-抛出、捕获异常
 https://blog.csdn.net/qq_33961117/article/details/82108271
+
+# python argparse 模块命令行参数解析
+https://blog.csdn.net/huangfei711/article/details/80325946
+
+# python 一个.py文件如何调用另一个.py文件中的类和函数
+https://blog.csdn.net/winycg/article/details/78512300
 ```
