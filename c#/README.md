@@ -4,7 +4,5 @@
 点击 **[此处](https://github.com/YellowTulipShow/CSharp)** 跳转代码库:
 
 ## 参考学习链接:
-```shell
-# 反射
-https://baike.baidu.com/item/%E5%8F%8D%E5%B0%84/928391?fr=aladdin
-```
+* [反射](https://baike.baidu.com/item/%E5%8F%8D%E5%B0%84/928391?fr=aladdin)
+* [C# http请求带请求头部分](https://www.cnblogs.com/hvaning/p/6956254.html)

@@ -162,16 +162,8 @@ i: 125 c: }
 i: 126 c: ~
 ```
 ### 链接:
-```shell
-# 百度百科 - ASCII
-https://baike.baidu.com/item/ASCII/309296
-
-# 维基百科 - ASCII
-https://en.wikipedia.org/wiki/ASCII
-```
+* [百度百科 - ASCII](https://baike.baidu.com/item/ASCII/309296)
+* [维基百科 - ASCII](https://en.wikipedia.org/wiki/ASCII)
 
 ## 参考学习链接:
-```shell
-# unicode 编码表查询
-https://unicode-table.com
-```
+* [unicode 编码表查询](https://unicode-table.com)

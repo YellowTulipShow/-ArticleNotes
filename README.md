@@ -13,19 +13,9 @@
 
 ## 参考学习链接:
 ### 图床
-```shell
-# 图床 - 百度百科
-https://baike.baidu.com/item/图床
-
-# 贴图库
-http://www.tietuku.com
-
-# 在线音频 & 视频转换器
-https://www.media.io/zh/
-
-# 常用虚拟机软件推荐
-https://blog.csdn.net/tzhuwb/article/details/77410893
-
-# 开源许可证都有什么区别,一般开源项目用什么许可证?
-https://www.zhihu.com/question/28292322
-```
+* [图床 - 百度百科](https://baike.baidu.com/item/图床)
+* [贴图库](http://www.tietuku.com)
+* [在线音频 & 视频转换器](https://www.media.io/zh/)
+* [常用虚拟机软件推荐](https://blog.csdn.net/tzhuwb/article/details/77410893)
+* [开源许可证都有什么区别,一般开源项目用什么许可证?](https://www.zhihu.com/question/28292322)
+* [四种常见的 POST 提交数据方式（application/x-www-form-urlencoded，multipart/form-data，application/json，text/xml）](https://blog.csdn.net/xiao__jia__jia/article/details/79357274)
