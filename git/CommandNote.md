@@ -39,6 +39,11 @@ git fetch --all
 git pull --all
 ```
 
+```shell
+# 拉取指定远程仓库分支到本地 (本地分支不存在)
+git checkout -b <branch> origin/<branch>
+```
+
 ## git 配置
 ```shell
 $ git config
@@ -64,14 +69,21 @@ $ git clone
 ## 远程仓库处理
 ```shell
 $ git remote
+    # 查看远程库的各名称 (比 -v 差)
+    show
+
     # 查看远程库的详细信息
     -v
+
+    # 查看指定远程库的巨细信息 (比 -v 强)
+    show <remote name>
 
     # 将本地仓库 关联 远程仓库 (记得需首先在远程仓库 网站设置好SSH)
     add <origin name> <url address>
 
     # 在本地删除 已经关联的远程库信息
     rm <origin name>
+
 ```
 
 ## 往 远程仓库 推送
