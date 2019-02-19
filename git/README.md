@@ -191,34 +191,15 @@ December    # 十二月   Dec
 ```
 
 ## 参考学习链接:
-```shell
-# 廖雪峰Git学习
-https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000
-
-# Git-scm.com 中文版
-https://git-scm.com/book/zh/v2
-
-# 阮一峰 Git分支管理策略
-http://www.ruanyifeng.com/blog/2012/07/git.html
-
-# 介绍一个成功的 Git 分支模型
-http://www.oschina.net/translate/a-successful-git-branching-model
-
-# Git常用命令查询
-http://www.open-open.com/lib/view/open1340532874842.html
-
-# Git 一次性 pull push 所有的分支
-https://www.cnblogs.com/zengjfgit/p/6212073.html
-
-# git clone一个github上的仓库，太慢，经常连接失败，但是github官网流畅访问，为什么？
-https://www.zhihu.com/question/27159393
-
-# 解决GitHub下载速度太慢的问题
-https://blog.csdn.net/qing666888/article/details/79123742
-
-# 一篇文章搞定Github API 调用 (v3）
-https://segmentfault.com/a/1190000015144126?utm_source=tag-newest
-
-# Git查看、删除、重命名远程分支和tag
-https://blog.zengrong.net/post/1746.html
-```
+* [廖雪峰Git学习](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
+* [Git-scm.com 中文版](https://git-scm.com/book/zh/v2)
+* [阮一峰 Git分支管理策略](http://www.ruanyifeng.com/blog/2012/07/git.html)
+* [介绍一个成功的 Git 分支模型](http://www.oschina.net/translate/a-successful-git-branching-model)
+* [Git常用命令查询](http://www.open-open.com/lib/view/open1340532874842.html)
+* [Git 一次性 pull push 所有的分支](https://www.cnblogs.com/zengjfgit/p/6212073.html)
+* [git clone一个github上的仓库，太慢，经常连接失败，但是github官网流畅访问，为什么？](https://www.zhihu.com/question/27159393)
+* [解决GitHub下载速度太慢的问题](https://blog.csdn.net/qing666888/article/details/79123742)
+* [一篇文章搞定Github API 调用 (v3）](https://segmentfault.com/a/1190000015144126?utm_source=tag-newest)
+* [Git查看、删除、重命名远程分支和tag](https://blog.zengrong.net/post/1746.html)
+* [改写历史，永久删除git库的物理文件](https://my.oschina.net/jfinal/blog/215624?fromerr=ZTZ6c38X)
+* [仓库体积过大，如何减小？](https://gitee.com/help/articles/4232)

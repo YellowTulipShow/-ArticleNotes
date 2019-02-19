@@ -151,19 +151,8 @@ git pull origin
 其他的项目如法炮制即可
 
 ## 参考学习链接:
-```shell
-# ssh-keygen 中文手册
-http://www.jinbuguo.com/openssh/ssh-keygen.html
-
-# ssh-config配置
-https://blog.csdn.net/huasonl88/article/details/52166876
-
-# windows一台电脑添加多个git账号
-https://blog.csdn.net/qq1332479771/article/details/70149616
-
-# Git使用手册：HTTPS和SSH方式的区别和使用
-https://www.cnblogs.com/lqfxyy/p/5740720.html
-
-# windows下git多账号配置详解
-https://jingyan.baidu.com/article/ab69b2708d09382ca7189f9b.html
-```
+* [ssh-keygen 中文手册](http://www.jinbuguo.com/openssh/ssh-keygen.html)
+* [ssh-config配置](https://blog.csdn.net/huasonl88/article/details/52166876)
+* [windows一台电脑添加多个git账号](https://blog.csdn.net/qq1332479771/article/details/70149616)
+* [Git使用手册：HTTPS和SSH方式的区别和使用](https://www.cnblogs.com/lqfxyy/p/5740720.html)
+* [windows下git多账号配置详解](https://jingyan.baidu.com/article/ab69b2708d09382ca7189f9b.html)
