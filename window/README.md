@@ -91,7 +91,4 @@ pause
 ```
 
 ## 参考链接:
-```shell
-# Win8系统108个运行命令 你能记住多少?
-http://win8.zol.com.cn/277/2772193.html
-```
+* [Win8系统108个运行命令 你能记住多少?](http://win8.zol.com.cn/277/2772193.html)

@@ -9,7 +9,4 @@
 ![](https://ytsimg.gitee.io/blog/yts_github_io/linux/keys.jpg)
 
 ## 参考学习链接:
-```shell
-# 登录 Linux 实例
-https://cloud.tencent.com/document/product/213/5436
-```
+* [登录 Linux 实例](https://cloud.tencent.com/document/product/213/5436)
