@@ -1,8 +1,8 @@
 # Android 笔记
 
 ## 环境搭建
-### Eclipse 开发工具包
-链接: https://pan.baidu.com/s/1_Y7cmIMfzBWoeiaiPg9ekg 提取码: 4gxv
+* [官网资源下载地址](http://www.android-studio.org/)
+* [Eclipse 开发工具包 提取码: 4gxv](https://pan.baidu.com/s/1_Y7cmIMfzBWoeiaiPg9ekg)
 
 
 ### 使用 adb 动态刷新安卓设备
@@ -16,11 +16,8 @@
 
 
 ## 开发文档:
-### 官网英文版:
-https://docs.oracle.com/javase/8/docs/api/
-
-### 翻译中文版:
-http://www.android-doc.com/reference/packages.html
+* [官网英文版](https://docs.oracle.com/javase/8/docs/api/)
+* [翻译中文版](http://www.android-doc.com/reference/packages.html)
 
 ## 正式签名:
 ### 查看地址:
@@ -55,4 +52,4 @@ Destination and key/certificate checks (目的地和密钥/证书检查):
 ```
 
 ## 打包项目
-https://jingyan.baidu.com/article/fedf0737b7e76835ac8977a6.html
+* [百度百科 - eclipse怎么打包android项目](https://jingyan.baidu.com/article/fedf0737b7e76835ac8977a6.html)
