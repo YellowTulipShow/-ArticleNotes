@@ -9,7 +9,7 @@
 * [JDK开发包下载](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 ## 技巧:
-点击 **[这里](DevelopmentTipsNotes.md)** 跳转查看更多
+* [点击跳转查看更多](./DevelopmentTipsNotes.md)
 
 ## 开发文档API:
 ### 下载:
@@ -29,3 +29,5 @@
 * [(java 取系统时间)慎用 System.currentTimeMillis()](http://blog.sina.com.cn/s/blog_6b8bd9d80101fe8t.html)
 * [Java中的时间精度](https://blog.csdn.net/elky1982/article/details/4677365)
 * [Java enum的用法详解](http://www.cnblogs.com/happyPawpaw/archive/2013/04/09/3009553.html)
+* [java枚举类Enum方法简介(valueof,value,ordinal)](https://blog.csdn.net/congqingbin/article/details/7520137)
+* [Google翻译 jdk-1.8 Enum class](https://blog.fondme.cn/apidoc/jdk-1.8-google/java/lang/Enum.html)

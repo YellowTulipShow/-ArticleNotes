@@ -43,20 +43,15 @@ window -> Preferences -> General -> Content Types -> 右侧面板 -> 找到要�
 
 ### 代码格式化
 ```shell
-# 链接: https://jingyan.baidu.com/article/4f7d5712ae407f1a201927b6.html
 # 代码格式化
     快捷键: Ctrl+Shift+F
 # 如果失效 输入法其他程序快捷键占用:
     文件空白处右键 -> source -> format
 ```
+* [eclipse中格式化代码快捷键Ctrl+Shift+F失效](https://jingyan.baidu.com/article/4f7d5712ae407f1a201927b6.html)
 
 ### 动态刷新工程目录文件
-```shell
-右键需要刷新的文件夹 -> Refresh(F5)
-```
-
-
-
+    右键需要刷新的文件夹 -> Refresh(F5)
 
 ## Eclipse空间的基本配置
 ### 程序的编译和运行的环境配置(一般不改)
@@ -79,17 +74,17 @@ window -> Preferences -> General -> Content Types -> 右侧面板 -> 找到要�
 
 ### 字体大小及颜色
 ### Java代码区域的字体大小和颜色：
-            window -- Preferences -- General -- Appearance -- Colors And Fonts -- Java修改 -- Java Edit Text Font
+    window -- Preferences -- General -- Appearance -- Colors And Fonts -- Java修改 -- Java Edit Text Font
 ### 控制台
-            window -- Preferences -- General -- Appearance -- Colors And Fonts -- Debug -- Console font
+    window -- Preferences -- General -- Appearance -- Colors And Fonts -- Debug -- Console font
 ### 其他文件
-            window -- Preferences -- General -- Appearance -- Colors And Fonts -- Basic -- Text Font
+    window -- Preferences -- General -- Appearance -- Colors And Fonts -- Basic -- Text Font
 
 ### 窗体给弄乱了，怎么办?
-        window -- Reset Perspective
+    window -- Reset Perspective
 
 ### 控制台找不到了，怎么办?
-        Window--Show View—Console
+    Window--Show View—Console
 
 ## 常用快捷键
     alt+/ 内容辅助键
