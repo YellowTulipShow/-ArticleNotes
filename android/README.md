@@ -62,3 +62,6 @@ Destination and key/certificate checks (目的地和密钥/证书检查):
 
 ## 测试
 * [Eclipse IDE Android Test Project](http://www.cnblogs.com/GnagWang/archive/2010/12/16/1908710.html)
+
+## 知识点
+* [android 获取 手机各项信息: IEMI/ISO国家码/手机号/...](http://www.cnblogs.com/luxiaofeng54/archive/2011/03/01/1968063.html)
