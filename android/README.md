@@ -35,7 +35,10 @@ Keystore selection ->
     Create new keystore ->
         Location (路径): 如: D:\\[name].keystore
         Password (密码):
-        Confirm (确认密码): -> Next ->
+        Confirm (确认密码):
+
+Next ->
+
 Key Creation: (创建 keystore 文件所必要的信息)
     Alias (别名, 默认填写):
     Password (密码):
@@ -46,10 +49,16 @@ Key Creation: (创建 keystore 文件所必要的信息)
     Organization (组织): Individual
     City or Locality (城市或地区): QingDao
     State or Province (州或省): ShanDong
-    Country Code (XX) (国家代码): China -> Next ->
+    Country Code (XX) (国家代码): China
+
+Next ->
+
 Destination and key/certificate checks (目的地和密钥/证书检查):
     Destination APK file (生成的APK文件输出地址): D:\\Download -> Finish (完成)
 ```
 
 ## 打包项目
 * [百度百科 - eclipse怎么打包android项目](https://jingyan.baidu.com/article/fedf0737b7e76835ac8977a6.html)
+
+## 测试
+* [Eclipse IDE Android Test Project](http://www.cnblogs.com/GnagWang/archive/2010/12/16/1908710.html)
