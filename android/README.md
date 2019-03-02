@@ -65,3 +65,6 @@ Destination and key/certificate checks (目的地和密钥/证书检查):
 
 ## 知识点
 * [android 获取 手机各项信息: IEMI/ISO国家码/手机号/...](http://www.cnblogs.com/luxiaofeng54/archive/2011/03/01/1968063.html)
+* [android 怎么读取sqlite数据库](https://zhidao.baidu.com/question/587470558422514085.html)
+* [Android 数据存储与读取：SQLite](https://blog.csdn.net/mimitracely/article/details/7982976)
+* [SQLite可视化管理工具汇总](https://blog.csdn.net/shellching/article/details/7979969)
