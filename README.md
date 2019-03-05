@@ -4,12 +4,13 @@
 一些生活或学习中的案例分享
 做出来的小游戏, 效果展示等等..
 
+## 经典语录
+* [点击查看详情](classic_quotation.md)
 
 ## PS:
 ### 查看目录下的 html 演示效果, 快捷方法:
 ![复制地址访问](https://ytsimg.gitee.io/blog/yts_github_io/copy_address_access.png)
-不愿意搭建模板博客, 不自由, 也懒...
-
+不愿意搭建模板博客, 不自由...
 
 ## 参考学习链接:
 ### 图床
