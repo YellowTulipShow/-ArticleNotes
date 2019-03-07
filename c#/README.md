@@ -1,5 +1,12 @@
 # C# 语言学习
 
+## Visual Studio
+版本号 | 版本 | 注册码/激活码
+---- | --- | ---
+2013 | Ultimate | BWG7X-J98B3-W34RT-33B3R-JVYW9
+2017 | Enterprise(企业版) | NJVYC-BMHX2-G77MM-4XJMR-6Q8QF
+2017 | Professional(专业版) | KBJFW-NXHK6-W4WJM-CRMQB-G3CDH
+
 ## 代码库:
 点击 **[此处](https://github.com/YellowTulipShow/CSharp)** 跳转代码库:
 
