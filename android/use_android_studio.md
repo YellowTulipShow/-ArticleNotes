@@ -27,6 +27,7 @@
 **Ctrl + Q** | 把光标移至方法处，按此组合键可快速查看方法的说明文档。
 **Ctrl + B** | 直接跳转到类、方法、成员变量定义的地方。与Ctrl+鼠标左键效果一样
 **Alt + F7** | 选中方法的, 查找所有引用项
+**Shift + F6** | 把光标放在变量上, 批量更改重命名 [变量 / 文件 / 方法] 名称
 
 * [键盘快捷键 - 官网详细说明](https://developer.android.google.cn/studio/intro/keyboard-shortcuts)
 
