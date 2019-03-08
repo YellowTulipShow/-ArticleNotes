@@ -1,13 +1,13 @@
 # 总结学习常用 Git 命令
 
 ## Git 基础命令
-点击 **[`这里`](./CommandNote.md)** 来查看更多
+* [本地学习各命令文档](./CommandNote.md)
 
 ## SSH Key
 ```shell
 $ ssh-keygen -t rsa -C "<email account>"
 ```
-点击 **[`这里`](./SSH_Config.md)** 来查看更多
+* [本地 SSH Key 学习详情](./SSH_Config.md)
 
 ## Git 基础概念:
 ### 工作区:
@@ -45,12 +45,7 @@ $ ssh-keygen -t rsa -C "<email account>"
 ### F function
     开发新功能时创建, 用完需要删除
 
-
 ## 别名命令收藏
-> 参考学习链接:
->
-> - [个性化你的 Git Log 的输出格式](https://ruby-china.org/topics/939)
-
 可以直接使用下面代码添加到 `~/.gitconfig` 文件
 ```shell
 [alias]
@@ -63,14 +58,15 @@ $ ssh-keygen -t rsa -C "<email account>"
     # 标签和标签注释
     tags = tag -ln
 ```
+* [个性化你的 Git Log 的输出格式](https://ruby-china.org/topics/939)
 
 ## 系统别名命令
-> - [Linux/mac下的自定义命令alias，并保存别名使其永久生效（重启不会失效)](http://blog.csdn.net/jianglei421/article/details/8510723)
-> - [linux下.bashrc文件 /PATH环境变量修改 /提示符修改](http://shunfengwei.blog.163.com/blog/static/17522511720122299241143/)
-
 `~/.bashrc` 则每次打开新的终端时，都要被读取
 
 `~/.bash_profile` 只在会话开始时被读取一次
+
+* [Linux/mac下的自定义命令alias，并保存别名使其永久生效（重启不会失效)](http://blog.csdn.net/jianglei421/article/details/8510723)
+* [linux下.bashrc文件 /PATH环境变量修改 /提示符修改](http://shunfengwei.blog.163.com/blog/static/17522511720122299241143/)
 
 ### 生效配置文件
 ```shell
@@ -88,111 +84,66 @@ alias grepf='grep -E ".*\.(aspx|html|htm|css|js|xml|md|)$"'
 ```shell
 alias gitdc='python /D/ZRQWork/YTS.ZRQ/PythonScripts/git_directory_check/main.py'
 ```
-自定义配置和使用:
-点击 **[查看更多](https://github.com/YellowTulipShow/PythonScripts/tree/master/git_directory_check)**
+
+* [点击查看自定义配置和使用](https://github.com/YellowTulipShow/PythonScripts/tree/master/git_directory_check)
 
 ## Git mintty 配置
 对于 `Git` 的操作基本上都是使用 `mintty` 命令行工具来实现
 
 从 `Git` 官网上下载的工具 `Git Bash` 便是 `mintty`
 
-具体的习惯性配置 点击 **[这里](./mintty.md)** 进行查看
+* [具体的习惯性配置 点击进行查看](./mintty.md)
 
 
 ## 提高访问 GitHub 速度
 更改 `hosts` 文件: (如果没有创建之, 并且注意需要管理员权限)
 
-Window: -> C:\Windows\System32\drivers\etc\hosts
+    Window: -> C:\Windows\System32\drivers\etc\hosts
+    Mac: -> /etc/hosts
 
-Mac: -> /etc/hosts
+    192.30.253.113      github.com
+    151.101.185.194     github.global.ssl.fastly.net
 
-```shell
-192.30.253.113      github.com
-151.101.185.194     github.global.ssl.fastly.net
-```
-
-浏览器访问 https://www.ipaddress.com/, 分别输入 `github.com` 和 `github.global.ssl.fastly.net` 以获取对应速度最快的ip写入到配置文件中
+[浏览器访问](https://www.ipaddress.com/), 分别输入 `github.com` 和 `github.global.ssl.fastly.net` 以获取对应速度最快的ip写入到配置文件中
 
 最后执行 `ipconfig /flushdns` 命令, 刷新 DNS 缓存
 
 ## 日期英文:
-### 周:
-```shell
-Monday      # 星期一   Mon
-Tuesday     # 星期二   Tue
-Wednesday   # 星期三   Wed
-Thursday    # 星期四   Thu
-Friday      # 星期五   Fri
-Saturday    # 星期六   Sat
-Sunday      # 星期日   Sun
-```
+
+简写 | 英文 | 中文
+--- | --- | ---
+Mon | Monday    | 星期一
+Tue | Tuesday   | 星期二
+Wed | Wednesday | 星期三
+Thu | Thursday  | 星期四
+Fri | Friday    | 星期五
+Sat | Saturday  | 星期六
+Sun | Sunday    | 星期日
 
 ### 月:
-```shell
-January     # 一月     Jan
-February    # 二月     Feb
-March       # 三月     Mar
-April       # 四月     Apr
-May         # 五月     May
-June        # 六月     Jun
-July        # 七月     Jul
-August      # 八月     Aug
-September   # 九月     Sep
-October     # 十月     Oct
-November    # 十一月   Nov
-December    # 十二月   Dec
-```
+
+简写 | 英文 | 中文
+--- | --- | ---
+Jan | January    | 一月
+Feb | February   | 二月
+Mar | March      | 三月
+Apr | April      | 四月
+May | May        | 五月
+Jun | June       | 六月
+Jul | July       | 七月
+Aug | August     | 八月
+Sep | September  | 九月
+Oct | October    | 十月
+Nov | November   | 十一月
+Dec | December   | 十二月
 
 ## 日志格式参数:
-```shell
-%H: commit hash
-%h: 缩短的commit hash
-%T: tree hash
-%t: 缩短的 tree hash
-%P: parent hashes
-%p: 缩短的 parent hashes
-%an: 作者名字
-%aN: mailmap的作者名字 (.mailmap对应，详情参照git-shortlog(1)或者git-blame(1))
-%ae: 作者邮箱
-%aE: 作者邮箱 (.mailmap对应，详情参照git-shortlog(1)或者git-blame(1))
-%ad: 日期 (--date= 制定的格式)
-%aD: 日期, RFC2822格式
-%ar: 日期, 相对格式(1 day ago)
-%at: 日期, UNIX timestamp
-%ai: 日期, ISO 8601 格式
-%cn: 提交者名字
-%cN: 提交者名字 (.mailmap对应，详情参照git-shortlog(1)或者git-blame(1))
-%ce: 提交者 email
-%cE: 提交者 email (.mailmap对应，详情参照git-shortlog(1)或者git-blame(1))
-%cd: 提交日期 (--date= 制定的格式)
-%cD: 提交日期, RFC2822格式
-%cr: 提交日期, 相对格式(1 day ago)
-%ct: 提交日期, UNIX timestamp
-%ci: 提交日期, ISO 8601 格式
-%d: ref名称
-%e: encoding
-%s: commit信息标题
-%f: sanitized subject line, suitable for a filename
-%b: commit信息内容
-%N: commit notes
-%gD: reflog selector, e.g., refs/stash@{1}
-%gd: shortened reflog selector, e.g., stash@{1}
-%gs: reflog subject
-%Cred: 切换到红色
-%Cgreen: 切换到绿色
-%Cblue: 切换到蓝色
-%Creset: 重设颜色
-%C(...): 制定颜色, as described in color.branch.* config option
-%m: left, right or boundary mark
-%n: 换行
-%%: a raw %
-%x00: print a byte from a hex code
-%w([[,[,]]]): switch line wrapping, like the -w option of git-shortlog(1).
-```
+* [点击查看详情](./log_format_arguments.md)
 
 ## 参考学习链接:
 * [廖雪峰Git学习](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
 * [Git-scm.com 中文版](https://git-scm.com/book/zh/v2)
+* [腾讯云 Git 中文开发者手册](https://cloud.tencent.com/developer/doc/1096)
 * [阮一峰 Git分支管理策略](http://www.ruanyifeng.com/blog/2012/07/git.html)
 * [介绍一个成功的 Git 分支模型](http://www.oschina.net/translate/a-successful-git-branching-model)
 * [Git常用命令查询](http://www.open-open.com/lib/view/open1340532874842.html)
