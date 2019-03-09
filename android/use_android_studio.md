@@ -21,6 +21,13 @@
     Spelling 取消勾选 -> OK
 * [Android Studio关闭拼写错误提示](https://jingyan.baidu.com/article/e8cdb32b45e6e837052badaa.html)
 
+### 关闭 Insert App Indexing
+    File -> Setting (对话框) ->
+    Editor -> Intentions ->
+    Android -> Insert App Indexing API Code 取消勾选 -> OK
+不是很明白这个是什么? 但是在代码编辑区域总是弹黄色灯泡让你添加, 添加之后代码就炸了, 无法运行编译 贼烦!!!
+* [怎么让android studio不indexing](https://zhidao.baidu.com/question/370604206984525924.html?qbl=relate_question_0)
+
 ## 快捷键
 键位 | 功能说明
 ---- | ---

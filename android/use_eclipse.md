@@ -6,6 +6,9 @@
 ## 测试
 * [Eclipse IDE Android Test Project](http://www.cnblogs.com/GnagWang/archive/2010/12/16/1908710.html)
 
+## 设置
+* [多数在 Eclipse 中的设置请详看 Java 配置](../java/eclipse.md)
+
 ## 查看签名
     window ->
     Preferences ->
