@@ -6,6 +6,8 @@
 ---
 
 ## 设置
+* [Android Studio 基本设置](https://jingyan.baidu.com/article/4e5b3e193e9bf691901e24fd.html)
+
 ### IDE 软件字体大小设置
     File -> Setting (对话框) ->
     Appearance & Behavior -> Appearance -> UI Options ->
