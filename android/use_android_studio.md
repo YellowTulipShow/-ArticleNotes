@@ -3,6 +3,8 @@
 ## 文档
 * [探索 Android Studio](https://developer.android.google.cn/studio/intro)
 
+---
+
 ## 设置
 ### IDE 软件字体大小设置
     File -> Setting (对话框) ->
@@ -28,6 +30,14 @@
 不是很明白这个是什么? 但是在代码编辑区域总是弹黄色灯泡让你添加, 添加之后代码就炸了, 无法运行编译 贼烦!!!
 * [怎么让android studio不indexing](https://zhidao.baidu.com/question/370604206984525924.html?qbl=relate_question_0)
 
+### 关闭参数名提示
+    File -> Setting (对话框) ->
+    Editor -> Appearance ->
+    Show parameter name hints 取消勾选 -> OK
+* [Android Studio 3.0被调方法参数名提示的取消方法](https://www.jb51.net/article/127327.htm)
+
+---
+
 ## 快捷键
 键位 | 功能说明
 ---- | ---
@@ -37,6 +47,8 @@
 **Shift + F6** | 把光标放在变量上, 批量更改重命名 [变量 / 文件 / 方法] 名称
 
 * [键盘快捷键 - 官网详细说明](https://developer.android.google.cn/studio/intro/keyboard-shortcuts)
+
+---
 
 ## 参考学习链接
 * [AndroidStudio编译提速，快过eclipse](https://blog.csdn.net/zero_and_one/article/details/42009487)
