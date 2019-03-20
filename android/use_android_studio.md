@@ -7,6 +7,7 @@
 
 ## 设置
 * [Android Studio 基本设置](https://jingyan.baidu.com/article/4e5b3e193e9bf691901e24fd.html)
+* [Android Studio简单设置](http://ask.android-studio.org/?/article/14)
 
 ### IDE 软件字体大小设置
     File -> Setting (对话框) ->
@@ -37,6 +38,31 @@
     Editor -> Appearance ->
     Show parameter name hints 取消勾选 -> OK
 * [Android Studio 3.0被调方法参数名提示的取消方法](https://www.jb51.net/article/127327.htm)
+
+### 默认文件编码
+    File -> Setting (对话框) ->
+    Editor -> File Encodings ->
+        建议将 IDE Encoding 、 Project Encoding 、 Properties Fiels 都设置成统一的编码。
+
+### 编辑区竖线
+    File -> Setting (对话框) ->
+    Editor -> General -> Appearance ->
+    Show right margin (configured in Code Style options) 勾选取消即关闭竖线
+
+### 行号
+    File -> Setting (对话框) ->
+    Editor -> General -> Appearance ->
+    Show line numbers 勾选显示行号
+
+### 空格
+    File -> Setting (对话框) ->
+    Editor -> General -> Appearance ->
+    Show whilespaces 勾选显示行号
+
+### 自动检查更新
+    File -> Setting (对话框) ->
+    Appearance & Behavior -> System Settings -> Updates
+    Automatically check updates for ... 取消勾选取消自动更新设置
 
 ---
 
