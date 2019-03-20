@@ -2,6 +2,7 @@
 
 ## 文档
 * [探索 Android Studio](https://developer.android.google.cn/studio/intro)
+* [查看Android API文档的正确方式](https://blog.csdn.net/youmingyu/article/details/53543745)
 
 ---
 
@@ -81,3 +82,4 @@
 ## 参考学习链接
 * [AndroidStudio编译提速，快过eclipse](https://blog.csdn.net/zero_and_one/article/details/42009487)
 * [Android Studio单元测试入门](https://github.com/soaringEveryday/BlogRoad/blob/master/Android%20Studio%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E5%85%A5%E9%97%A8.md)
+* [Android Studio不显示日志问题](https://jingyan.baidu.com/article/5d6edee2d35ec199eadeecd2.html)
