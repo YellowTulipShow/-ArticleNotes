@@ -3,6 +3,7 @@
 ## 文档
 * [探索 Android Studio](https://developer.android.google.cn/studio/intro)
 * [查看Android API文档的正确方式](https://blog.csdn.net/youmingyu/article/details/53543745)
+* [如何查看Android SDK API文档](https://jingyan.baidu.com/article/295430f1c631900c7e0050e2.html)
 
 ---
 
