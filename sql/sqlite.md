@@ -3,6 +3,7 @@
 ## 显示读取数据库内容
 工具下载:
 * [sqlcipher.exe 百度链接 -  提取码: tqum](https://pan.baidu.com/s/137UmjTCgeuB7lhmSikfjJA)
+* [sqlcipher.exe 腾讯微云](https://share.weiyun.com/5t5Gywt)
 
 ### 读取 sqlcipher 加密数据库
 比如微信的 **EnMicroMsg.db** 数据库是已经加密的, 注意!!! 巨坑如下:
