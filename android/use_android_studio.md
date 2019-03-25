@@ -84,3 +84,4 @@
 * [AndroidStudio编译提速，快过eclipse](https://blog.csdn.net/zero_and_one/article/details/42009487)
 * [Android Studio单元测试入门](https://github.com/soaringEveryday/BlogRoad/blob/master/Android%20Studio%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E5%85%A5%E9%97%A8.md)
 * [Android Studio不显示日志问题](https://jingyan.baidu.com/article/5d6edee2d35ec199eadeecd2.html)
+* [Android studio & lint 代码检查设置](https://www.jianshu.com/p/ba1ce1c1ae39)
