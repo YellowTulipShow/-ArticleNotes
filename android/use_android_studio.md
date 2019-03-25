@@ -37,7 +37,7 @@
 
 ### 关闭参数名提示
     File -> Setting (对话框) ->
-    Editor -> Appearance ->
+    Editor -> General -> Appearance ->
     Show parameter name hints 取消勾选 -> OK
 * [Android Studio 3.0被调方法参数名提示的取消方法](https://www.jb51.net/article/127327.htm)
 
