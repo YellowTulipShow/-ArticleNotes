@@ -31,3 +31,4 @@
 * [Java enum的用法详解](http://www.cnblogs.com/happyPawpaw/archive/2013/04/09/3009553.html)
 * [java枚举类Enum方法简介(valueof,value,ordinal)](https://blog.csdn.net/congqingbin/article/details/7520137)
 * [Google翻译 jdk-1.8 Enum class](https://blog.fondme.cn/apidoc/jdk-1.8-google/java/lang/Enum.html)
+* [Java实现队列（Queue）的方式](https://blog.csdn.net/jsc123581/article/details/81986714)
