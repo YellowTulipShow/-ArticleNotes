@@ -80,12 +80,12 @@ source ~/.bashrc
 alias grepf='grep -E ".*\.(aspx|html|htm|css|js|xml|md|)$"'
 ```
 
-### 检查目录下多个项目库的状态
+### 检查目录下多个项目库的状态 - Python脚本
 ```shell
-alias gitdc='python /D/ZRQWork/YTS.ZRQ/PythonScripts/git_directory_check/main.py'
+alias gitdc='python /D/ZRQWork/YTS.ZRQ/GitDirectoryCheck/main.py'
 ```
 
-* [点击查看自定义配置和使用](https://github.com/YellowTulipShow/PythonScripts/tree/master/git_directory_check)
+* [点击查看自定义配置和使用](https://github.com/YellowTulipShow/GitDirectoryCheck)
 
 ## Git mintty 配置
 对于 `Git` 的操作基本上都是使用 `mintty` 命令行工具来实现
