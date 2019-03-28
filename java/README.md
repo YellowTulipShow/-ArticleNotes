@@ -18,8 +18,6 @@ protected | ✔ | ✔ | ✔ | ✘
 default | ✔ | ✔ | ✘ | ✘
 private | ✔ | ✘ | ✘ | ✘
 
-比如：用protected修饰的成员（变量或方法），在类内部可以调用，同一个package下的其他类也可以调用，子类里也可以调用，其他地方则不可以调用，也就是说在其他
-
 * [Java public、private、protected区别 -访问权限](https://blog.csdn.net/applepie1/article/details/7262419)
 
 ## 代码库:
