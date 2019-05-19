@@ -9,6 +9,7 @@
 
 ## 开发文档:
 * [Android 类库API中文文档](http://www.android-doc.com/reference/packages.html)
+* [官网文档 - AIDL](https://developer.android.google.cn/guide/components/aidl)
 
 ## 知识点
 * [android 获取 手机各项信息: IEMI/ISO国家码/手机号/...](http://www.cnblogs.com/luxiaofeng54/archive/2011/03/01/1968063.html)
