@@ -1,0 +1,8 @@
+Font=Consolas
+FontHeight=14
+Language=zh_CN
+MiddleClickAction=enter
+RightClickAction=paste
+Columns=130
+Rows=35
+PgUpDnScroll=no

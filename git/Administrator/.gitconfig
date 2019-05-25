@@ -1,0 +1,7 @@
+[user]
+    name = YellowTulipShow
+    email = 1426689530@qq.com
+[alias]
+    logs = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -n 10
+    diffn = diff --name-status
+    tags = tag -ln
