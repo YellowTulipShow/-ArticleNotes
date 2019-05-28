@@ -16,3 +16,4 @@
 * [android 怎么读取sqlite数据库](https://zhidao.baidu.com/question/587470558422514085.html)
 * [Android 数据存储与读取：SQLite](https://blog.csdn.net/mimitracely/article/details/7982976)
 * [SQLite可视化管理工具汇总](https://blog.csdn.net/shellching/article/details/7979969)
+* [手机屏幕可投影到电脑软件工具](http://mirror.etcom098.cn/mirror-phone)
