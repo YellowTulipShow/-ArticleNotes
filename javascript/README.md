@@ -17,3 +17,4 @@ document.getElementById('input').onchange = input_format; // 内容更改时触�
 * [JQuery 插件库](http://www.jq22.com/)
 * [jquery JSON的解析方式](https://www.cnblogs.com/leejersey/p/3594473.html)
 * [JavaScript继承详解](http://www.cnblogs.com/sanshi/archive/2009/07/08/1519036.html)
+* [Html5 学习系列（六）Html5本地存储和本地数据库](https://www.cnblogs.com/fly_dragon/p/3946012.html)
