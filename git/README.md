@@ -110,6 +110,8 @@ alias gitdc='python /D/ZRQWork/YTS.ZRQ/GitDirectoryCheck/main.py'
 
 ## 日期英文:
 
+### 周:
+
 简写 | 英文 | 中文
 --- | --- | ---
 Mon | Monday    | 星期一
