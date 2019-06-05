@@ -18,3 +18,6 @@ document.getElementById('input').onchange = input_format; // 内容更改时触�
 * [jquery JSON的解析方式](https://www.cnblogs.com/leejersey/p/3594473.html)
 * [JavaScript继承详解](http://www.cnblogs.com/sanshi/archive/2009/07/08/1519036.html)
 * [Html5 学习系列（六）Html5本地存储和本地数据库](https://www.cnblogs.com/fly_dragon/p/3946012.html)
+* [Javascript面向对象编程一:封装](http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_encapsulation.html)
+* [Javascript面向对象编程二:构造函数的继承](http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_inheritance.html)
+* [Javascript面向对象编程三:非构造函数的继承](http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_inheritance_continued.html)
