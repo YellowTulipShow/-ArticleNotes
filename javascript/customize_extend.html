@@ -66,16 +66,23 @@ function Unrealized() {
 }
 
 
-function extend(structure, entity, father) {
-}
+Object.prototype.InheritExtend = function(structure, entity) {
 
+    var father = this;
+    // console.log("structure:",structure);
+    // console.log("entity:",entity);
+    // console.log("father:",father);
+    structure.super = father;
+    deepCopy(entity, structure)
+    return structure;
+};
 
 
 
 /* ************* 使用: ************* */
 
 // 动物
-var Animal = extend(function(name, color) {
+var Animal = Object.InheritExtend(function(name, color) {
     this.name = name;
     this.color = color;
 }, {
@@ -89,21 +96,26 @@ var Animal = extend(function(name, color) {
 });
 
 // 猫
-var Cat = extend(function(name, color) {}, {
+var Cat = Animal.InheritExtend(function(name, color) {
+    console.log(this);
+    return this.super(name, color);
+}, {
     species: "猫",
     sound: function() { return "喵喵喵~~~"; }
-}, Animal);
+});
 
 // 狗
-var Dog = extend(function(name, color) {}, {
+var Dog = Animal.InheritExtend(function(name, color) {
+    return this.super(name, color);
+}, {
     species: "狗",
     sound: function() { return "汪汪汪~~~"; }
-}, Animal);
+});
 
 // 白猫
-var WhiteCat = extend(function(name) {
-    return super(name, "白");
-}, {}, Cat);
+var WhiteCat = Cat.InheritExtend(function(name) {
+    return this.super(name, "白");
+}, {});
 
 
 var cat1 = new Cat("杰克", "黄");
