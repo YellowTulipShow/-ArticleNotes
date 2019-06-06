@@ -331,6 +331,17 @@ $ git push origin --delete <branchName>
 git push origin --delete tag <tagname>
 ```
 
+## 删除 .gitignore 已经在版本库中的文件
+```shell
+git rm -r --cached .
+git add .
+git commit -m 'update .gitignore'
+-- 删除 .git/ 以外的所有文件
+git checkout -- .
+```
+
+* [](https://www.cnblogs.com/kevingrace/p/5690241.html)
+
 ## Git 命令列表:
 ### add
 ### am
