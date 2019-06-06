@@ -340,7 +340,8 @@ git commit -m 'update .gitignore'
 git checkout -- .
 ```
 
-* [](https://www.cnblogs.com/kevingrace/p/5690241.html)
+* [Git如何永久删除文件(包括历史记录)](https://www.cnblogs.com/shines77/p/3460274.html)
+* [Git忽略提交规则 - .gitignore配置运维总结](https://www.cnblogs.com/kevingrace/p/5690241.html)
 
 ## Git 命令列表:
 ### add
