@@ -35,3 +35,4 @@
 
 ## 参考链接:
 * [Win8系统108个运行命令 你能记住多少?](http://win8.zol.com.cn/277/2772193.html)
+* [Win10怎么优化？安装好Win10后必做的22项优化！](http://www.xitonghe.com/jiaocheng/Windows10-5634.html)
