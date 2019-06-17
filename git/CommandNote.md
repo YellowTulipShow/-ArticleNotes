@@ -84,6 +84,8 @@ $ git remote
     # 在本地删除 已经关联的远程库信息
     rm <origin name>
 
+    # 更改新的地址
+    set-url <origin name> <url address>
 ```
 
 ## 往 远程仓库 推送
