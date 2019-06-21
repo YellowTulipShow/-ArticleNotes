@@ -1,5 +1,6 @@
 # 日志格式参数详情
 
+## --pretty=format 参数内容值说明
 参数 | 说明
 --- | ---
 %H | commit hash
@@ -45,3 +46,6 @@
 %% | a raw %
 %x00 | print a byte from a hex code
 %w([[,[,]]]) | switch line wrapping, like the -w option of git-shortlog(1).
+
+## 参考学习链接
+* (git查看某人某段时间的代码提交)[https://www.jianshu.com/p/ee976eb939bb]

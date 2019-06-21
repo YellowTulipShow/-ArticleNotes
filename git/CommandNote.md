@@ -58,6 +58,9 @@ $ git config
 
     # 设置操作的用户 电子邮箱
     user.email "<email@example.com>"
+
+    # 使用 http / https 方式操作版本库时记住用户名密码
+    credential.helper store
 ```
 
 ## 从 远程服务器 克隆
