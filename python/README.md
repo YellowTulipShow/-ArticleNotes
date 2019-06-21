@@ -1,5 +1,7 @@
 # Python 语言学习
 
+各实例转移至 [GitHub - PythonScripts](https://github.com/YellowTulipShow/PythonScripts)
+
 ## 参考学习链接:
 * [Python 官网](https://www.python.org/)
 * [Python 基础教程 - 菜鸟教程](http://www.runoob.com/python/python-tutorial.html)
