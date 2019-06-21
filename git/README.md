@@ -108,8 +108,22 @@ alias gitdc='python /D/ZRQWork/YTS.ZRQ/GitDirectoryCheck/main.py'
 
 最后执行 `ipconfig /flushdns` 命令, 刷新 DNS 缓存
 
-## 日期英文:
+## window10 Git Bash 启动闪退
 
+问题原因:
+
+**C:\Windows\System32\drivers\null.sys** 文件非正版系统不兼容
+
+解决:
+
+获取大神的文件: [百度网盘地址](https://pan.baidu.com/s/1UtcZizm-iFcVk4OKrnFJVg) 密码: 1q4d
+
+替换之即可, 详细查看下面文章:
+
+* [**win10 专业版 git bash 闪退问题终极解决方案**](https://www.cnblogs.com/ricklz/p/9216395.html)
+* [WIN10 GIT BASH 闪退问题终极解决方案](https://blog.csdn.net/qq_36927265/article/details/81538873)
+
+## 日期英文:
 ### 周:
 
 简写 | 英文 | 中文
