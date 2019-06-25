@@ -63,6 +63,12 @@ $ git config
     credential.helper store
 ```
 
+常用命令:
+```shell
+git config --global user.name "YellowTulipShow"
+git config --global user.email "1426689530@qq.com"
+```
+
 ## 从 远程服务器 克隆
 ```shell
 $ git clone
