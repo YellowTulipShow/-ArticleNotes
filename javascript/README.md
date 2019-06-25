@@ -12,6 +12,10 @@ document.getElementById('input').onkeyup = input_format; // 键位按起时触�
 document.getElementById('input').onchange = input_format; // 内容更改时触发
 ```
 
+## 制作的样例地址
+* [是否支持H5本地存储](https://yellowtulipshow.github.io/javascript/TestIsSupportH5DataSave.html)
+* [手机宽度高度显示](https://yellowtulipshow.github.io/javascript/phone_width_height.html)
+
 ## 参考学习链接
 * [js 删除数组几种方法(大神解决方案)](http://www.cnblogs.com/qiantuwuliang/archive/2010/09/01/1814706.html)
 * [JQuery 插件库](http://www.jq22.com/)
