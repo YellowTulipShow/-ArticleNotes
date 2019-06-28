@@ -19,7 +19,7 @@
 
     // 文本自动换行
     "word_wrap": true,
-    // "word_wrap": true,
+    // "word_wrap": false,
 
     // 高亮当前行
     "highlight_line": true,
