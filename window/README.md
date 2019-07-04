@@ -13,20 +13,6 @@
 快速在文件夹目录中打开cmd:
     文件夹空白处按住shift键鼠标右键选择【在此处打开命令窗口】即可
 
-## 清理 C 盘占用大空间文件
-关闭休眠功能(仅适用于台式机), 笔记本关闭会出问题, 即删除 `Hiberfil.sys` 系统保护文件
-
-    powercfg -h off
-    powercfg -h on # 开启休眠
-
-调整休眠内容文件 `Hiberfil.sys` 同步内容的比例 `*%` 例如: 占用70%
-
-    powercfg -h -size 70
-
-参考链接:
-* [win7系统c盘空间显示与实际占用空间不对怎么回事？解决方法](http://www.xitongcheng.com/jiaocheng/win7_article_29079.html)
-* [*重点(占用超大空间) - 调整和删除Win7休眠文件Hiberfil.sys释放C盘*](https://jingyan.baidu.com/article/f3ad7d0fc0992e09c2345b51.html)
-
 ## 常用应用程序命令
 * [点击查看详情...](./application_command.md)
 
