@@ -171,3 +171,4 @@ Dec | December   | 十二月
 * [改写历史，永久删除git库的物理文件](https://my.oschina.net/jfinal/blog/215624?fromerr=ZTZ6c38X)
 * [仓库体积过大，如何减小？](https://gitee.com/help/articles/4232)
 * [git之https或http方式设置记住用户名和密码的方法](https://www.cnblogs.com/wish123/p/3937851.html)
+* [Gitee 码云APP链接地址](https://gitee.com/appclient)
