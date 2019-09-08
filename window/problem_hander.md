@@ -73,3 +73,26 @@ win键+R键打开运行对话框框，输入gpedit.msc打开本地组策略编�
 看情况，可能禁用第5步的选项就解决问题了
 
 * [解决Antimalware Service Executable CPU占用高](https://jingyan.baidu.com/article/e75057f2c1f6edebc91a89ed.html)
+
+## Win10 1709提示“因文件共享不安全 不能连接文件共享”如何解决？
+控制面板 -> 启用或关闭Windows功能 -> 勾选: SMB1.0/CIFS文件共享支持
+
+除了以上方法，微软官方也提供了通过PowerShell来进行设置的方法，用管理员权限打开Powershell之后，可以参考下面的命令：
+
+SMB v1
+
+检测： Get-WindowsOptionalFeature –Online –FeatureName SMB1Protocol
+
+禁用： Disable-WindowsOptionalFeature -Online -FeatureName SMB1Protocol
+
+启用： Enable-WindowsOptionalFeature -Online -FeatureName SMB1Protocol
+
+SMB v2/v3
+
+检测：Get-SmbServerConfiguration | Select EnableSMB2Protocol
+
+禁用：Set-SmbServerConfiguration –EnableSMB2Protocol $false
+
+启用：Set-SmbServerConfiguration –EnableSMB2Protocol $true
+
+* [Win10 1709提示“因文件共享不安全 不能连接文件共享”如何解决？](https://www.pconline.com.cn/win10/1035/10357000.html)
