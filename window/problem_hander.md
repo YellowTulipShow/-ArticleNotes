@@ -33,3 +33,43 @@ net localgroup administrators networkservice /add
     设置为: 禁用(Enabled)
 
 设置完成后解决了问题, 但重启电脑后问题依旧, 而且配置是上面设好的值
+
+## 解决Antimalware Service Executable CPU占用高
+windows8/8.1，WIN10自带的安全软件Windows defender还不错，基本可以不用装其他杀毒软件了。
+
+但是其进程Antimalware Service Executable 出现CPU使用率和占用大，困扰许多用户。网上的基本方法是关闭Windows defender,但是还得安装其他杀软，而且不能禁止其服务的启动（至少win10里是这样的，该服务管理中的选项都是灰色不可用的）。
+
+初步判断是Windows defender在后台执行扫描产生的CPU和内存占用居高不下的问题，有的人说是没有进行过全盘扫描，所以它还要扫描，但是昨晚做了一次全屏扫描。早上起床发现，共扫描了140多万个文件，但是问题依旧，重启几次都不行，于是再找其他方法，终于发现解决方法，现在一切宁静了：
+
+方法是从组策略中设置。
+
+win键+R键打开运行对话框框，输入gpedit.msc打开本地组策略编辑器（组策略）
+
+依次打开计算机配置-管理模板-Windows组件-Windows Defender；
+
+如果要关闭Windows defender，则将“关闭 Windows Defender”项设置为“已启用”即可。
+
+如果要保留Windows defender，只解决CPU占用和内存占用高的问题，则继续下列步骤；
+
+打开“实时保护”，将里面的“不论何时启动实时保护，都会启动进程扫描”这一配置项设置为“已禁用”（此步骤最关键）；
+
+打开“扫描”，将里面的以下几项设置为“已禁用”：
+
+（1）指定每天进行快速扫描的时间间隔；
+
+（2）仅当计算机处于打开但未使用状态才启动计划扫描；
+
+（3）指定每天进行快速扫描的时间；
+
+（4）指定每天的不同时间运行计划扫描；
+
+将“指定每周的不同时间运行计划扫描”设置为“从不”，并设置为“已启用”。
+7
+
+总之，看情况，可能禁用第5步的选项就解决问题了。希望能帮到大家。
+
+注意事项
+
+看情况，可能禁用第5步的选项就解决问题了
+
+* [解决Antimalware Service Executable CPU占用高](https://jingyan.baidu.com/article/e75057f2c1f6edebc91a89ed.html)
