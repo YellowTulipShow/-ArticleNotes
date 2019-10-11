@@ -2427,7 +2427,7 @@ Book subject : Telecom Billing Tutorial
 Book book_id : 6495700
 ```
 
-### 位域
+## C位域
 有些信息在存储时，并不需要占用一个完整的字节，而只需占几个或一个二进制位。例如在存放一个开关量时，只有 0 和 1 两种状态，用 1 位二进位即可。为了节省存储空间，并使处理简便，C 语言又提供了一种数据结构，称为"位域"或"位段"。
 
 所谓"位域"是把一个字节中的二进位划分为几个不同的区域，并说明每个区域的位数。每个域有一个域名，允许在程序中按域名进行操作。这样就可以把几个不同的对象用一个字节的二进制位域来表示。
@@ -2437,7 +2437,7 @@ Book book_id : 6495700
 * 用 1 位二进位存放一个开关量时，只有 0 和 1 两种状态。
 * 读取外部文件格式——可以读取非标准的文件格式。例如：9 位的整数。
 
-#### 位域的定义和位域变量的说明
+### 位域的定义和位域变量的说明
 
 位域定义与结构定义相仿，其形式为：
 ```c
@@ -2506,7 +2506,7 @@ struct k{
 
 从以上分析可以看出，位域在本质上就是一种结构类型，不过其成员是按二进位分配的。
 
-#### 位域的使用
+### 位域的使用
 
 位域的使用和结构成员的使用相同，其一般形式为：
 ```c
@@ -2555,3 +2555,244 @@ main(){
 ```
 
 上例程序中定义了位域结构 bs，三个位域为 a、b、c。说明了 bs 类型的变量 bit 和指向 bs 类型的指针变量 pbit。这表示位域也是可以使用指针的。
+
+如果程序的结构中包含多个开关量，只有 TRUE/FALSE 变量，如下：
+```c
+struct
+{
+  unsigned int widthValidated;
+  unsigned int heightValidated;
+} status;
+```
+
+这种结构需要 8 字节的内存空间，但在实际上，在每个变量中，我们只存储 0 或 1。在这种情况下，C 语言提供了一种更好的利用内存空间的方式。如果您在结构内使用这样的变量，您可以定义变量的宽度来告诉编译器，您将只使用这些字节。例如，上面的结构可以重写成：
+```c
+struct
+{
+  unsigned int widthValidated : 1;
+  unsigned int heightValidated : 1;
+} status;
+```
+
+现在，上面的结构中，status 变量将占用 4 个字节的内存空间，但是只有 2 位被用来存储值。如果您用了 32 个变量，每一个变量宽度为 1 位，那么 status 结构将使用 4 个字节，但只要您再多用一个变量，如果使用了 33 个变量，那么它将分配内存的下一段来存储第 33 个变量，这个时候就开始使用 8 个字节。让我们看看下面的实例来理解这个概念：
+```c
+#include <stdio.h>
+#include <string.h>
+
+/* 定义简单的结构 */
+struct
+{
+  unsigned int widthValidated;
+  unsigned int heightValidated;
+} status1;
+
+/* 定义位域结构 */
+struct
+{
+  unsigned int widthValidated : 1;
+  unsigned int heightValidated : 1;
+} status2;
+
+int main( )
+{
+   printf( "Memory size occupied by status1 : %d\n", sizeof(status1));
+   printf( "Memory size occupied by status2 : %d\n", sizeof(status2));
+
+   return 0;
+}
+```
+
+当上面的代码被编译和执行时，它会产生下列结果：
+```
+Memory size occupied by status1 : 8
+Memory size occupied by status2 : 4
+```
+
+### 位域声明
+
+在结构内声明位域的形式如下：
+```c
+struct
+{
+  type [member_name] : width ;
+};
+```
+
+下面是有关位域中变量元素的描述：
+
+| 元素 | 描述 |
+| --- | --- |
+| type | 整数类型，决定了如何解释位域的值。类型可以是整型、有符号整型、无符号整型。 |
+| member_name | 位域的名称。 |
+| width | 位域中位的数量。宽度必须小于或等于指定类型的位宽度。 |
+
+带有预定义宽度的变量被称为位域。位域可以存储多于 1 位的数，例如，需要一个变量来存储从 0 到 7 的值，您可以定义一个宽度为 3 位的位域，如下：
+```
+struct
+{
+  unsigned int age : 3;
+} Age;
+```
+
+上面的结构定义指示 C 编译器，age 变量将只使用 3 位来存储这个值，如果您试图使用超过 3 位，则无法完成。让我们来看下面的实例：
+```c
+#include <stdio.h>
+#include <string.h>
+
+struct
+{
+  unsigned int age : 3;
+} Age;
+
+int main( )
+{
+   Age.age = 4;
+   printf( "Sizeof( Age ) : %d\n", sizeof(Age) );
+   printf( "Age.age : %d\n", Age.age );
+
+   Age.age = 7;
+   printf( "Age.age : %d\n", Age.age );
+
+   Age.age = 8; // 二进制表示为 1000 有四位，超出
+   printf( "Age.age : %d\n", Age.age );
+
+   return 0;
+}
+```
+
+当上面的代码被编译时，它会带有警告，当上面的代码被执行时，它会产生下列结果：
+```
+Sizeof( Age ) : 4
+Age.age : 4
+Age.age : 7
+Age.age : 0
+```
+
+## C共用体
+共用体是一种特殊的数据类型，允许您在相同的内存位置存储不同的数据类型。您可以定义一个带有多成员的共用体，但是任何时候只能有一个成员带有值。共用体提供了一种使用相同的内存位置的有效方式。
+定义共用体
+
+为了定义共用体，您必须使用 union 语句，方式与定义结构类似。union 语句定义了一个新的数据类型，带有多个成员。union 语句的格式如下：
+```c
+union [union tag]
+{
+   member definition;
+   member definition;
+   ...
+   member definition;
+} [one or more union variables];
+```
+
+`union tag` 是可选的，每个 `member definition` 是标准的变量定义，比如 int i; 或者 float f; 或者其他有效的变量定义。在共用体定义的末尾，最后一个分号之前，您可以指定一个或多个共用体变量，这是可选的。下面定义一个名为 Data 的共用体类型，有三个成员 i、f 和 str：
+```c
+union Data
+{
+   int i;
+   float f;
+   char  str[20];
+} data;
+```
+
+现在，Data 类型的变量可以存储一个整数、一个浮点数，或者一个字符串。这意味着一个变量（相同的内存位置）可以存储多个多种类型的数据。您可以根据需要在一个共用体内使用任何内置的或者用户自定义的数据类型。
+
+共用体占用的内存应足够存储共用体中最大的成员。例如，在上面的实例中，Data 将占用 20 个字节的内存空间，因为在各个成员中，字符串所占用的空间是最大的。下面的实例将显示上面的共用体占用的总内存大小：
+```c
+#include <stdio.h>
+#include <string.h>
+
+union Data
+{
+   int i;
+   float f;
+   char  str[20];
+};
+
+int main( )
+{
+   union Data data;
+
+   printf( "Memory size occupied by data : %d\n", sizeof(data));
+
+   return 0;
+}
+```
+
+当上面的代码被编译和执行时，它会产生下列结果：
+```
+Memory size occupied by data : 20
+```
+
+### 访问共用体成员
+
+为了访问共用体的成员，我们使用成员访问运算符（.）。成员访问运算符是共用体变量名称和我们要访问的共用体成员之间的一个句号。您可以使用 union 关键字来定义共用体类型的变量。下面的实例演示了共用体的用法：
+```c
+#include <stdio.h>
+#include <string.h>
+
+union Data
+{
+   int i;
+   float f;
+   char  str[20];
+};
+
+int main( )
+{
+   union Data data;
+
+   data.i = 10;
+   data.f = 220.5;
+   strcpy( data.str, "C Programming");
+
+   printf( "data.i : %d\n", data.i);
+   printf( "data.f : %f\n", data.f);
+   printf( "data.str : %s\n", data.str);
+
+   return 0;
+}
+```
+
+当上面的代码被编译和执行时，它会产生下列结果：
+```
+data.i : 1917853763
+data.f : 4122360580327794860452759994368.000000
+data.str : C Programming
+```
+
+在这里，我们可以看到共用体的 i 和 f 成员的值有损坏，因为最后赋给变量的值占用了内存位置，这也是 str 成员能够完好输出的原因。现在让我们再来看一个相同的实例，这次我们在同一时间只使用一个变量，这也演示了使用共用体的主要目的：
+```c
+#include <stdio.h>
+#include <string.h>
+
+union Data
+{
+   int i;
+   float f;
+   char  str[20];
+};
+
+int main( )
+{
+   union Data data;
+
+   data.i = 10;
+   printf( "data.i : %d\n", data.i);
+
+   data.f = 220.5;
+   printf( "data.f : %f\n", data.f);
+
+   strcpy( data.str, "C Programming");
+   printf( "data.str : %s\n", data.str);
+
+   return 0;
+}
+```
+
+当上面的代码被编译和执行时，它会产生下列结果：
+```
+data.i : 10
+data.f : 220.500000
+data.str : C Programming
+```
+
+在这里，所有的成员都能完好输出，因为同一时间只用到一个成员。
