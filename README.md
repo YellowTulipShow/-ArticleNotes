@@ -10,6 +10,13 @@
 ## 经典语录
 * [点击查看详情](classic_quotation.md)
 
+## 待学习目录:
+* [C 语言](./c/README.md)
+* [Node.js](./node.js/README.md)
+* [Vue.js](./Vue.js/README.md)
+* [Linux](./linux/README.md)
+* [.Net Core](./dotnetcore/README.md)
+
 ## PS:
 ### 查看目录下的 html 演示效果, 快捷方法:
 ![复制地址访问](https://ytsimg.gitee.io/blog/yts_github_io/copy_address_access.png)
