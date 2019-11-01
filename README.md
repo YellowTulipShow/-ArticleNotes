@@ -13,7 +13,7 @@
 ## 待学习目录:
 * [C 语言](./c/README.md)
 * [Node.js](./node.js/README.md)
-* [Vue.js](./Vue.js/README.md)
+* [Vue.js](./vue.js/README.md)
 * [Linux](./linux/README.md)
 * [.Net Core](./dotnetcore/README.md)
 
