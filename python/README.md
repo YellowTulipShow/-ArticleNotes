@@ -2,6 +2,25 @@
 
 各实例转移至 [GitHub - PythonScripts](https://github.com/YellowTulipShow/PythonScripts)
 
+## 代码风格
+### 方法注释
+Google风格
+```python
+"""
+This is a groups style docs.
+
+Parameters:
+  param1 - this is the first param
+  param2 - this is a second param
+
+Returns:
+  This is a description of what is returned
+
+Raises:
+  KeyError - raises an exception
+"""
+```
+
 ## 参考学习链接:
 * [Python 官网](https://www.python.org/)
 * [Python 基础教程 - 菜鸟教程](http://www.runoob.com/python/python-tutorial.html)
@@ -17,3 +36,4 @@
 * [python argparse 模块命令行参数解析](https://blog.csdn.net/huangfei711/article/details/80325946)
 * [python 一个.py文件如何调用另一个.py文件中的类和函数](https://blog.csdn.net/winycg/article/details/78512300)
 * [Python连接SQL Server入门](https://blog.csdn.net/chroming/article/details/51541959)
+* [python代码规范以及函数注释规范](https://www.cnblogs.com/19921019yy/p/8024731.html)
