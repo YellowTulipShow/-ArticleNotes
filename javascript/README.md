@@ -26,3 +26,5 @@ document.getElementById('input').onchange = input_format; // 内容更改时触�
 * [Javascript面向对象编程二:构造函数的继承](http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_inheritance.html)
 * [Javascript面向对象编程三:非构造函数的继承](http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_inheritance_continued.html)
 * [ 奇怪-正则匹配的test函数](https://www.cnblogs.com/sanshi/archive/2009/07/09/1519585.html)
+* [WebSocket 教程 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2017/05/websocket.html)
+* [WebSocket 对象文档 - MDN Web docs](https://developer.mozilla.org/zh-CN/docs/Web/API/WebSocket)
