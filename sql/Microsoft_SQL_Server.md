@@ -14,6 +14,15 @@ Microsoft SQL SERVER 2012 开发版激活码序列号: YQWTX-G8T4R-QW4XX-BVH62-G
 Microsoft SQL SERVER 2012 企业服务器版/CAL版序列号: 748RB-X4T6B-MRM7V-RTVFF-CHC8H
 ```
 
+## SQL Server 2017 序列号(密钥)
+```
+Enterprise Core 6GPYM-VHN83-PHDM2-Q9T2R-KBV83
+Developer 22222-00000-00000-00000-00000
+Enterprise TDKQD-PKV44-PJT4N-TCJG2-3YJ6B
+Strandard PHDV4-3VJWD-N7JVP-FGPKY-XBV89
+Web WV79P-7K6YG-T7QFN-M3WHF-37BXC
+```
+
 ## 参考学习链接:
 * [解决SQL Server CPU占用率高](https://jingyan.baidu.com/article/39810a239f92f9b636fda6a8.html)
 
