@@ -44,6 +44,18 @@ git pull --all
 git checkout -b <branch> origin/<branch>
 ```
 
+```shell
+当正在修改某文件A，此时需要commit，但是A没修改完暂时不能一起commit。
+执行：
+
+git update-index --assume-unchanged A的路径
+
+git暂时会忽略该文件的修改， git status查看时A已经不在待commit列表中了。
+让git重新监视文件A的修改：
+
+git update-index --no-assume-unchanged A的路径
+```
+
 ## git 配置
 ```shell
 $ git config

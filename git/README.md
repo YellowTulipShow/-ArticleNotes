@@ -172,3 +172,4 @@ Dec | December   | 十二月
 * [仓库体积过大，如何减小？](https://gitee.com/help/articles/4232)
 * [git之https或http方式设置记住用户名和密码的方法](https://www.cnblogs.com/wish123/p/3937851.html)
 * [Gitee 码云APP链接地址](https://gitee.com/appclient)
+* [git commit时暂时忽略已提交的文件](https://blog.csdn.net/FCXD_2014/article/details/101167158)
