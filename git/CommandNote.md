@@ -1,62 +1,7 @@
 # Git 基础命令
 
-> PS:
-> This File Content Use Software Notepad++ Python Code Format
-> 使用 Notepad++ 软件打开当前文件内容 请使用 Python 代码格式
-
-## 常用后悔药:
-### Need Revoked: (需要撤销: )
-```shell
-# 工作区内容已更改
-# 取消指定文件 在工作区内容的更改操作
-$ git checkout -- <file>
-
-# 需要撤销: 暂存区内容已更改
-# 可以把暂存区的修改撤销掉（unstage），重新放回工作区
-$ git reset HEAD <file>
-
-# 需要撤销: 仓库(版本库)内容已更改
-# 将版本跳转到指定的版本节点上去
-$ git reset --hard <commit_id>
-
-# 重新备注说明最近一次的提交信息:
-$ git commit --amend
-```
-
-## 常用代码
-```shell
-# 推送本地代码到远程代码库
-git remote add <origin name> <url address>
-git push -u origin --all
-git push origin --tags
-```
-
-```shell
-# git 从远程仓库获取所有分支
-# 引用链接：http://stackoverflow.com/questions/10312521/how-to-fetch-all-git-branches
-git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
-git fetch --all
-git pull --all
-```
-
-```shell
-# 拉取指定远程仓库分支到本地 (本地分支不存在)
-git checkout -b <branch> origin/<branch>
-```
-
-```shell
-当正在修改某文件A，此时需要commit，但是A没修改完暂时不能一起commit。
-执行：
-
-git update-index --assume-unchanged A的路径
-
-git暂时会忽略该文件的修改， git status查看时A已经不在待commit列表中了。
-让git重新监视文件A的修改：
-
-git update-index --no-assume-unchanged A的路径
-```
-
 ## git 配置
+
 ```shell
 $ git config
     # 针对当前 "用户(系统)" 做全局配置
@@ -75,85 +20,30 @@ $ git config
     credential.helper store
 ```
 
-常用命令:
+个人命令:
+
 ```shell
 git config --global user.name "YellowTulipShow"
+git config --global user.email "main@yellowtulipshow.site"
 git config --global user.email "1426689530@qq.com"
-```
-
-## 从 远程服务器 克隆
-```shell
-$ git clone
-    <url address>
-```
-
-## 远程仓库处理
-```shell
-$ git remote
-    # 查看远程库的各名称 (比 -v 差)
-    show
-
-    # 查看远程库的详细信息
-    -v
-
-    # 查看指定远程库的巨细信息 (比 -v 强)
-    show <remote name>
-
-    # 将本地仓库 关联 远程仓库 (记得需首先在远程仓库 网站设置好SSH)
-    add <origin name> <url address>
-
-    # 在本地删除 已经关联的远程库信息
-    rm <origin name>
-
-    # 更改新的地址
-    set-url <origin name> <url address>
-```
-
-## 往 远程仓库 推送
-```shell
-$ git push
-    # 第一次推送所有内容 必须添加此参数
-    -u
-
-    # 推送 <branch name> 分支内容 到 远程仓库 <origin name>
-    <origin name> <branch name>
-
-    # 推送本地版本库的所有分支到远程版本库
-    <origin name> --all
-
-    # 推送 <tagname> 标签 到 远程仓库 <origin name
-    <origin name> <tagname>
-
-    # 一次性推送全部尚未推送到远程的本地标签
-    <origin name> --tags
-
-    # 可以删除一个远程标签 不能删除本地
-    <origin name> :refs/tags/<tagname>
-```
-
-## 从 远程仓库 抓取
-```shell
-$ git pull
-    # 抓取指定仓库 的 指定分支内容合并到本地相同名称分支中
-    <origin name> <branch name>
-
-    # 抓取远程版本库的所有分支到本地版本库
-    <origin name> --all
 ```
 
 
 ## 创建初始化仓库
+
 ```shell
 $ git init
 ```
 
 ## 查看仓库状态
+
 ```shell
 # 随时掌握工作区的状态
 $ git status
 ```
 
 ## 文件修改内容
+
 ```shell
 $ git diff
     # 查看具体文件变更内容
@@ -170,6 +60,7 @@ $ git diff
 ```
 
 ## 添加到暂存区
+
 ```shell
 $ git add
     # 添加 当前目录所有文件 到缓存区
@@ -183,6 +74,7 @@ $ git add
 ```
 
 ## 删除文件
+
 ```shell
 $ git rm
     # 用于删除一个在版本库文件 提交到 暂存区 和 git add 类似
@@ -190,6 +82,7 @@ $ git rm
 ```
 
 ## 提交到本地仓库
+
 ```shell
 $ git commit
     # 全部提交
@@ -203,12 +96,15 @@ $ git commit
 ```
 
 ## 显示信息
+
 > 官方文档里还有输出格式自定义的功能, 需要细看...
+
 ```shell
 $ git show <object>
 ```
 
 ## 查看历史日志
+
 ```shell
 $ git log
     # 查看最近的几条日志
@@ -225,13 +121,17 @@ $ git log
 ```
 
 ## 查看命令历史
+
 > 常用于回到 未来 的后悔药
+
 ```shell
 $ git reflog
 ```
 
 ## 跳转历史
+
 > 后悔药的最主要实现手段
+
 ```shell
 $ git reset
     # 将在暂存区的修改撤销, 重新放回工作区
@@ -245,6 +145,7 @@ $ git reset
 ```
 
 ## 切换...
+
 ```shell
 $ git checkout
     # 把文件在 "工作区" 的修改全部撤销
@@ -264,7 +165,9 @@ $ git checkout
 ```
 
 ## 分支操作
+
 > 无参数时, 查看分支列表
+
 ```shell
 $ git branch
     # 创建 指定名称 "分支
@@ -293,6 +196,7 @@ $ git branch
 ```
 
 ## 合并分支
+
 ```shell
 $ git merge
     # 合并某分支到当前分支
@@ -303,6 +207,7 @@ $ git merge
 ```
 
 ## 隐藏工作区内容
+
 ```shell
 $ git stash # 隐藏当前 工作区内容
     # 可以查看 隐藏的工作区内容都有哪些
@@ -319,6 +224,7 @@ $ git stash # 隐藏当前 工作区内容
 ```
 
 ## 标签
+
 ```shell
 $ git tag # 可以查看所有标签
     # (已不建议使用) 用于新建一个标签, 默认是HEAD
@@ -338,90 +244,77 @@ $ git tag # 可以查看所有标签
 ```
 
 常用:
+
 ```shell
 $ git tag <tagname> <commit_id> -a -m "<message>"
 ```
 
-在Git v1.7.0 之后
+## 从 远程服务器 克隆
 
-可以使用这种语法删除远程分支:
 ```shell
-$ git push origin --delete <branchName>
+$ git clone <url address>
 ```
 
-删除tag这么用:
+## 远程仓库处理
+
 ```shell
-git push origin --delete tag <tagname>
+$ git remote
+    # 查看远程库的各名称 (比 -v 差)
+    show
+
+    # 查看远程库的详细信息
+    -v
+
+    # 查看指定远程库的巨细信息 (比 -v 强)
+    show <remote name>
+
+    # 将本地仓库 关联 远程仓库 (记得需首先在远程仓库 网站设置好SSH)
+    add <origin name> <url address>
+
+    # 在本地删除 已经关联的远程库信息
+    rm <origin name>
+
+    # 更改新的地址
+    set-url <origin name> <url address>
 ```
 
-## 删除 .gitignore 已经在版本库中的文件
+## 往 远程仓库 推送
+
 ```shell
-git rm -r --cached .
-git add .
-git commit -m 'update .gitignore'
--- 删除 .git/ 以外的所有文件
-git checkout -- .
+$ git push
+    # 第一次推送所有内容 必须添加此参数
+    -u
+
+    # 推送 <branch name> 分支内容 到 远程仓库 <origin name>
+    <origin name> <branch name>
+
+    # 推送本地版本库的所有分支到远程版本库
+    <origin name> --all
+
+    # 推送 <tagname> 标签 到 远程仓库 <origin name
+    <origin name> <tagname>
+
+    # 一次性推送全部尚未推送到远程的本地标签
+    <origin name> --tags
+
+    # 可以删除一个远程标签 不能删除本地
+    <origin name> :refs/tags/<tagname>
+
+    # 可以使用这种语法删除远程分支
+    origin --delete <branchName>
+
+    # 可以使用这种语法删除远程标签
+    origin --delete tag <tagname>
 ```
 
-* [Git如何永久删除文件(包括历史记录)](https://www.cnblogs.com/shines77/p/3460274.html)
-* [Git忽略提交规则 - .gitignore配置运维总结](https://www.cnblogs.com/kevingrace/p/5690241.html)
+## 从 远程仓库 抓取
 
-## Git 命令列表:
-### add
-### am
-### apply
-### archive
-### bisect
-### blame
-### branch
-### bundle
-### checkout
-### cherry
-### cherry-pick
-### citool
-### clean
-### clone
-### commit
-### config
-### describe
-### diff
-### difftool
-### fetch
-### flow
-### format-patch
-### fsck
-### gc
-### gitk
-### grep
-### gui
-### help
-### init
-### instaweb
-### lfs
-### log
-### merge
-### mergetool
-### mv
-### notes
-### pull
-### push
-### rebase
-### reflog
-### remote
-### repack
-### replace
-### request-pull
-### reset
-### revert
-### rm
-### send-email
-### shortlog
-### show
-### show-branch
-### stage
-### stash
-### status
-### submodule
-### tag
-### whatchanged
-### worktree
+```shell
+$ git pull
+    # 抓取指定仓库 的 指定分支内容合并到本地相同名称分支中
+    <origin name> <branch name>
+
+    # 抓取远程版本库的所有分支到本地版本库
+    <origin name> --all
+```
+

@@ -173,3 +173,5 @@ Dec | December   | 十二月
 * [git之https或http方式设置记住用户名和密码的方法](https://www.cnblogs.com/wish123/p/3937851.html)
 * [Gitee 码云APP链接地址](https://gitee.com/appclient)
 * [git commit时暂时忽略已提交的文件](https://blog.csdn.net/FCXD_2014/article/details/101167158)
+* [Git如何永久删除文件(包括历史记录)](https://www.cnblogs.com/shines77/p/3460274.html)
+* [Git忽略提交规则 - .gitignore配置运维总结](https://www.cnblogs.com/kevingrace/p/5690241.html)
