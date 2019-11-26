@@ -175,3 +175,5 @@ Dec | December   | 十二月
 * [git commit时暂时忽略已提交的文件](https://blog.csdn.net/FCXD_2014/article/details/101167158)
 * [Git如何永久删除文件(包括历史记录)](https://www.cnblogs.com/shines77/p/3460274.html)
 * [Git忽略提交规则 - .gitignore配置运维总结](https://www.cnblogs.com/kevingrace/p/5690241.html)
+* [libgit2 C 实现的 Git API](https://libgit2.org/)
+* [与libgit2 '连接'的 Python API](https://www.pygit2.org/)
