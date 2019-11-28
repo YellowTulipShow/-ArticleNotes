@@ -177,3 +177,4 @@ Dec | December   | 十二月
 * [Git忽略提交规则 - .gitignore配置运维总结](https://www.cnblogs.com/kevingrace/p/5690241.html)
 * [libgit2 C 实现的 Git API](https://libgit2.org/)
 * [与libgit2 '连接'的 Python API](https://www.pygit2.org/)
+* [【Git/GitHub学习笔记】一键更新多个git仓库至远程](https://www.bbsmax.com/A/GBJrv7WRJ0/)
