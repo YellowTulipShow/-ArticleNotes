@@ -1,0 +1,33 @@
+{
+    "editor.renderControlCharacters": false,
+    // 编辑器字体
+    "editor.fontFamily": "consolas",
+    // 编辑器字体大小
+    "editor.fontSize": 16,
+    // 标尺
+    "editor.rulers": [120],
+    // Tab大小
+    "editor.tabSize": 4,
+    // 文本自动换行
+    "editor.wordWrap": "on",
+    // 显示空白字符 - 再选择时
+    "editor.renderWhitespace": "selection",
+    // 根据制表位插入或删除空格
+    "editor.useTabStops": true,
+    "workbench.sideBar.location": "left",
+    "workbench.iconTheme": "vscode-icons",
+    "vsicons.dontShowNewVersionMessage": true,
+    "window.zoomLevel": 0,
+    "terminal.explorerKind": "external",
+    "terminal.external.windowsExec": "C:\\Program Files\\Git\\bin",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/bin": true,
+        "**/obj": true,
+        "**/.vscode": true,
+    },
+}
