@@ -12,8 +12,12 @@
     "editor.wordWrap": "on",
     // 显示空白字符 - 再选择时
     "editor.renderWhitespace": "selection",
-    // 根据制表位插入或删除空格
+    // 根据制表位插入和删除空格。
     "editor.useTabStops": true,
+    // 按 Tab 键时插入空格。该设置在 #editor.detectIndentation# 启用时根据文件内容可能会被覆盖。
+    "editor.insertSpaces": true,
+    // 控制是否在打开文件时，基于文件内容自动检测 #editor.tabSize# 和 #editor.insertSpaces#
+    "editor.detectIndentation": false,
     "workbench.sideBar.location": "left",
     "workbench.iconTheme": "vscode-icons",
     "vsicons.dontShowNewVersionMessage": true,
