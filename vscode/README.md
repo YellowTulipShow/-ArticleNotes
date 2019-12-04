@@ -18,6 +18,12 @@
 
 ## 常用插件
 
+* C/C++
 * C#
 * vscode-icons
 * Chinese (Simplified) Language Pack for Visual Studio Code
+* ESLint
+* Markdownlint
+* Python
+* SQL Server(mssql)
+* Debugger for Firefox
