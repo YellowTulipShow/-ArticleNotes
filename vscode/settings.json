@@ -19,6 +19,8 @@
     "editor.tabSize": 4,
     // 按 Tab 键时插入空格。该设置在 #editor.detectIndentation# 启用时根据文件内容可能会被覆盖。
     "editor.insertSpaces": true,
+    // 启用 Tab 补全。on: 在按下 Tab 键时进行 Tab 补全，将插入最佳匹配建议。
+    "editor.tabCompletion": "on",
     // 控制边栏的位置。它可显示在工作台的左侧或右侧。
     "workbench.sideBar.location": "left",
     // 指定在工作台中使用的图标主题，或指定 "null" 以不显示任何文件图标。
@@ -26,8 +28,8 @@
     // 如果设置成'true'，关于新的版本消息将不再显示
     "vsicons.dontShowNewVersionMessage": true,
     // 调整窗口的缩放级别。原始大小是 0，每次递增(例如 1)或递减(例如 -1)表示放大或缩小 20%。也可以输入小数以便以更精细的粒度调整缩放级别。
-    "window.zoomLevel": 0.6,
-    // 自定义要启动的终端类型。external: 使用设定的外部终端
+    "window.zoomLevel": 0.58,
+    // 自定义要启动的终端类型。external: 使用设定的外部终端 / integrated: 使用 VS Code 的集成终端。
     "terminal.explorerKind": "external",
     // 自定义要在 Windows 上运行的终端。
     "terminal.external.windowsExec": "C:\\Program Files\\Git\\bin",
