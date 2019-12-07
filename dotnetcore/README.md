@@ -1,5 +1,11 @@
 # .Net Core
 
+## 常用命令
+* [本地学习各命令文档](./CommandNote.md)
+
+## Route 路由
+* [本地路由学习文档](./Route.md)
+
 ## 学习链接地址:
 * [微软官网 - .NET Core 指南](https://docs.microsoft.com/zh-cn/dotnet/core/)
 * [.NET Core SDK 概述](https://docs.microsoft.com/zh-cn/dotnet/core/sdk)
@@ -7,3 +13,4 @@
 * [教程：使用 ASP.NET Core 创建 Web API](https://docs.microsoft.com/zh-cn/aspnet/core/tutorials/first-web-api?view=aspnetcore-3.0&tabs=visual-studio-code)
 * [使用VS Code开发asp.net core (上)](https://www.cnblogs.com/cgzl/p/8450179.html)
 * [使用VS Code开发asp.net core (下)](https://www.cnblogs.com/cgzl/p/8450409.html)
+* [官网教程：使用 ASP.NET Core 创建 Web API](https://docs.microsoft.com/zh-cn/aspnet/core/tutorials/first-web-api?view=aspnetcore-3.1&tabs=visual-studio)
