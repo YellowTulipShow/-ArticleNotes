@@ -7,3 +7,4 @@
 * [教程：使用 ASP.NET Core 创建 Web API](https://docs.microsoft.com/zh-cn/aspnet/core/tutorials/first-web-api?view=aspnetcore-3.0&tabs=visual-studio-code)
 * [使用VS Code开发asp.net core (上)](https://www.cnblogs.com/cgzl/p/8450179.html)
 * [使用VS Code开发asp.net core (下)](https://www.cnblogs.com/cgzl/p/8450409.html)
+* [C#进阶系列——WebApi 接口参数不再困惑：传参详解](https://www.cnblogs.com/landeanfen/p/5337072.html)
