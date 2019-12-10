@@ -23,37 +23,47 @@ $ git commit --amend
 
 ## 常用代码
 
+### 推送本地代码到远程代码库
+
 ```shell
-# 推送本地代码到远程代码库
 git remote add <origin name> <url address>
 git push -u origin --all
 git push origin --tags
 ```
 
+### git 从远程仓库获取所有分支
+
 ```shell
-# git 从远程仓库获取所有分支
-# 引用链接：http://stackoverflow.com/questions/10312521/how-to-fetch-all-git-branches
 git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
 git fetch --all
 git pull --all
 ```
 
+* [引用链接](http://stackoverflow.com/questions/10312521/how-to-fetch-all-git-branches)
+
+
+### 拉取指定远程仓库分支到本地 (本地分支不存在)
+
 ```shell
-# 拉取指定远程仓库分支到本地 (本地分支不存在)
 git checkout -b <branch> origin/<branch>
 ```
 
-```shell
-当正在修改某文件A，此时需要commit，但是A没修改完暂时不能一起commit。
-执行：
+### 暂时屏蔽文件
 
+当正在修改某文件A，此时需要commit，但是A没修改完暂时不能一起commit。 执行：
+
+```shell
 git update-index --assume-unchanged A的路径
+```
 
 git暂时会忽略该文件的修改， git status查看时A已经不在待commit列表中了。
+
 让git重新监视文件A的修改：
 
+```shell
 git update-index --no-assume-unchanged A的路径
 ```
+
 
 ## 删除 .gitignore 已经在版本库中的文件
 
