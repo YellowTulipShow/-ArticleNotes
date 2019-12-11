@@ -16,3 +16,5 @@
 * [C#进阶系列——WebApi 接口参数不再困惑：传参详解](https://www.cnblogs.com/landeanfen/p/5337072.html)
 * [官网教程：使用 ASP.NET Core 创建 Web API](https://docs.microsoft.com/zh-cn/aspnet/core/tutorials/first-web-api?view=aspnetcore-3.1&tabs=visual-studio)
 * [Swashbuckle 和 ASP.NET Core 入门](https://docs.microsoft.com/zh-cn/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-3.0&tabs=visual-studio-code)
+* [EF Core 入门](https://docs.microsoft.com/zh-cn/ef/core/get-started/?tabs=netcore-cli)
+* [反向工程](https://docs.microsoft.com/zh-cn/ef/core/managing-schemas/scaffolding)
