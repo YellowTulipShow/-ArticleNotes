@@ -88,8 +88,15 @@ Tools -> SublimeServer ->
 Ps: 使用时, 关闭 `Sublime Text` 软件, `SublimeServer` 也会同步关闭
 
 
+## 使用技巧
+
+### 快速折叠指定层级
+`Ctrl+K`, `Ctrl+1` (N数字代码折叠级数)
+`Ctrl+K`, `Ctrl+0` 展开全部折叠
+
 ## 参考学习链接:
 * [配置Chrome支持本地（file协议）的AJAX请求](http://www.cnblogs.com/micua/p/chrome-file-protocol-support-ajax.html)
 * [用sublime server 启动本地服务器（手机访问电脑页面）](http://www.cnblogs.com/lhy-93/p/5741274.html)
 * [Sublime Text 有哪些使用技巧？](https://www.zhihu.com/question/24896283)
 * [sublime安装服务器sublimeServer插件](https://blog.csdn.net/tengxing007/article/details/76038475)
+* [【Sublime】sublime text 快捷键折叠全部代码](https://blog.csdn.net/qq_29757283/article/details/83046862)
