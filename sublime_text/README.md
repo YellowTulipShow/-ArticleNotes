@@ -1,53 +1,14 @@
 # Sublime Text 编辑器
 
+## 配置安装
+
+### 编辑器格式配置
+* [配置文件内容](./Preferences.sublime-settings)
+
 ## 常用问题:
+
 ### 顶部菜单栏消失了
 快捷键: `Ctrl` + `Shift` + `P` 打开命令框选择 -> `View:Toggle Menu` 选项即可
-
-## 配置安装
-### 编辑器格式配置
-```json
-{
-    // 字体样式
-    "font_face": "consolas",
-
-    // 字体大小
-    "font_size": 14,
-
-    // 忽略软件包
-    "ignored_packages": [
-        "Vintage"
-    ],
-
-    // tab大小
-    "tab_size": 4,
-
-    // 文本自动换行
-    "word_wrap": true,
-    // "word_wrap": true,
-
-    // 高亮当前行
-    "highlight_line": true,
-
-    // 高亮有修改的标签
-    "highlight_modified_tabs": true,
-
-    // 添加行宽标尺
-    "rulers": [120],
-
-    // 显示空白字符
-    "draw_white_space": "selection",
-
-    // 使用空格代替tab内容
-    "translate_tabs_to_spaces": true,
-
-    // 保存时自动去除行末空白
-    "trim_trailing_white_space_on_save": true,
-
-    // 保存时自动增加文件末尾换行
-    "ensure_newline_at_eof_on_save": true,
-}
-```
 
 ### Package Control
 使用Package Control组件安装
