@@ -178,3 +178,4 @@ Dec | December   | 十二月
 * [libgit2 C 实现的 Git API](https://libgit2.org/)
 * [与libgit2 '连接'的 Python API](https://www.pygit2.org/)
 * [【Git/GitHub学习笔记】一键更新多个git仓库至远程](https://www.bbsmax.com/A/GBJrv7WRJ0/)
+* [理解Git的工作流程](https://kb.cnblogs.com/page/152176/)
