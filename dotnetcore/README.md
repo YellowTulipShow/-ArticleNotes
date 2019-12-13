@@ -20,3 +20,4 @@
 * [反向工程](https://docs.microsoft.com/zh-cn/ef/core/managing-schemas/scaffolding)
 * [Asp.Net Core WebAPI入门整理（三）跨域处理](https://www.cnblogs.com/tianma3798/p/6920704.html)
 * [asp.net core webapi之跨域（Cors）访问](https://www.cnblogs.com/xingbo/p/6093325.html)
+* [官网教程：启用 ASP.NET Core 中的跨域请求 (CORS)](https://docs.microsoft.com/zh-cn/aspnet/core/security/cors?view=aspnetcore-3.0)
