@@ -18,3 +18,5 @@
 * [Swashbuckle 和 ASP.NET Core 入门](https://docs.microsoft.com/zh-cn/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-3.0&tabs=visual-studio-code)
 * [EF Core 入门](https://docs.microsoft.com/zh-cn/ef/core/get-started/?tabs=netcore-cli)
 * [反向工程](https://docs.microsoft.com/zh-cn/ef/core/managing-schemas/scaffolding)
+* [Asp.Net Core WebAPI入门整理（三）跨域处理](https://www.cnblogs.com/tianma3798/p/6920704.html)
+* [asp.net core webapi之跨域（Cors）访问](https://www.cnblogs.com/xingbo/p/6093325.html)
