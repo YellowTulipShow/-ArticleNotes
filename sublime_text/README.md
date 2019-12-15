@@ -5,6 +5,9 @@
 ### 编辑器格式配置
 * [配置文件内容](./Preferences.sublime-settings)
 
+## 常用插件
+* [Sublime Merge - Git UI界面](https://www.sublimemerge.com/download)
+
 ## 常用问题:
 
 ### 顶部菜单栏消失了
