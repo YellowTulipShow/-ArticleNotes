@@ -19,6 +19,7 @@
 * [将 ASP.NET Core 应用发布到 IIS](https://docs.microsoft.com/zh-cn/aspnet/core/tutorials/publish-to-iis?view=aspnetcore-3.1&tabs=visual-studio)
 * [.NET Core 和 .NET Standard 单元测试最佳做法](https://docs.microsoft.com/zh-cn/dotnet/core/testing/unit-testing-best-practices)
 * [在 Linux 上的 Azure 应用服务中生成 ASP.NET Core 和 SQL 数据库应用](https://docs.microsoft.com/zh-cn/azure/app-service/containers/tutorial-dotnetcore-sqldb-app)
+* [Linux 上的 SQL Server](https://docs.microsoft.com/zh-cn/sql/linux/sql-server-linux-overview?view=sql-server-ver15)
 
 ## 学习链接地址:
 * [使用VS Code开发asp.net core (上)](https://www.cnblogs.com/cgzl/p/8450179.html)

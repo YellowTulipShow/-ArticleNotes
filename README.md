@@ -37,3 +37,6 @@
 * [码工具 - 代码在线工具箱, 很全很好用](http://www.matools.com/)
 * [新华字典](https://zidian.911cha.com/)
 * [好记么 - (很不错博客空间和实用Demo地址)](https://haoji.me/)
+* [开源软件名称中的故事](https://linux.cn/article-11688-1.html)
+* [极客漫画](https://linux.cn/talk/comic/)
+* [如何评估一个 Linux 发行版的总体成本](https://linux.cn/article-10684-1.html)
