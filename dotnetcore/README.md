@@ -24,4 +24,6 @@
 * [C#进阶系列——WebApi 接口参数不再困惑：传参详解](https://www.cnblogs.com/landeanfen/p/5337072.html)
 * [Asp.Net Core WebAPI入门整理（三）跨域处理](https://www.cnblogs.com/tianma3798/p/6920704.html)
 * [asp.net core webapi之跨域（Cors）访问](https://www.cnblogs.com/xingbo/p/6093325.html)
-
+* [将asp.net core站点发布到IIS上遇到的问题](https://www.cnblogs.com/dudu/p/6110727.html)
+* [HTTP Error 500.0 - ANCM In-Process Handler Load Failure 排错历程](https://www.cnblogs.com/leoxjy/p/10282148.html)
+* [HTTP Error 500.30 - ANCM In-Process Start Failure 解决方法](https://blog.csdn.net/qq_25042791/article/details/103055914)
