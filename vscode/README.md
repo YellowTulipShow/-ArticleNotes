@@ -29,3 +29,4 @@
 * Debugger for Firefox
 * C# XML Documentation Comments
 * Git History
+* [Code Runner](https://github.com/formulahendry/vscode-code-runner)
