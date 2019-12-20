@@ -32,3 +32,4 @@
 * [HTTP Error 500.30 - ANCM In-Process Start Failure 解决方法](https://blog.csdn.net/qq_25042791/article/details/103055914)
 * [ASP.NET Core使用EF Core操作MySql数据库](https://www.cnblogs.com/alan-lin/p/9997657.html)
 * [ASP.NET Core Web API 最佳实践指南](https://mp.weixin.qq.com/s/CEAzOIe9avIoL0XmHJeMrg)
+* [ASP.NET Core 源码阅读笔记(3) ---Microsoft.AspNetCore.Hosting](https://www.cnblogs.com/bill-shooting/p/SourceCode_Hosting.html)
