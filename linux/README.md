@@ -15,3 +15,5 @@
 * [怎样用 Bash 编程：逻辑操作符和 shell 扩展](https://linux.cn/article-11687-1.html)
 * [24 个必知必会的系统管理员面试问题](https://linux.cn/article-11673-1.html)
 * [新人必读：区块链实用型技能树](https://linux.cn/article-11690-1.html)
+* [通过外网访问内网的服务器（完美部署上线，超级详细）](https://blog.csdn.net/u010905359/article/details/84989831)
+* [通过外网访问内网服务器（绝对成功）](https://blog.csdn.net/jinzhichaoshuiping/article/details/45751671)
