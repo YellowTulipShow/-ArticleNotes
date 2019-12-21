@@ -22,3 +22,6 @@ slmgr /ato
 // 查看激活状态 (有时间限制到期激活结束 尝试重新使用上面方法激活)
 slmgr.vbs -xpr
 ```
+
+## 参考学习链接:
+* [win10永久激活方法（真正永久激活）](https://jingyan.baidu.com/article/9113f81b4d49232b3314c75e.html)
