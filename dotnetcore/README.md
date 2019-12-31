@@ -33,3 +33,4 @@
 * [ASP.NET Core使用EF Core操作MySql数据库](https://www.cnblogs.com/alan-lin/p/9997657.html)
 * [ASP.NET Core Web API 最佳实践指南](https://mp.weixin.qq.com/s/CEAzOIe9avIoL0XmHJeMrg)
 * [ASP.NET Core 源码阅读笔记(3) ---Microsoft.AspNetCore.Hosting](https://www.cnblogs.com/bill-shooting/p/SourceCode_Hosting.html)
+* [.NET Core+MySql+Nginx 容器化部署](https://www.jianshu.com/p/2a755277a1e6)
