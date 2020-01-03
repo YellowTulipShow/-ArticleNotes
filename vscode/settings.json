@@ -45,4 +45,12 @@
         "**/obj": true,
         "**/.vscode": true,
     },
+    // 在读取和写入文件时使用的默认字符集编码。可以按语言对此项进行配置。utf8: UTF-8
+    "files.encoding": "utf8",
+    // 启用后，保存文件时在文件末尾插入一个最终新行。
+    "files.insertFinalNewline": true,
+    // 启用后，将在保存文件时删除文件每行末尾的空格。
+    "files.trimTrailingWhitespace": true,
+    // 启用后，保存文件时将删除在最终新行后的所有新行。
+    "files.trimFinalNewlines": true,
 }
