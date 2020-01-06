@@ -3,21 +3,23 @@
 各实例转移至 [GitHub - PythonScripts](https://github.com/YellowTulipShow/PythonScripts)
 
 ## 代码风格
+
 ### 方法注释
+
 Google风格
 ```python
 """
 This is a groups style docs.
 
 Parameters:
-  param1 - this is the first param
-  param2 - this is a second param
+    param1 - this is the first param
+    param2 - this is a second param
 
 Returns:
-  This is a description of what is returned
+    This is a description of what is returned
 
 Raises:
-  KeyError - raises an exception
+    KeyError - raises an exception
 """
 ```
 
