@@ -23,6 +23,18 @@ $ git commit --amend
 
 ## 常用代码
 
+### 测试与代码服务器是否连通
+
+GitHub
+```shell
+ssh git@github.com
+```
+
+Gitee 码云
+```shell
+ssh git@gitee.com
+```
+
 ### 推送本地代码到远程代码库
 
 ```shell
