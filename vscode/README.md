@@ -19,7 +19,7 @@
 ## 常用插件
 
 * C/C++
-* C#
+* [C#](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
 * vscode-icons
 * Chinese (Simplified) Language Pack for Visual Studio Code
 * ESLint
@@ -30,3 +30,4 @@
 * C# XML Documentation Comments
 * Git History
 * [Code Runner](https://github.com/formulahendry/vscode-code-runner)
+* [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
