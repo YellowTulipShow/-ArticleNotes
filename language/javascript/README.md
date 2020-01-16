@@ -31,3 +31,4 @@ document.getElementById('input').onchange = input_format; // 内容更改时触�
 * [Web 开发技术Web API 接口参考 - IndexedDB](https://developer.mozilla.org/zh-CN/docs/Web/API/IndexedDB_API)
 * [HTML5本地存储——IndexedDB - 知乎](https://zhuanlan.zhihu.com/p/27419332)
 * [HTML5 indexedDB前端本地存储数据库实例教程](https://www.zhangxinxu.com/wordpress/2017/07/html5-indexeddb-js-example/)
+* [encodeURI()和encodeURIComponent() 区别](https://blog.csdn.net/qq_34629352/article/details/78959707)
