@@ -23,3 +23,4 @@
 * [Win8系统108个运行命令 你能记住多少?](http://win8.zol.com.cn/277/2772193.html)
 * [Win10怎么优化？安装好Win10后必做的22项优化！](http://www.xitonghe.com/jiaocheng/Windows10-5634.html)
 * [windows修改PowerShell（命令提示符）默认中文编码方式](https://blog.csdn.net/x356982611/article/details/80285930)
+* [教你怎么在windows上用命令查看和终止进程](https://jingyan.baidu.com/article/19020a0a120677529d284228.html)
