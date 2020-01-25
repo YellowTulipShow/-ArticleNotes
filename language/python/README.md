@@ -39,3 +39,4 @@ Raises:
 * [python 一个.py文件如何调用另一个.py文件中的类和函数](https://blog.csdn.net/winycg/article/details/78512300)
 * [Python连接SQL Server入门](https://blog.csdn.net/chroming/article/details/51541959)
 * [python代码规范以及函数注释规范](https://www.cnblogs.com/19921019yy/p/8024731.html)
+* [python3 出现print输出的中文乱码问题解决](https://blog.csdn.net/butailengmu/article/details/78479505)

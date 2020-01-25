@@ -8,3 +8,4 @@
 * [10个免费开源的JS音乐播放器插件](http://www.shejidaren.com/free-audio-players.html)
 * [audio.js](http://kolber.github.io/audiojs/)
 * [photoshop通过标尺生成参考线由参考线生成切片](https://jingyan.baidu.com/article/a17d52851b94fa8099c8f24d.html)
+* [encodeURI()和encodeURIComponent() 区别](https://blog.csdn.net/qq_34629352/article/details/78959707)
