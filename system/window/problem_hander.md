@@ -130,24 +130,33 @@ win键+R键打开运行对话框框，输入gpedit.msc打开本地组策略编�
 * [解决Antimalware Service Executable CPU占用高](https://jingyan.baidu.com/article/e75057f2c1f6edebc91a89ed.html)
 
 ## Win10 1709提示“因文件共享不安全 不能连接文件共享”如何解决？
+
+### Windows功能
+
 控制面板 -> 启用或关闭Windows功能 -> 勾选: SMB1.0/CIFS文件共享支持
 
 除了以上方法，微软官方也提供了通过PowerShell来进行设置的方法，用管理员权限打开Powershell之后，可以参考下面的命令：
 
 SMB v1
 
-检测： Get-WindowsOptionalFeature –Online –FeatureName SMB1Protocol
-
-禁用： Disable-WindowsOptionalFeature -Online -FeatureName SMB1Protocol
-
-启用： Enable-WindowsOptionalFeature -Online -FeatureName SMB1Protocol
+> 检测： Get-WindowsOptionalFeature –Online –FeatureName SMB1Protocol
+> 禁用： Disable-WindowsOptionalFeature -Online -FeatureName SMB1Protocol
+> 启用： Enable-WindowsOptionalFeature -Online -FeatureName SMB1Protocol
 
 SMB v2/v3
 
-检测：Get-SmbServerConfiguration | Select EnableSMB2Protocol
+> 检测：Get-SmbServerConfiguration | Select EnableSMB2Protocol
+> 禁用：Set-SmbServerConfiguration –EnableSMB2Protocol $false
+> 启用：Set-SmbServerConfiguration –EnableSMB2Protocol $true
 
-禁用：Set-SmbServerConfiguration –EnableSMB2Protocol $false
+### 使用场景:
 
-启用：Set-SmbServerConfiguration –EnableSMB2Protocol $true
+使用了华为的路由器, 增加了一个移动硬盘的存储空间在家通过网络访问
+
+比如文件资源管理器访问地址: **\\192.168.199.1**
+
+正常情况下的Window10是不能进行访问的, 会报超时或上面的错误, 以上步骤开启SMB协议后就可以正常访问了
+
+### 链接:
 
 * [Win10 1709提示“因文件共享不安全 不能连接文件共享”如何解决？](https://www.pconline.com.cn/win10/1035/10357000.html)
