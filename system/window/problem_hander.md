@@ -1,5 +1,44 @@
 # 问题处理
 
+## 关闭系统更新
+
+### 系统服务配置
+
+命令行:
+
+```powershell
+services.msc
+```
+
+找到 `Windows Update`
+
+常规选项卡 - 启动类型 改为 **禁用**
+
+恢复选项卡 - 第一次失败/第二次失败/后续失败都改为 **无操作**
+
+### 更改组策略编辑器的设置
+
+命令行:
+
+```powershell
+gpedit.msc
+```
+
+使用专业版的Windows 10，您可以通过更改Windows更新设置来禁用自动更新，以便控制PC上安装的更新。这些是要遵循的步骤。
+
+1. 打开“开始”菜单，然后检查“gpedit.msc”并选择顶部的结果以启动它。
+2. 导航路径“计算机配置\管理模板\Windows组件\Windows Update
+3. 双击右侧的“配置自动更新”系统策略。
+4. 选中“已禁用选项”以完全关闭系统策略
+5. 单击“应用”和“确定”以禁用Windows 10自动更新功能。
+
+完成上述步骤后，Windows 10将立即停止自动下载任何更新。
+
+### 链接:
+
+* [如何永久关闭Windows10更新](https://jingyan.baidu.com/article/75ab0bcbb22d0bd6864db21e.html)
+* [如何停止Windows 10更新](https://www.diyihuifu.com/how-to-stop-windows-10-update.html)
+
 ## 文件夹删不掉, 提示权限不足
 
 其实是磁盘读取错误的, 重启Window资源管理器即可
