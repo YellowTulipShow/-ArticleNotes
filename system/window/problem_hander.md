@@ -140,20 +140,24 @@ win键+R键打开运行对话框框，输入gpedit.msc打开本地组策略编�
 SMB v1
 
 > 检测： Get-WindowsOptionalFeature –Online –FeatureName SMB1Protocol
+>
 > 禁用： Disable-WindowsOptionalFeature -Online -FeatureName SMB1Protocol
+>
 > 启用： Enable-WindowsOptionalFeature -Online -FeatureName SMB1Protocol
 
 SMB v2/v3
 
 > 检测：Get-SmbServerConfiguration | Select EnableSMB2Protocol
+>
 > 禁用：Set-SmbServerConfiguration –EnableSMB2Protocol $false
+>
 > 启用：Set-SmbServerConfiguration –EnableSMB2Protocol $true
 
 ### 使用场景:
 
 使用了华为的路由器, 增加了一个移动硬盘的存储空间在家通过网络访问
 
-比如文件资源管理器访问地址: **\\192.168.199.1**
+比如文件资源管理器访问地址: **`\\192.168.199.1`**
 
 正常情况下的Window10是不能进行访问的, 会报超时或上面的错误, 以上步骤开启SMB协议后就可以正常访问了
 
