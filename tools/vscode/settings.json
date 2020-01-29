@@ -23,6 +23,10 @@
     "editor.tabCompletion": "on",
     // 控制计算折叠范围的策略。auto 将使用语言特定的折叠策略 (若可用)。indentation 将使用基于缩进的折叠策略。
     "editor.foldingStrategy": "indentation",
+    // 控制编辑器在键入一行后是否自动格式化该行。
+    "editor.formatOnType": true,
+    // 在保存时格式化文件。格式化程序必须可用，延迟后文件不能保存，并且编辑器不能关闭。
+    "editor.formatOnSave": true,
     // 控制边栏的位置。它可显示在工作台的左侧或右侧。
     "workbench.sideBar.location": "left",
     // 指定在工作台中使用的图标主题，或指定 "null" 以不显示任何文件图标。
