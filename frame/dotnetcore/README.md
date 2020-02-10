@@ -34,3 +34,4 @@
 * [ASP.NET Core Web API 最佳实践指南](https://mp.weixin.qq.com/s/CEAzOIe9avIoL0XmHJeMrg)
 * [ASP.NET Core 源码阅读笔记(3) ---Microsoft.AspNetCore.Hosting](https://www.cnblogs.com/bill-shooting/p/SourceCode_Hosting.html)
 * [.NET Core+MySql+Nginx 容器化部署](https://www.jianshu.com/p/2a755277a1e6)
+* [Asp.Net Core WebApi 身份验证、注册、用户管理](https://blog.csdn.net/qq_33319140/article/details/83722130)
