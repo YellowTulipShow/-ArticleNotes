@@ -40,3 +40,4 @@ Raises:
 * [Python连接SQL Server入门](https://blog.csdn.net/chroming/article/details/51541959)
 * [python代码规范以及函数注释规范](https://www.cnblogs.com/19921019yy/p/8024731.html)
 * [python3 出现print输出的中文乱码问题解决](https://blog.csdn.net/butailengmu/article/details/78479505)
+* [如何安装 Python 的第三方模块 - 知乎](https://zhuanlan.zhihu.com/p/20760860)
