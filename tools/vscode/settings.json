@@ -50,6 +50,7 @@
         "**/bin": true,
         "**/obj": true,
         "**/.vscode": true,
+        "**/.vs": true,
     },
     // 在读取和写入文件时使用的默认字符集编码。可以按语言对此项进行配置。utf8: UTF-8
     "files.encoding": "utf8",
