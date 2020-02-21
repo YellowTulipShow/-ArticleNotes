@@ -179,3 +179,6 @@ Dec | December   | 十二月
 * [与libgit2 '连接'的 Python API](https://www.pygit2.org/)
 * [【Git/GitHub学习笔记】一键更新多个git仓库至远程](https://www.bbsmax.com/A/GBJrv7WRJ0/)
 * [理解Git的工作流程](https://kb.cnblogs.com/page/152176/)
+* [8.3 自定义 Git - Git 钩子](https://git-scm.com/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-Git-%E9%92%A9%E5%AD%90)
+* [git hook实现代码自动部署](https://blog.csdn.net/u010837612/article/details/70825225)
+* [Git Hook开发实践总结](https://blog.csdn.net/blueheart20/article/details/102855642)
