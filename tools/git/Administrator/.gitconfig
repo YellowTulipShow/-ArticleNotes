@@ -1,6 +1,6 @@
 [user]
     name = YellowTulipShow
-    email = 1426689530@qq.com
+    email = main@yellowtulipshow.site
 [alias]
     logs = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset %Cgreen(%ci)' --abbrev-commit -n 10
     logsyts = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset %Cgreen(%ci)' --abbrev-commit -n 10 --author="YellowTulipShow" --author="赵瑞青"

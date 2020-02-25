@@ -1,5 +1,15 @@
 # 使用技巧
 
+## 配置
+
+### 使用 Notepad++ 取代 Git Bash 的默认Vim编辑器
+
+```shell
+git config core.editor "\"C:/Program Files (x86)/Notepad++/notepad++.exe\" -multiInst -notabbar -nosession -noPlugin"
+```
+
+注意`Notepad++`程序的路径与外面的引号
+
 ## 常用后悔药:
 
 ### Need Revoked: (需要撤销: )
