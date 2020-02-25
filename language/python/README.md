@@ -44,3 +44,5 @@ Raises:
 * [Python获取文件路径、文件名和扩展名](https://blog.csdn.net/lilongsy/article/details/99853925)
 * [python判断文件和文件夹是否存在](https://blog.csdn.net/samxx8/article/details/6284960)
 * [python获取程序执行文件路径方法](https://blog.csdn.net/py_tester/article/details/78954034)
+* [python脚本执行CMD命令并返回结果](https://blog.csdn.net/xgh1951/article/details/85244272)
+* [Python十大装B语法](https://blog.csdn.net/xufive/article/details/102856921)
