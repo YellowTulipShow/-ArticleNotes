@@ -46,3 +46,4 @@ Raises:
 * [python获取程序执行文件路径方法](https://blog.csdn.net/py_tester/article/details/78954034)
 * [python脚本执行CMD命令并返回结果](https://blog.csdn.net/xgh1951/article/details/85244272)
 * [Python十大装B语法](https://blog.csdn.net/xufive/article/details/102856921)
+* [os.system() 和 os.popen() 和 commands.getstatusoutput()](https://www.cnblogs.com/jefree/p/4461979.html)
