@@ -6,3 +6,6 @@ RightClickAction=paste
 Columns=130
 Rows=35
 PgUpDnScroll=no
+BoldAsFont=-1
+Locale=zh_CN
+Charset=UTF-8

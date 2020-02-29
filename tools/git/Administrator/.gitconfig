@@ -6,3 +6,7 @@
     logsyts = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset %Cgreen(%ci)' --abbrev-commit -n 10 --author="YellowTulipShow" --author="赵瑞青"
     diffn = diff --name-status
     tags = tag -ln
+[credential]
+    helper = store
+[core]
+    quotepath = false
