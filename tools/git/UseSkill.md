@@ -10,6 +10,24 @@ git config core.editor "\"C:/Program Files (x86)/Notepad++/notepad++.exe\" -mult
 
 注意`Notepad++`程序的路径与外面的引号
 
+## 查看单个文件修改历史
+
+```shell
+git log -p <filename>
+```
+
+可以看到fileName相关的commit记录
+
+```shell
+git log <filename>
+```
+
+只看某次提交中的某个文件变化，可以直接加上fileName
+
+```shell
+git show <commit_id> <filename>
+```
+
 ## 常用后悔药:
 
 ### Need Revoked: (需要撤销: )
