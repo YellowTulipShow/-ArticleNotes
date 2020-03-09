@@ -10,19 +10,37 @@ git config core.editor "\"C:/Program Files (x86)/Notepad++/notepad++.exe\" -mult
 
 注意`Notepad++`程序的路径与外面的引号
 
+## Git 清除远端已删除的分支
+
+可以查看remote地址，远程分支，还有本地分支与之相对应关系等信息。
+
+```shell
+git remote show origin
+```
+
+可以看到那些远程仓库已经不存在的分支，根据提示使用命令:
+
+```shell
+git remote prune origin
+```
+
+这样就删除了那些远程仓库不存在的分支。
+
+* [Git 清除远端已删除的分支](https://www.cnblogs.com/weifeng1463/p/9916469.html)
+
 ## 查看单个文件修改历史
 
 ```shell
 git log -p <filename>
 ```
 
-可以看到fileName相关的commit记录
+可以看到`<filename>`相关的`<commit_id>`记录
 
 ```shell
 git log <filename>
 ```
 
-只看某次提交中的某个文件变化，可以直接加上fileName
+只看某次提交中的某个文件变化，可以直接加上`<filename>`
 
 ```shell
 git show <commit_id> <filename>
