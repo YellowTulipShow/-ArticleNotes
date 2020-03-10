@@ -18,7 +18,7 @@ $ ssh-keygen -t rsa -C "<email account>"
 
 本人为:
 ```shell
-ssh-keygen -t rsa -C "1426689530@qq.com YelloTulipShow"
+ssh-keygen -t rsa -C "main@yellowtulipshow.site YelloTulipShow"
 ```
 
 执行命令结束后在本地创建了两个文件:
