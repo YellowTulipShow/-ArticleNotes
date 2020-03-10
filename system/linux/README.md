@@ -1,14 +1,35 @@
 # Linux 系统学习
 
 ## 登录 Linux 服务器
+
+## 使用 Git Bash 命令行
+
+可以使用 `Git Bash` 程序直接连接登陆服务器, 简单快捷而且有效
+
+连接命令:
+
+```shell
+ssh <login_user_name>@<server_address>
+```
+
+比如:
+
+```shell
+ssh ubuntu@58.87.71.34
+```
+
 ### 使用 Putty
+
 点击 [查看详情](./putty_login.md)
 
 ## Vim
+
 键位
+
 ![](https://ytsimg.gitee.io/blog/yts_github_io/linux/keys.jpg)
 
 ## 参考学习链接:
+
 * [登录 Linux 实例](https://cloud.tencent.com/document/product/213/5436)
 * [Linux中国](https://linux.cn/)
 * [怎样用 Bash 编程：语法和工具](https://linux.cn/article-11552-1.html)
