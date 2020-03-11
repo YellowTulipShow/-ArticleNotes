@@ -48,3 +48,4 @@ Raises:
 * [Python十大装B语法](https://blog.csdn.net/xufive/article/details/102856921)
 * [os.system() 和 os.popen() 和 commands.getstatusoutput()](https://www.cnblogs.com/jefree/p/4461979.html)
 * [Python的命令行参数解析](https://blog.csdn.net/quincuntial/article/details/77963301)
+* [Python 包安装 - setuptools详解](https://www.jianshu.com/p/ea9973091fdf)
