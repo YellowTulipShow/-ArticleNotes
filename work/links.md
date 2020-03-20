@@ -17,3 +17,4 @@
 * [开源软件名称中的故事](https://linux.cn/article-11688-1.html)
 * [极客漫画](https://linux.cn/talk/comic/)
 * [如何评估一个 Linux 发行版的总体成本](https://linux.cn/article-10684-1.html)
+* [百度网盘提速方法](https://jingyan.baidu.com/article/22fe7ced4b7bb07002617fe3.html)
