@@ -20,6 +20,7 @@
 * [.NET Core 和 .NET Standard 单元测试最佳做法](https://docs.microsoft.com/zh-cn/dotnet/core/testing/unit-testing-best-practices)
 * [在 Linux 上的 Azure 应用服务中生成 ASP.NET Core 和 SQL 数据库应用](https://docs.microsoft.com/zh-cn/azure/app-service/containers/tutorial-dotnetcore-sqldb-app)
 * [Linux 上的 SQL Server](https://docs.microsoft.com/zh-cn/sql/linux/sql-server-linux-overview?view=sql-server-ver15)
+* [IdentityServer4 官网学习文档](https://identityserver4.readthedocs.io/en/latest/)
 
 ## 学习链接地址:
 * [使用VS Code开发asp.net core (上)](https://www.cnblogs.com/cgzl/p/8450179.html)
@@ -35,3 +36,5 @@
 * [ASP.NET Core 源码阅读笔记(3) ---Microsoft.AspNetCore.Hosting](https://www.cnblogs.com/bill-shooting/p/SourceCode_Hosting.html)
 * [.NET Core+MySql+Nginx 容器化部署](https://www.jianshu.com/p/2a755277a1e6)
 * [Asp.Net Core WebApi 身份验证、注册、用户管理](https://blog.csdn.net/qq_33319140/article/details/83722130)
+* [.NET Core实战项目之CMS 第一章 入门篇-开篇及总体规划 作者：依乐祝](https://www.cnblogs.com/yilezhu/p/9977862.html)
+* [Sqlite Browser](https://sqlitebrowser.org/)
