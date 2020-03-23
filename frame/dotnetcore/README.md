@@ -38,3 +38,5 @@
 * [Asp.Net Core WebApi 身份验证、注册、用户管理](https://blog.csdn.net/qq_33319140/article/details/83722130)
 * [.NET Core实战项目之CMS 第一章 入门篇-开篇及总体规划 作者：依乐祝](https://www.cnblogs.com/yilezhu/p/9977862.html)
 * [Sqlite Browser](https://sqlitebrowser.org/)
+* [什么是 JWT -- JSON WEB TOKEN](https://www.jianshu.com/p/576dbf44b2ae)
+* [ASP.Net Core 3.1 中使用JWT认证](https://www.cnblogs.com/liuww/p/12177272.html)
