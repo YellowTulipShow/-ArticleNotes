@@ -40,3 +40,7 @@
 * [Sqlite Browser](https://sqlitebrowser.org/)
 * [什么是 JWT -- JSON WEB TOKEN](https://www.jianshu.com/p/576dbf44b2ae)
 * [ASP.Net Core 3.1 中使用JWT认证](https://www.cnblogs.com/liuww/p/12177272.html)
+* [nuget.org 无法加载源 https://api.nuget.org/v3/index.json 的服务索引](https://www.cnblogs.com/shapaozi/archive/2017/10/31/7764469.html)
+* [jquery ajax设置header的两种方式](https://blog.csdn.net/shjavadown/article/details/51213342)
+* [AJAX请求中出现OPTIONS请求](https://www.cnblogs.com/wanghuijie/p/preflighted_request.html)
+* [OPTIONS 方法在跨域请求（CORS）中的应用](https://blog.csdn.net/qizhiqq/article/details/71171916)
