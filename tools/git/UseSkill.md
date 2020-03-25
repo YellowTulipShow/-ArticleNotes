@@ -122,6 +122,25 @@ git暂时会忽略该文件的修改， git status查看时A已经不在待commi
 git update-index --no-assume-unchanged A的路径
 ```
 
+如果忽略的文件多了，可以使用以下命令查看忽略列表
+
+```shell
+git ls-files -v | grep '^h\ '
+```
+
+提取文件路径，方法如下
+
+```shell
+git ls-files -v | grep '^h\ ' | awk '{print $2}'
+```
+
+所有被忽略的文件，取消忽略的方法，如下
+
+```shell
+git ls-files -v | grep '^h' | awk '{print $2}' |xargs git update-index --no-assume-unchanged
+```
+
+* [Git命令git update-index --assume-unchanged，忽略不想提交的文件（忽略跟踪）](https://www.cnblogs.com/wt645631686/p/10007328.html)
 
 ## 删除 .gitignore 已经在版本库中的文件
 
