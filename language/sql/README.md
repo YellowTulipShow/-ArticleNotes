@@ -96,7 +96,10 @@ select [语句执行花费时间(毫秒)]=datediff(ms,@d,getdate())
 
 
 ## 参考学习链接:
+
 * [SQL中char、varchar、nvarchar的区别](http://www.cnblogs.com/carekee/articles/2094676.html)
 * [查看sql语句执行时间/测试sql语句性能](http://www.cnblogs.com/qanholas/archive/2011/05/06/2038543.html)
 * [SQL server 树形递归查询](https://blog.csdn.net/weixin_36408281/article/details/81316334)
 * [Sqlite Browser](https://sqlitebrowser.org/)
+* [Sql Server 多数据库联合查询](https://blog.csdn.net/weixin_30539625/article/details/96772754)
+* [SQL 连接(JOIN)](https://www.runoob.com/sql/sql-join.html)
