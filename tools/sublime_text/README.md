@@ -103,3 +103,4 @@ Ps: 使用时, 关闭 `Sublime Text` 软件, `SublimeServer` 也会同步关闭
 * [Sublime Text 有哪些使用技巧？](https://www.zhihu.com/question/24896283)
 * [sublime安装服务器sublimeServer插件](https://blog.csdn.net/tengxing007/article/details/76038475)
 * [【Sublime】sublime text 快捷键折叠全部代码](https://blog.csdn.net/qq_29757283/article/details/83046862)
+* [Sublime Text3批量更改文件内容](https://blog.csdn.net/KleyChan/article/details/82469844)
