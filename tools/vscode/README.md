@@ -31,3 +31,4 @@
 * Git History
 * [Code Runner](https://github.com/formulahendry/vscode-code-runner)
 * [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+* Beautify
