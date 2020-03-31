@@ -21,6 +21,7 @@ su git
 切换到 `git` 用户的主目录并创建 `ssh` 协议存储公钥文件
 
 ```shell
+cd ~
 mkdir .ssh/
 touch authorized_keys
 ```
@@ -38,9 +39,12 @@ vim authorized_keys
 例如:
 
 ```shell
+cd ~
+mkdir librarys/
+git init --bare <project>.git
 ```
 
-客户端使用模板
+之后就可以在客户端使用模板
 
 ```shell
 git remote add <origin name> ssh://git@<ip address>:/home/git/librarys/<project>.git
