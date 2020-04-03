@@ -15,3 +15,5 @@
 * [C# http请求带请求头部分](https://www.cnblogs.com/hvaning/p/6956254.html)
 * [FreeSql 如何实现 Sqlite 跨库查询 - FreeSql 是 .NetFramework 4.6+、.NetCore 下的 ORM 功能库，提供了丰富的功能，支持五种流行数据库 MySql/SqlServer/PostgreSQL/Oracle/Sqlite](https://www.cnblogs.com/kellynic/p/10452867.html)
 * [.net IHttpHandler](https://blog.csdn.net/angle860123/article/details/7976045)
+* [C# 路径中获取文件全路径、目录、扩展名、文件名称](https://blog.csdn.net/yueliangge910101/article/details/81332236)
+* [C# 常见Url操作实例（一）、正则表达式匹配URl](https://blog.csdn.net/u011127019/article/details/52538320)
