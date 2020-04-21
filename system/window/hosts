@@ -6,3 +6,6 @@
 # GitHub
 192.30.255.112  github.com
 185.31.16.184 github.global.ssl.fastly.net
+
+# nuget
+65.52.16.184 nuget.org
