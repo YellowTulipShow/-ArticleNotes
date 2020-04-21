@@ -21,6 +21,7 @@
 * [在 Linux 上的 Azure 应用服务中生成 ASP.NET Core 和 SQL 数据库应用](https://docs.microsoft.com/zh-cn/azure/app-service/containers/tutorial-dotnetcore-sqldb-app)
 * [Linux 上的 SQL Server](https://docs.microsoft.com/zh-cn/sql/linux/sql-server-linux-overview?view=sql-server-ver15)
 * [IdentityServer4 官网学习文档](https://identityserver4.readthedocs.io/en/latest/)
+* [配置 DbContext](https://docs.microsoft.com/zh-cn/ef/core/miscellaneous/configuring-dbcontext)
 
 ## 学习链接地址:
 * [使用VS Code开发asp.net core (上)](https://www.cnblogs.com/cgzl/p/8450179.html)
