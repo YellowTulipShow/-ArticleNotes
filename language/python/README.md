@@ -49,3 +49,4 @@ Raises:
 * [os.system() 和 os.popen() 和 commands.getstatusoutput()](https://www.cnblogs.com/jefree/p/4461979.html)
 * [Python的命令行参数解析](https://blog.csdn.net/quincuntial/article/details/77963301)
 * [Python 包安装 - setuptools详解](https://www.jianshu.com/p/ea9973091fdf)
+* [python3 print输出不换行，并能即时显示](https://blog.csdn.net/sinat_29046147/article/details/81539423)
