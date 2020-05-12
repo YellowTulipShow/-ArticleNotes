@@ -10,6 +10,13 @@ git config core.editor "\"C:/Program Files (x86)/Notepad++/notepad++.exe\" -mult
 
 注意`Notepad++`程序的路径与外面的引号
 
+
+还原 `Vim` 配置
+
+```shell
+git config core.editor vim
+```
+
 ## Git 清除远端已删除的分支
 
 可以查看remote地址，远程分支，还有本地分支与之相对应关系等信息。
