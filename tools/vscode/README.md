@@ -32,3 +32,4 @@
 * [Code Runner](https://github.com/formulahendry/vscode-code-runner)
 * [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 * Beautify
+* [draw.io 流程图绘制插件](https://github.com/hediet/vscode-drawio)
