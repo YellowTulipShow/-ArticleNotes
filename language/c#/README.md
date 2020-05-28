@@ -17,3 +17,6 @@
 * [.net IHttpHandler](https://blog.csdn.net/angle860123/article/details/7976045)
 * [C# 路径中获取文件全路径、目录、扩展名、文件名称](https://blog.csdn.net/yueliangge910101/article/details/81332236)
 * [C# 常见Url操作实例（一）、正则表达式匹配URl](https://blog.csdn.net/u011127019/article/details/52538320)
+* [C#里面的枚举与位或运算符 一个枚举变量存入多个值](https://www.cnblogs.com/ChineseMoonGod/p/5312993.html)
+* [C# 枚举与位枚举](https://www.runoob.com/w3cnote/csharp-enum.html)
+* [CSharp - C#中，如何传递多个枚举值？](https://kb.kutu66.com/c-Sharp/post_445541)
