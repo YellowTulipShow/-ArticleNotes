@@ -1,12 +1,15 @@
 # .Net Core
 
 ## 常用命令
+
 * [本地学习各命令文档](./CommandNote.md)
 
 ## Route 路由
+
 * [本地路由学习文档](./Route.md)
 
 ## 官网教程
+
 * [微软官网 - .NET Core 指南](https://docs.microsoft.com/zh-cn/dotnet/core/)
 * [.NET Core SDK 概述](https://docs.microsoft.com/zh-cn/dotnet/core/sdk)
 * [通过探讨这些教程来学习 .NET Core 和 .NET Core SDK 工具](https://docs.microsoft.com/zh-cn/dotnet/core/tutorials/index)
@@ -24,6 +27,7 @@
 * [配置 DbContext](https://docs.microsoft.com/zh-cn/ef/core/miscellaneous/configuring-dbcontext)
 
 ## 学习链接地址:
+
 * [使用VS Code开发asp.net core (上)](https://www.cnblogs.com/cgzl/p/8450179.html)
 * [使用VS Code开发asp.net core (下)](https://www.cnblogs.com/cgzl/p/8450409.html)
 * [C#进阶系列——WebApi 接口参数不再困惑：传参详解](https://www.cnblogs.com/landeanfen/p/5337072.html)
@@ -45,3 +49,7 @@
 * [jquery ajax设置header的两种方式](https://blog.csdn.net/shjavadown/article/details/51213342)
 * [AJAX请求中出现OPTIONS请求](https://www.cnblogs.com/wanghuijie/p/preflighted_request.html)
 * [OPTIONS 方法在跨域请求（CORS）中的应用](https://blog.csdn.net/qizhiqq/article/details/71171916)
+* [15分钟从零开始搭建支持10w+用户的生产环境(一)](https://mp.weixin.qq.com/s/gLUlwh85XZbv-9HikWLffg)
+* [15分钟从零开始搭建支持10w+用户的生产环境(二)](https://mp.weixin.qq.com/s/ymMnySDt_iL7PrcrFmr4XA)
+* [15分钟从零开始搭建支持10w+用户的生产环境(三)](https://mp.weixin.qq.com/s/xxE4FiLjNwkpeEFr5uq-kg)
+* [15分钟从零开始搭建支持10w+用户的生产环境(四)](https://mp.weixin.qq.com/s/vts3IUcomLtuQSv8KiIAAQ)
