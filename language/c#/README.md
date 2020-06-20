@@ -24,3 +24,4 @@
 * [C# 枚举与位枚举](https://www.runoob.com/w3cnote/csharp-enum.html)
 * [CSharp - C#中，如何传递多个枚举值？](https://kb.kutu66.com/c-Sharp/post_445541)
 * [EF 汇总函数使用注意事项Max()/Min()等](https://blog.csdn.net/u011127019/article/details/61413670)
+* [如何将网络流转化为内存流 C#](https://blog.csdn.net/neal1991/article/details/45333923)
