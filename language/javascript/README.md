@@ -34,3 +34,4 @@ document.getElementById('input').onchange = input_format; // 内容更改时触�
 * [encodeURI()和encodeURIComponent() 区别](https://blog.csdn.net/qq_34629352/article/details/78959707)
 * [JS逗号运算符的用法详解](https://blog.csdn.net/wl110231/article/details/8162732)
 * [图表插件](https://www.chartjs.org/samples/latest/)
+* [图表插件](https://chartjs.bootcss.com/)
