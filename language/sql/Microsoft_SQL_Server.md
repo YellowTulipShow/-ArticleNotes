@@ -4,6 +4,12 @@
 * [SQL Server2012如何导出sql脚本并且还原数据库](https://www.cnblogs.com/seekdream/p/5723079.html)
 * [SQL Server直接执行.sql文件](https://blog.csdn.net/m0_37988746/article/details/79517923)
 
+### 操作数据库命令
+
+```shell
+osql --help
+```
+
 ## SQL Server 2012 序列号(密钥)
 ```
 SQL Server 2012 序列号(密钥)：
