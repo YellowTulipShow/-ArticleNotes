@@ -53,3 +53,5 @@
 * [15分钟从零开始搭建支持10w+用户的生产环境(二)](https://mp.weixin.qq.com/s/ymMnySDt_iL7PrcrFmr4XA)
 * [15分钟从零开始搭建支持10w+用户的生产环境(三)](https://mp.weixin.qq.com/s/xxE4FiLjNwkpeEFr5uq-kg)
 * [15分钟从零开始搭建支持10w+用户的生产环境(四)](https://mp.weixin.qq.com/s/vts3IUcomLtuQSv8KiIAAQ)
+* [.NET Core使用命令行参数库构建控制台应用程序](https://www.cnblogs.com/yyfh/p/12189541.html)
+* [教程：使 .NET Core 应用程序容器化](https://docs.microsoft.com/zh-cn/dotnet/core/docker/build-container?tabs=linux)
