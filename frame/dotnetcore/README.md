@@ -58,3 +58,4 @@
 * [ASP.NET Web API的Controller是如何被创建的？](https://cloud.tencent.com/developer/article/1020494)
 * [ASP.NET Web API 中的路由和操作选择](https://docs.microsoft.com/zh-cn/aspnet/web-api/overview/web-api-routing-and-actions/routing-and-action-selection)
 * [ASP.NET Web API 中的路由以及Action的选择](https://blog.csdn.net/wf824284257/article/details/79491961)
+* [vscode 编译输出 xml 注释文档](https://www.cnblogs.com/wbblogs/p/9519941.html)
