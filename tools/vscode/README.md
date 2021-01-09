@@ -24,6 +24,7 @@
 
 * C/C++
 * [C#](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
+* vscode-solution-explorer
 * vscode-icons
 * Chinese (Simplified) Language Pack for Visual Studio Code
 * ESLint
