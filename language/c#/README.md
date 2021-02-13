@@ -26,3 +26,6 @@
 * [EF 汇总函数使用注意事项Max()/Min()等](https://blog.csdn.net/u011127019/article/details/61413670)
 * [如何将网络流转化为内存流 C#](https://blog.csdn.net/neal1991/article/details/45333923)
 * [Newtonsoft.Json 自定义序列化格式转化器](https://www.cnblogs.com/zhshlimi/p/6422613.html)
+* [ASP.NET Web API的Controller是如何被创建的？](https://cloud.tencent.com/developer/article/1020494)
+* [ASP.NET Web API 中的路由和操作选择](https://docs.microsoft.com/zh-cn/aspnet/web-api/overview/web-api-routing-and-actions/routing-and-action-selection)
+* [ASP.NET Web API 中的路由以及Action的选择](https://blog.csdn.net/wf824284257/article/details/79491961)

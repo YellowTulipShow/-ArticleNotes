@@ -55,6 +55,13 @@
         "**/obj": true,
         "**/.vscode": true,
         "**/.vs": true,
+        // 屏蔽 Node.js Npm 包引用目录
+        "node_modules": true,
+        // 屏蔽 TypeScript 自动生成的 js 文件
+        "**/*.js": {
+            "when": "$(basename).ts"
+        },
+        "**/*.js.map": true,
     },
     // 在读取和写入文件时使用的默认字符集编码。可以按语言对此项进行配置。utf8: UTF-8
     "files.encoding": "utf8",

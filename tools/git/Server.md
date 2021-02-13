@@ -55,3 +55,4 @@ git remote add <origin name> ssh://git@<ip address>:/home/git/librarys/<project>
 * [Ubuntu下搭建Git服务器](https://blog.csdn.net/zhouxiangbai/article/details/78851276)
 * [Ubuntu18.04搭建git服务器](https://blog.csdn.net/zhen_apple/article/details/88655414?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task)
 * [在linux中搭建自己的git仓库](https://blog.csdn.net/Jioho_chen/article/details/81007238)
+* [ubuntu下的git服务器禁止用户shell登录](https://blog.csdn.net/qq_28053189/article/details/53573090)

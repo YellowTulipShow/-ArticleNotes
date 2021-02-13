@@ -24,6 +24,7 @@
 
 * C/C++
 * [C#](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
+* vscode-solution-explorer
 * vscode-icons
 * Chinese (Simplified) Language Pack for Visual Studio Code
 * ESLint
@@ -37,3 +38,5 @@
 * [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 * Beautify
 * [draw.io 流程图绘制插件](https://github.com/hediet/vscode-drawio)
+* [T4 Support](https://marketplace.visualstudio.com/items?itemName=zbecknell.t4-support)
+* [TT-Processor](https://marketplace.visualstudio.com/items?itemName=aisoftware.tt-processor)
