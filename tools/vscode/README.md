@@ -40,3 +40,4 @@
 * [draw.io 流程图绘制插件](https://github.com/hediet/vscode-drawio)
 * [T4 Support](https://marketplace.visualstudio.com/items?itemName=zbecknell.t4-support)
 * [TT-Processor](https://marketplace.visualstudio.com/items?itemName=aisoftware.tt-processor)
+* [Compile Hero - 编译各类文件: Sass/Less/Stylus/Pug/Jade/Typescript/Javascript](https://marketplace.visualstudio.com/items?itemName=Wscats.eno)
