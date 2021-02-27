@@ -50,3 +50,4 @@ Raises:
 * [Python的命令行参数解析](https://blog.csdn.net/quincuntial/article/details/77963301)
 * [Python 包安装 - setuptools详解](https://www.jianshu.com/p/ea9973091fdf)
 * [python3 print输出不换行，并能即时显示](https://blog.csdn.net/sinat_29046147/article/details/81539423)
+* [Python学习（六）模块 —— 包](https://www.cnblogs.com/feeland/p/4401758.html)
