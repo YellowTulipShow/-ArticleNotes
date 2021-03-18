@@ -43,3 +43,4 @@
 * [Compile Hero - 编译各类文件: Sass/Less/Stylus/Pug/Jade/Typescript/Javascript](https://marketplace.visualstudio.com/items?itemName=Wscats.eno)
 * [Markdown All in One - 实现媲美Typora的Markdown编辑体验](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 * [LeetCode](https://marketplace.visualstudio.com/items?itemName=LeetCode.vscode-leetcode)
+* [.NET Core Test Explorer](https://marketplace.visualstudio.com/items?itemName=formulahendry.dotnet-test-explorer)
