@@ -21,3 +21,4 @@
 ## 参考学习链接:
 
 * [ECharts 使用教程 (图文教程--版本4.6.0)](https://blog.csdn.net/u011318077/article/details/104216574)
+* [echarts - 教程 - 使用 dataset 管理数据](https://echarts.apache.org/zh/tutorial.html#%E4%BD%BF%E7%94%A8%20dataset%20%E7%AE%A1%E7%90%86%E6%95%B0%E6%8D%AE)
