@@ -18,3 +18,5 @@
 * [CSS3打造磨砂玻璃的背景](https://blog.csdn.net/crper/article/details/50462812)
 * [CSS中一个冒号和两个冒号之间区别:如果你的网站只需要兼容webkit、firefox、opera等浏览器，建议对于伪元素采用双冒号的写法，如果不得不兼容IE浏览器，还是用CSS2的单冒号写法比较安全。](http://www.cnblogs.com/cuoreqzt/p/3345906.html)
 * [清除浮动 清除 float](http://www.cnblogs.com/wangfupeng1988/p/4314804.html)
+* [利用CSS改变图片颜色的100种方法！](https://blog.csdn.net/nanhupatar/article/details/82793637)
+* [纯CSS实现任意格式图标变色的研究](https://www.zhangxinxu.com/wordpress/2018/11/css-change-icon-color/)
