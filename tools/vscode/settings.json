@@ -90,5 +90,4 @@
     "leetcode.defaultLanguage": "csharp",
     "markdown-preview-enhanced.previewTheme": "atom-dark.css",
     "pasteImage.basePath": "${currentFileNameWithoutExt}_image",
-    "pasteImage.path": "${currentFileNameWithoutExt}_image",
 }
