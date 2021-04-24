@@ -73,6 +73,10 @@
     "files.trimFinalNewlines": true,
 
     // 自定义控件相关设置
+    "diffEditor.renderSideBySide": false,
+    "compile-hero.typescript-output-directory": "./tsoutdir",
+    "compile-hero.generate-minified-html": true,
+    "compile-hero.generate-minified-javascript": true,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "debug.onTaskErrors": "abort",
