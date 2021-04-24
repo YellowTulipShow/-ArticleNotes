@@ -30,5 +30,17 @@
         "key": "ctrl+space",
         "command": "-editor.action.triggerSuggest",
         "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
-    }
+    },
+    {
+        // 新增: 控件 Paste Image 粘贴截图
+        "key": "ctrl+i ctrl+v",
+        "command": "extension.pasteImage",
+        "when": "editorTextFocus"
+    },
+    {
+        // 移除: 控件 Paste Image 粘贴截图
+        "key": "ctrl+alt+v",
+        "command": "-extension.pasteImage",
+        "when": "editorTextFocus"
+    },
 ]

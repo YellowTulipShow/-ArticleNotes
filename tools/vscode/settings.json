@@ -71,4 +71,24 @@
     "files.trimTrailingWhitespace": true,
     // 启用后，保存文件时将删除在最终新行后的所有新行。
     "files.trimFinalNewlines": true,
+
+    // 自定义控件相关设置
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "debug.onTaskErrors": "abort",
+    "extensions.ignoreRecommendations": false,
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "leetcode.endpoint": "leetcode-cn",
+    "leetcode.hint.configWebviewMarkdown": false,
+    "leetcode.workspaceFolder": "d:\\_Test_\\LeetCodeLearn",
+    "leetcode.hint.commentDescription": true,
+    "leetcode.defaultLanguage": "csharp",
+    "markdown-preview-enhanced.previewTheme": "atom-dark.css",
+    "pasteImage.basePath": "${currentFileNameWithoutExt}_image",
+    "pasteImage.path": "${currentFileNameWithoutExt}_image",
 }

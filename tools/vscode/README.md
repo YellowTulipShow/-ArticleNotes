@@ -44,3 +44,8 @@
 * [Markdown All in One - 实现媲美Typora的Markdown编辑体验](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 * [LeetCode](https://marketplace.visualstudio.com/items?itemName=LeetCode.vscode-leetcode)
 * [.NET Core Test Explorer](https://marketplace.visualstudio.com/items?itemName=formulahendry.dotnet-test-explorer)
+* [Markdown-Notes-Pack](https://marketplace.visualstudio.com/items?itemName=OrangeX4.markdown-notes-pack)
+* [Cmd Markdown 公式指导手册](https://www.zybuluo.com/codeep/note/163962)
+* [一篇文章教会你如何在Markdown文档中插入数学公式](https://zhuanlan.zhihu.com/p/158156773)
+* [教程向: 在 VSCode 中用 Markdown 做「数字化」学习笔记](https://zhuanlan.zhihu.com/p/366596107)
+* [Paste Image - 贴上图片](https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image)

@@ -25,4 +25,7 @@ pandoc .\README.md -o out.doc
 * [GitHub上README.md教程](https://blog.csdn.net/Kaitiren/article/details/38513715)
 * [Markdown语法学习（Github上README.md书写规范）](https://blog.csdn.net/brian512/article/details/41310269)
 * [GitHub上README.md的简单介绍](https://www.cnblogs.com/shiy/p/6526868.html)
+* [Cmd Markdown 公式指导手册](https://www.zybuluo.com/codeep/note/163962)
+* [一篇文章教会你如何在Markdown文档中插入数学公式](https://zhuanlan.zhihu.com/p/158156773)
+* [教程向: 在 VSCode 中用 Markdown 做「数字化」学习笔记](https://zhuanlan.zhihu.com/p/366596107)
 
