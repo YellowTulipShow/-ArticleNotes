@@ -31,3 +31,4 @@
 * [ASP.NET Web API 中的路由以及Action的选择](https://blog.csdn.net/wf824284257/article/details/79491961)
 * [[小北De编程手记] : Lesson 02 玩转 xUnit.Net 之 基本UnitTest & 数据驱动](https://www.cnblogs.com/NorthAlan/p/5188391.html)
 * [23 种设计模式的通俗解释，虽然有点污，但是秒懂](https://mp.weixin.qq.com/s/y0hWLr9f_AfXUdhNcy-h7Q)
+* [C# 代码注释规范文档](https://www.cnblogs.com/mq0036/p/6540194.html)
