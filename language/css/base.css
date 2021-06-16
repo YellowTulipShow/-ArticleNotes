@@ -68,42 +68,42 @@
         width: 87%;
     }
 
-    .hover_cursor_pointer:hover { cursor: pointer !important; }
+    .hover_cursor_pointer:hover { cursor: pointer; }
 
-    .displayNone { display: none !important; }
-    .displayBlock { display: block !important; }
+    .displayNone { display: none; }
+    .displayBlock { display: block; }
 
     /* overflow ~~~ */
         /*overflow-y 属性规定是否对内容的上/下边缘进行裁剪 - 如果溢出元素内容区域的话，则应该提供滚动机制。*/
         .overtouch { overflow-y: auto; -webkit-overflow-scrolling: touch; }
         /*盒子内容溢出时: 不进行处理*/
-        .overflow-visible { overflow: visible !important; }
+        .overflow-visible { overflow: visible; }
         /*盒子内容溢出时: 全部隐藏*/
-        .overflow-hidden { overflow: hidden !important; }
+        .overflow-hidden { overflow: hidden; }
 
     /* z-index ~~~ */
-        .zix-min, .zix-f1 { z-index: -1 !important; }
-        .zix-max, .zix-999 { z-index: 999 !important; }
-        .zix-0 { z-index: 0 !important; }
-        .zix-1 { z-index: 1 !important; }
-        .zix-2 { z-index: 2 !important; }
-        .zix-3 { z-index: 3 !important; }
-        .zix-4 { z-index: 4 !important; }
-        .zix-5 { z-index: 5 !important; }
-        .zix-6 { z-index: 6 !important; }
-        .zix-7 { z-index: 7 !important; }
-        .zix-8 { z-index: 8 !important; }
-        .zix-9 { z-index: 9 !important; }
-        .zix-10 { z-index: 10 !important; }
-        .zix-11 { z-index: 11 !important; }
-        .zix-12 { z-index: 12 !important; }
-        .zix-13 { z-index: 13 !important; }
-        .zix-14 { z-index: 14 !important; }
-        .zix-15 { z-index: 15 !important; }
-        .zix-16 { z-index: 16 !important; }
-        .zix-17 { z-index: 17 !important; }
-        .zix-18 { z-index: 18 !important; }
-        .zix-19 { z-index: 19 !important; }
+        .zix-min, .zix-f1 { z-index: -1; }
+        .zix-max, .zix-999 { z-index: 999; }
+        .zix-0 { z-index: 0; }
+        .zix-1 { z-index: 1; }
+        .zix-2 { z-index: 2; }
+        .zix-3 { z-index: 3; }
+        .zix-4 { z-index: 4; }
+        .zix-5 { z-index: 5; }
+        .zix-6 { z-index: 6; }
+        .zix-7 { z-index: 7; }
+        .zix-8 { z-index: 8; }
+        .zix-9 { z-index: 9; }
+        .zix-10 { z-index: 10; }
+        .zix-11 { z-index: 11; }
+        .zix-12 { z-index: 12; }
+        .zix-13 { z-index: 13; }
+        .zix-14 { z-index: 14; }
+        .zix-15 { z-index: 15; }
+        .zix-16 { z-index: 16; }
+        .zix-17 { z-index: 17; }
+        .zix-18 { z-index: 18; }
+        .zix-19 { z-index: 19; }
 
     /* opacity ~~~ */
         /*透明度*/
@@ -121,32 +121,32 @@
 
     /* box-sizing */
         .boxSizing_borderbox {
-            -moz-box-sizing: border-box !important;
-            -webkit-box-sizing: border-box !important;
-            box-sizing: border-box !important;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
         }
         .boxSizing_contentbox {
-            -moz-box-sizing: content-box !important;
-            -webkit-box-sizing: content-box !important;
+            -moz-box-sizing: content-box;
+            -webkit-box-sizing: content-box;
             box-sizing: content-box;
         }
         .boxSizing_inherit {
-            -moz-box-sizing: inherit !important;
-            -webkit-box-sizing: inherit !important;
-            box-sizing: inherit !important;
+            -moz-box-sizing: inherit;
+            -webkit-box-sizing: inherit;
+            box-sizing: inherit;
         }
 
     /* 字体样式 */
-        .font-weight-bold { font-weight: bold !important; }
+        .font-weight-bold { font-weight: bold; }
 
-        .font-size-OneHalf { font-size: 1.5em !important; }
-        .font-size-MIN { font-size: 6px !important; }
-        .font_color_black { color: #000 !important; }
-        .font_color_white { color: #fff !important; }
-        .font_weight_bold { font-weight: bold !important; }
+        .font-size-OneHalf { font-size: 1.5em; }
+        .font-size-MIN { font-size: 6px; }
+        .font_color_black { color: #000; }
+        .font_color_white { color: #fff; }
+        .font_weight_bold { font-weight: bold; }
 
         .whiteSpace_nowrap {
-            white-space: nowrap !important;
+            white-space: nowrap;
         }
 
         /* flex 和 box 内容: */
@@ -174,10 +174,10 @@
 
     /* text */
         .textalign_center {
-            text-align: center !important;
+            text-align: center;
         }
         .textalign_left {
-            text-align: center !important;
+            text-align: center;
         }
         .textAutoNewline {
             word-wrap: break-word;
@@ -186,16 +186,16 @@
         }
 
         .textDecoration_none {
-            text-decoration: none !important;
+            text-decoration: none;
         }
         .textDecoration_underline {
-            text-decoration: underline !important;
+            text-decoration: underline;
         }
 
     /* position */
-        .position_relative { position: relative !important; }
-        .position_absolute { position: absolute !important; }
-        .position_fixed { position: fixed !important; }
+        .position_relative { position: relative; }
+        .position_absolute { position: absolute; }
+        .position_fixed { position: fixed; }
 
     /* box-shadow */
         .box_shadow {
@@ -209,55 +209,55 @@
 
     /* user-select */
         .user_select_none {
-            -webkit-user-select: none !important;
-            -moz-user-select: none !important;
-            -ms-user-select: none !important;
-            user-select: none !important;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
         .user_select_text {
-            -webkit-user-select: text !important;
-            -moz-user-select: text !important;
-            -ms-user-select: text !important;
-            user-select: text !important;
+            -webkit-user-select: text;
+            -moz-user-select: text;
+            -ms-user-select: text;
+            user-select: text;
         }
         .user_select_all {
-            -webkit-user-select: all !important;
-            -moz-user-select: all !important;
-            -ms-user-select: all !important;
-            user-select: all !important;
+            -webkit-user-select: all;
+            -moz-user-select: all;
+            -ms-user-select: all;
+            user-select: all;
         }
         .user_select_element {
-            -webkit-user-select: element !important;
-            -moz-user-select: element !important;
-            -ms-user-select: element !important;
-            user-select: element !important;
+            -webkit-user-select: element;
+            -moz-user-select: element;
+            -ms-user-select: element;
+            user-select: element;
         }
 
 /* Tools */
     /* 隐藏并且需要存在的盒子 */
     .HideExistBox {
-        display: block !important;
-        overflow: hidden !important;
-        position: fixed !important;
-        top: -1px !important;
-        left: -1px !important;
-        right: auto !important;
-        bottom: auto !important;
-        z-index: -999999999 !important;
-        width: 1px !important;
-        height: 1px !important;
-        filter: alpha(opacity=0) !important;
-        -moz-opacity: 0 !important;
-        opacity: 0 !important;
+        display: block;
+        overflow: hidden;
+        position: fixed;
+        top: -1px;
+        left: -1px;
+        right: auto;
+        bottom: auto;
+        z-index: -999999999;
+        width: 1px;
+        height: 1px;
+        filter: alpha(opacity=0);
+        -moz-opacity: 0;
+        opacity: 0;
     }
 
     /* 锁定窗口尺寸 一般使用在 html 和 body 元素上 */
     .LockWindowSize {
-        display: block !important;
-        overflow: hidden !important;
-        position: relative !important;
-        width: 100% !important;
-        height: auto !important;
+        display: block;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: auto;
     }
 
     /* 加载Gif图片 */
@@ -341,7 +341,7 @@
     .DetailsExpanded {}
         .DetailsExpanded .UpperLayer {
             position: relative;
-            z-index: 100 !important;
+            z-index: 100;
         }
         .DetailsExpanded.Show .Summary::before {
             display: block;
@@ -358,12 +358,12 @@
 
     /* 悬浮固定 */
     .SuspensionFixationALLWindow {
-        display: block !important;
-        position: fixed !important;
-        top: 0 !important;
-        left: 0 !important;
-        right: 0 !important;
-        bottom: 0 !important;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
 
         z-index: 0;
         cursor: default;
@@ -371,13 +371,13 @@
     }
     /* 绝对定位-水平垂直居中 */
     .AbsHorizontalVerticalCenter {
-        display: block !important;
-        top: 50% !important;
-        left: 50% !important;
-        -webkit-transform: translate(-50%, -50%) !important;
-        -moz-transform: translate(-50%, -50%) !important;
-        -ms-transform: translate(-50%, -50%) !important;
-        transform: translate(-50%, -50%) !important;
+        display: block;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
         position: absolute;
         z-index: 1;
     }
@@ -395,14 +395,14 @@
     @media screen and (min-width: 880px) { html { font-size: 32.00px; } body { font-size: 16.00px; } }
     /* 手机端样式 */
     @media screen and (max-width: 1200px) {
-        .Style_IsMobile_Hide { display: none !important; }
+        .Style_IsMobile_Hide { display: none; }
     }
     /* 电脑端样式 */
     @media screen and (min-width: 1200px) {
-        .Style_IsPC_Hide { display: none !important; }
+        .Style_IsPC_Hide { display: none; }
         .Style_IsPC_Opacity {
-            filter: alpha(opacity=0) !important;
-            -moz-opacity: 0 !important;
-            opacity: 0 !important;
+            filter: alpha(opacity=0);
+            -moz-opacity: 0;
+            opacity: 0;
         }
     }
