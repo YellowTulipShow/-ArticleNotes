@@ -49,3 +49,4 @@
 * [一篇文章教会你如何在Markdown文档中插入数学公式](https://zhuanlan.zhihu.com/p/158156773)
 * [Markdown-Notes-Pack - 教程向: 在 VSCode 中用 Markdown 做「数字化」学习笔记](https://zhuanlan.zhihu.com/p/366596107)
 * [Paste Image - 贴上图片](https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image)
+* [Markmap - Markdown文件转思维导图方式展示](https://marketplace.visualstudio.com/items?itemName=gera2ld.markmap-vscode)
