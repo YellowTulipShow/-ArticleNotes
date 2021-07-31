@@ -35,7 +35,21 @@ Web WV79P-7K6YG-T7QFN-M3WHF-37BXC
 
 ## 参考学习链接:
 * [解决SQL Server CPU占用率高](https://jingyan.baidu.com/article/39810a239f92f9b636fda6a8.html)
+* [sql server查询历史执行sql语句](https://blog.csdn.net/qq_35409113/article/details/109518326)
 
+### sql server查询历史执行sql语句
+
+```sql
+SELECT st.text as sql_statement,
+       qs.creation_time as plan_last_compiled,
+       qs.last_execution_time as plan_last_executed,
+       qs.execution_count as plan_executed_count,
+       qp.query_plan
+FROM sys.dm_exec_query_stats qs
+CROSS APPLY sys.dm_exec_sql_text(qs.plan_handle) st
+CROSS APPLY sys.dm_exec_query_plan(qs.plan_handle) qp
+order by qs.creation_time desc
+```
 
 ### 查询表结构
 
