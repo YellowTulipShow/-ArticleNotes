@@ -14,28 +14,28 @@ https://caniuse.com/
 #region 导入式: <style type="text/css">@import "样式表名称.css"</style>#endregion
 #region 链接式: <link href="样式表名称.css" rel="stylesheet" type="text/css">#endregion
 
-#region 一般需要设置: 
-    
+#region 一般需要设置:
+
     font-family:```;            /*字体样式*/
     font-size:```;                  /*字体大小*/
     color:```;                  /*字体颜色*/
-    
+
     width:```;                  /*盒子宽度*/
     height:```;                 /*盒子高度*/
-    
+
     margin:```;                 /*盒子外边距*/
     border:```;                 /*盒子边框*/
     padding:```;                    /*盒子内边距*/
-    
+
     float:```;                  /*浮动方式*/
     display:```;                    /*块级、行内、隐藏元素*/
-    
+
     background:```;             /*背景*/
-    
+
     text:```;                       /*内容*/
-    
+
     list···:```;                    /*列表*/
-    
+
     line-height:```;                /*行高*/
 #endregion
 
@@ -54,12 +54,12 @@ https://caniuse.com/
         上面用连个加号，连接3个td，就表示每一行的第3个td为选中的元素
         具体的实例在“CSS设计彻底研究”的10-2的书中P242-P243
     六、使用属性选择器的部分匹配功能
-		如: 
-		[abc^="def"] // 选择 abc 属性值以 "def" 开头的所有元素    
-		[abc$="def"] // 选择 abc 属性值以 "def" 结尾的所有元素    
+		如:
+		[abc^="def"] // 选择 abc 属性值以 "def" 开头的所有元素
+		[abc$="def"] // 选择 abc 属性值以 "def" 结尾的所有元素
 		[abc*="def"] // 选择 abc 属性值中包含子串 "def" 的所有元素
 		详解: http://www.w3school.com.cn/cssref/selector_attr_begin.asp
-    
+
 
 ===<选择器种类>===
     严格来讲，选择器的种类可以分为三种: 标签名选择器、类选择器和ID选择器。
@@ -69,7 +69,7 @@ https://caniuse.com/
 
 
 ===<三种基本的选择器类型>===
-    语法如下: 
+    语法如下:
     ◆标签名选择器，如: p{}，即直接使用HTML标签作为选择器。
     ◆类选择器，如.polaris{}。
     ◆ID选择器，如#polaris{}。
@@ -82,39 +82,39 @@ https://caniuse.com/
     ◆群组选择器，如div,span,img{}，群组选择器实际上是对CSS的一种简化写法，只不过把有相同定义的不同选择器放在一起，省了很多代码。
 
 ===<选择器的优先级别>===
-    了解了各种选择器后，还有一个重要的知识点就是CSS选择器的优先级。这也就是为什么polaris会遇到文章开头的问题。举个简单的例子: 
-    <div class="polaris"> 
-        <span class="beijixing"> 
-            beijixing  
-        </span> 
-        <span> 
-            polaris  
-        </span> 
-    </div> 
-    如果已经把.polaris下面span内的字体设置成红色: 
-    .polaris span {color:red;} 
-    这时，如果要改变.beijixing的颜色为蓝色，用下面的命令是不能实现的: 
-    .beijixing {color:blue;} 
+    了解了各种选择器后，还有一个重要的知识点就是CSS选择器的优先级。这也就是为什么polaris会遇到文章开头的问题。举个简单的例子:
+    <div class="polaris">
+        <span class="beijixing">
+            beijixing
+        </span>
+        <span>
+            polaris
+        </span>
+    </div>
+    如果已经把.polaris下面span内的字体设置成红色:
+    .polaris span {color:red;}
+    这时，如果要改变.beijixing的颜色为蓝色，用下面的命令是不能实现的:
+    .beijixing {color:blue;}
     出现这种情况就是因为后一个命令的优先级不够，两条相互冲突的样式设置，浏览器只会执行优先级较高的那个。
     那么选择器的优先级是怎么规定的呢？
         一般而言，选择器越特殊，它的优先级越高。
         也就是选择器指向的越准确，它的优先级就越高。
         通常我们用1表示标签名选择器的优先级，用10表示类选择 器的优先级，用100标示ID选择器的优先级。
         比如上例当中 .polaris span {color:red;}的选择器优先级是 10 + 1 也就是11；而 .polaris 的优先级是10；浏览器自然会显示红色的字。
-        理解了这个道理之后下面的优先级计算自是易如反掌: 
-    div.test1 .span var 优先级 1+10 +10 +1  
-    span#xxx .songs li 优先级1+100 + 10 + 1  
-    #xxx li 优先级 100 +1 
-    对于什么情况下使用什么选择器，用不同选择器的原则是: 
+        理解了这个道理之后下面的优先级计算自是易如反掌:
+    div.test1 .span var 优先级 1+10 +10 +1
+    span#xxx .songs li 优先级1+100 + 10 + 1
+    #xxx li 优先级 100 +1
+    对于什么情况下使用什么选择器，用不同选择器的原则是:
         第一: 准确的选到要控制的标签；
         第二: 使用最合理优先级的选择器；
         第三: HTML和CSS代码尽量简洁美观。
-    通常: 
+    通常:
         1、最常用的选择器是类选择器。
         2、li、td、dd等经常大量连续出现，并且样式相同或者相类似的标签，我们采用类选择器跟标签名选择器结合的后代选择器 .xx li/td/dd {} 的方式选择。
         3、极少的情况下会用ID选择器，当然很多前端开发人员喜欢header，footer，banner，conntent设置成ID选择器的，因为相同的样式在一个页面里不可能有第二次。
-    在这里不得不提使用在标签内引入CSS的方式来写CSS，即: 
-    <div style="color:red">polaris</div> 
+    在这里不得不提使用在标签内引入CSS的方式来写CSS，即:
+    <div style="color:red">polaris</div>
     这时候的优先级是最高的。我们给它的优先级是1000，这种写法不推荐使用，特别是对新手来说。这也完全违背了内容和显示分离的思想。DIV+CSS的优点也不能再有任何体现。
 
 
@@ -124,24 +124,24 @@ https://caniuse.com/
     比如DIV#divBox p span.red{color:red;}，浏览器的查找顺序如下: 先查找html中所有class='red'的span元素，
     找到后，再查找其父辈元 素中是否有p元素，再判断p的父元素中是否有id为divBox的div元素，如果都存在则匹配上。
     浏览器从右到左进行查找的好处是为了尽早过滤掉一些无关的样式规则和元素。比如如下html和css:
-    <style> 
-        DIV#divBox p span.red{color:red;}  
-    <style> 
-    <body> 
-        <div id="divBox"> 
-            <p><span>s1</span></p> 
-            <p><span>s2</span></p> 
-            <p><span>s3</span></p> 
-            <p><span class='red'>s4</span></p> 
-        </div> 
-    </body> 
+    <style>
+        DIV#divBox p span.red{color:red;}
+    <style>
+    <body>
+        <div id="divBox">
+            <p><span>s1</span></p>
+            <p><span>s2</span></p>
+            <p><span>s3</span></p>
+            <p><span class='red'>s4</span></p>
+        </div>
+    </body>
     如果按从左到右查找，哪会先查找到很多不相关的p和span元素。
     而如果按从左到右的方式进行查找，则首先就查找到<span class='red'>的元素。
     firefox称这种查找方式为key selector(关键字查询)，所谓的关键字就是样式规则中最后(最右边)的规则，上面的key就是span.red。
 
 
 ===<简洁、高效的CSS>===
-    所谓高效的CSS就是让浏览器在查找style匹配的元素的时候尽量进行少的查找，下面列出一些我们常见的写CSS犯一些低效错误: 
+    所谓高效的CSS就是让浏览器在查找style匹配的元素的时候尽量进行少的查找，下面列出一些我们常见的写CSS犯一些低效错误:
     ◆不要在ID选择器前使用标签名
     一般写法: DIV#divBox
     更好写法: #divBox
@@ -149,9 +149,9 @@ https://caniuse.com/
     ◆不要再class选择器前使用标签名
     一般写法: span.red
     更好写法: .red
-    解释: 同第一条，但如果你定义了多个.red，而且在不同的元素下是样式不一样，则不能去掉，比如你css文件中定义如下: 
-    p.red{color:red;}  
-    span.red{color:#ff00ff} 
+    解释: 同第一条，但如果你定义了多个.red，而且在不同的元素下是样式不一样，则不能去掉，比如你css文件中定义如下:
+    p.red{color:red;}
+    span.red{color:#ff00ff}
     如果是这样定义的就不要去掉，去掉后就会混淆，不过建议最好不要这样写
     ◆尽量少使用层级关系
     一般写法: #divBox p .red{color:red;}
@@ -192,19 +192,19 @@ https://caniuse.com/
         二个值: 前者表示上下方向的值，后者表示左右方向的值
         三个值: 前者表示上方向的值，中间表示左右方向的值，后面表示下方向的值
         四个值: 依次为上、右、下、左方向的值，即顺时针排序赋值
-    
+
     // 为"盒子"设置添加圆角
     /*圆形*/
-    -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
     border-radius: 50%;
-        
+
     // 为"盒子"设置阴影(不会对位置和宽高度差生影响,但要注意父级的override:hidden;)
     -moz-box-shadow: 10px 10px 5px #888888; /* 老的 Firefox */
     box-shadow: 10px 10px 5px #888888;
     (text-shadow: 水平阴影 垂直阴影 模糊距离 阴影颜色)
     (原则是:  x轴位置顶左边  y轴位置顶上边  阴影模糊程度  阴影颜色)
-    
+
     // 为"盒子"设置使用图片来设置边框
     -moz-border-image:url(/i/border.png) 30 30 round;   /* Old Firefox */
     -webkit-border-image:url(/i/border.png) 30 30 round;    /* Safari and Chrome */
@@ -212,12 +212,12 @@ https://caniuse.com/
     border-image:url(/i/border.png) 30 30 round;
     #region border-image的具体描述
         值                           描述
-        border-image-source         用在边框的图片的路径。 
-        border-image-slice          图片边框向内偏移。   
-        border-image-width          图片边框的宽度。    
-        border-image-outset         边框图像区域超出边框的量。   
+        border-image-source         用在边框的图片的路径。
+        border-image-slice          图片边框向内偏移。
+        border-image-width          图片边框的宽度。
+        border-image-outset         边框图像区域超出边框的量。
         border-image-repeat         图像边框是否应平铺(repeated)、铺满(round)或拉伸(stretch)。
-        
+
         border-image:url(/i/border.png) 30 30 round;
         (边框图片: 图片路径  *待查找*  *待查找*  重复的样式(repeat))
     #endregion
@@ -235,28 +235,28 @@ https://caniuse.com/
                 案例: 第11章\01\
         2、不同宽度的圆角框
         **************************************************************************************************************************************
-            对于宽度“不固定”的说法: 
-            1、可变: 
+            对于宽度“不固定”的说法:
+            1、可变:
                 含义: 这个圆角框本身在网页上的宽度是固定的，
                 但是在制作网页的时候，只要简单地设定该圆角框的宽度，
                 就能产生正确的效果，而不必重新制作背景图片。
                 这样如果一个网页上有3种宽度的圆角框，仅适用一套背景图像就都可以完成了。
-                
+
                 实际上对于网页的访问者来说就是固定宽度，使用绝对单位（例如像素）来设置宽度
-            2、流动: 
+            2、流动:
                 含义: 圆角框的宽度是跟随浏览器窗口宽度的变化而变化。
                 例如标准流方式的div的宽度就是自动横向伸展的，它的宽度就会随时改变。
-                
+
                 使用百分比或者auto来设置宽度
-            3、弹性: 
+            3、弹性:
                 含义: 圆角框的宽度在文字大小不变的情况下，宽度不变，
                 而文字大小发生变化的时候，宽度随之改变。
                 这里说的文字大小的变化是通过浏览器菜单中的“查看-->文字大小”命令来改变的。
-                
+
                 使用相对单位(例如em)来设置宽度。
-            
+
             利用这3种不同的具体方式来设计“不固定”宽度的圆角框的原理都是一样的，只是在具体处理时对宽度设置方法有所不同。
-            注意: 文字的行字数: 
+            注意: 文字的行字数:
                 使用流动方式时，要确保不要使文本的一行过长，这样会影响访问者的阅读体验。
                 一本16开图书，就像这本《CSS设计彻底研究》，一行的字数时40个字，这是很合适的一个行跨度。
                 如果一行很长，读完以后，回到最左端的时候，可能会找不到下一行的位置，这无疑会使访问者的感受很不好。
@@ -272,7 +272,7 @@ https://caniuse.com/
                                 或者在p标记里面套一层span。
                         实例: 第11章\01\unfixe-dwidth.htm
             2、“5图像”二维滑动门经典圆角框
-            基本思路: 
+            基本思路:
             (1)首先在Photoshop或者Fireworks中绘制一个大约800*600的圆角矩形
                 具体的样式和大小可以自己决定，最终完成的圆角框大小不能超过这个大小，如果超过，就会出现裂缝，因此如果需要很大的圆角框，这个图就要做得再大一些。
             (2)在Photoshop或者Fireworks中进行切片，一共产生5个图像文件
@@ -292,7 +292,7 @@ https://caniuse.com/
     定义和用法:
         box-sizing 属性允许您以特定的方式定义匹配某个区域的特定元素。
         例如，假如您需要并排放置两个带边框的框，可通过将 box-sizing 设置为 "border-box"。这可令浏览器呈现出带有指定宽度和高度的框，并把边框和内边距放入框中。
-    
+
     语法:
         box-sizing: content-box|border-box|inherit;
 
@@ -304,34 +304,34 @@ https://caniuse.com/
     border-box              为元素设定的宽度和高度决定了元素的边框盒。
                             就是说，为元素指定的任何内边距和边框都将在已设定的宽度和高度内进行绘制。
                             通过从已设定的宽度和高度分别减去边框和内边距才能得到内容的宽度和高度。
-                            
+
     inherit                 规定应从父元素继承 box-sizing 属性的值。
     #endregion
-    
+
 #endregion
 
 #region CSS3背景 (background)
-    
+
     // 背景大小(图片)
     background-size: 100%;
     background-size: 64px 100px;
-    
+
     // 属性规定背景图片的定位区域
     background-origin: content-box; // 定位在内容区域
     background-origin: padding-box; // 定位在内边距区域
     background-origin: border-box; // 定位在边框区域(以内,和padding-box的效果差不多)
-    
+
     // CSS3还允许为元素设置两幅或多幅背景图片
     background-image: url("1.jpg"),url("2.jpg");
-    
+
     // 制定规定背景的绘制区域
     background-clip:content-box; // 仅绘制元素内部内容区域
     background-clip:padding-box; // 从内边距的范围内所有区域进行绘制
     background-clip:border-box; // 从边框内部就开始绘制 默认为border-box
-	
+
 	// 背景混合模式, 用于将图片和背景颜色进行混合
 	background-blend-mode: difference;
-    
+
 #endregion
 
 #region 内边距（padding）
@@ -365,7 +365,7 @@ https://caniuse.com/
         display 属性规定元素应该生成的框的类型。
     说明
         这个属性用于定义建立布局时元素生成的显示框类型。对于 HTML 等文档类型，如果使用 display 不谨慎会很危险，因为可能违反 HTML 中已经定义的显示层次结构。对于 XML，由于 XML 没有内置的这种层次结构，所有 display 是绝对必要的。
-    属性内容: 
+    属性内容:
         none                此元素不会被显示。
         block               此元素将显示为块级元素，此元素前后会带有换行符。
         inline              默认。此元素会被显示为内联元素，元素前后没有换行符。
@@ -385,24 +385,24 @@ https://caniuse.com/
         table-cell          此元素会作为一个表格单元格显示（类似 <td> 和 <th>）
         table-caption       此元素会作为一个表格标题显示（类似 <caption>）
         inherit             规定应该从父元素继承 display 属性的值。
-        
+
         box                 弹性布局盒子的属性,下面具体模块讲述 (2009 年发布的老版本,做兼容时用)
         flex                弹性布局盒子的属性,下面具体模块讲述 (2012 年发布的确定版)
-        
+
 #endregion
 
 #region 弹性布局 (display: flex;)
-    参考技术文章: 
+    参考技术文章:
         // Flex 布局教程: 语法篇 (阮一峰老师)
         http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
         // Flex 布局教程: 实例篇 (阮一峰老师)
         http://www.ruanyifeng.com/blog/2015/07/flex-examples.html
         // 国外flex布局实例
         https://hufan-akari.github.io/solved-by-flexbox/
-        
+
     一、Flex布局是什么？
         Flex是Flexible Box的缩写，意为"弹性布局"，用来为盒状模型提供最大的灵活性。
-        
+
         任何一个容器都可以指定为Flex布局。
         .box{ display: flex; }
 
@@ -412,18 +412,18 @@ https://caniuse.com/
         Webkit内核的浏览器，必须加上-webkit前缀。
         .box { display: -webkit-flex; /* Safari */ display: flex; }
         注意，设为Flex布局以后，子元素的float、clear和vertical-align属性将失效。
-        
+
         完整属性兼容代码:
         .box { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
-        
+
     二、基本概念
         采用Flex布局的元素，称为Flex容器（flex container），简称"容器"。它的所有子元素自动成为容器成员，称为Flex项目（flex item），简称"项目"。
-        
+
         容器默认存在两根轴: 水平的主轴（main axis）和垂直的交叉轴（cross axis）。
         主轴的开始位置（与边框的交叉点）叫做(main start)，结束位置叫做(main end)；交叉轴的开始位置叫做(cross start)，结束位置叫做(cross end)。
-        
+
         项目默认沿主轴排列。单个项目占据的主轴空间叫做(main size)，占据的交叉轴空间叫做(cross size)。
-    
+
     三、容器的属性
         以下6个属性设置在容器上。
             flex-direction      { // 属性决定主轴的方向（即项目的排列方向）。
@@ -494,7 +494,7 @@ https://caniuse.com/
                 .item {
                     order: <integer>;
                 }
-                展示图片地址: 
+                展示图片地址:
             }
             flex-grow           { // 属性定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。
                 .item {
@@ -539,8 +539,8 @@ https://caniuse.com/
 #region 浮动（float）★
     float:left;     向左浮动
     float:right;    向右浮动
-    
-    与浮动配套使用的有: 
+
+    与浮动配套使用的有:
     清除浮动的影响（clear）
     clear:left;     清除左边浮动所产生的环绕之类的效果
     clear:right;    ----右边----
@@ -551,8 +551,8 @@ https://caniuse.com/
     position:relative;      相对定位，就是在原有标准流的基础上偏移指定的距离，相对定位的盒子依然在标准流中，其他的盒子仍以标准流的方式对待它
     position:absolute;      绝对定位，盒子的位置以它的包含框为基准进行偏移。绝对定位的盒子从标准流中脱离，可以当
     position:fixed;         固定定位，与绝对定位类似，只是一浏览器窗口为基准进行定位，也就是当拖动浏览器的滚动条时，依然保持对象位置不变
-    
-    当设置了定位position之后，便可设置各个盒子之间的重叠高低关系: 
+
+    当设置了定位position之后，便可设置各个盒子之间的重叠高低关系:
     z-index:1;
     默认的值为0，当两个块的z-index值一样时，将保持原有的高低覆盖关系
 #endregion
@@ -585,13 +585,13 @@ https://caniuse.com/
         %       相对于父元素。正常情况下是通过属性定义自身或其他元素  表示百分比（一般是以“父类”为基准）
 
         Css3 calc(): 动态计算内容单位方法:
-            calc()使用通用的数学运算规则，但是也提供更智能的功能: 
+            calc()使用通用的数学运算规则，但是也提供更智能的功能:
                 使用“+”、“-”、“*” 和 “/”四则运算；
                 可以使用百分比、px、em、rem等单位；
                 可以混合使用各种单位进行计算；
                 表达式中有“+”和“-”时，其前后必须要有空格，如"widht: calc(12%+5em)"这种没有空格的写法是错误的；
                 表达式中有“*”和“/”时，其前后可以没有空格，但建议留有空格。
-            
+
             如: width: calc(50% - 10px);
             兼容使用:
             .box {
@@ -613,24 +613,24 @@ https://caniuse.com/
         kHz     kilohertz, 千赫
     4、圆角框
         /*备选方式，以免在不同的浏览器显示的效果不一样*/
-        -moz-border-radius: 15px;   
+        -moz-border-radius: 15px;
         border-radius: 15px;
     5、元素的优先级: 越小的显示的优先级越高
-    
+
     /*IE滤镜，透明度50%*/
     filter:alpha(opacity=70);
     -moz-opacity:0.7;
     opacity:0.7;
-    
+
     // text-indent: 1em ! important;
     #region // !important 应用实例:
     !important是CSS1就定义的语法，作用是提高指定样式规则的应用优先权。语法格式{ cssRule !important }，即写在定义的最后面，例如: box{color:red !important;}
     在CSS中，通过对某一样式声明! important ，可以更改默认的CSS样式优先级规则，使该条样式属性声明具有最高优先级，也就是相当于写在最下面。
-    
+
     CSS企图创造一个平衡作者和用户之间的级层样式表。
     默认情况下,CSS规则按级层覆盖，例如在.CSS文件中的定义可以被html文件中<style type="text/css"></style>里的定义覆盖，反之不行；书写在下面的定义可以覆盖写在上面的定义，反之不行。
     然而,对覆盖平衡而言,加上一个“!important”就优先于正常的CSS规则。
-    
+
     例子: // 以下这里例子 如依次顺序书写 最后div 的样式为 display:block;
     div {
         display:block!important;
@@ -642,40 +642,40 @@ https://caniuse.com/
         display:none;
     }
     #endregion
-    
+
     // visibility:hidden;
     #region visibility 属性规定元素是否可见。
         h1.visible {visibility:visible}
         h1.invisible {visibility:hidden}
     #endregion
-    
+
     border: 1px solid transparent; //边框色为透明
-    
+
 #endregion
 
 #region 基本字段
-    
+
     color:#000000;
     在color之前没有任何元素时，表示当前盒子的所有的颜色为此值
-    
+
     width:2px;
     表示宽度
-    
+
     height:6px;
     表示高度
-    
+
     text-align:center;
     表示元素中的文本对齐方式
-    
+
     vertical-align:center
     表示垂直对齐
-    
+
     background
     表示背景
-    
+
     line-height:33px;
     表示行高
-    
+
     overflow:hidden;
     防止溢出(将溢出的内容全部隐藏起来)
 #endregion
@@ -686,27 +686,27 @@ https://caniuse.com/
     text-shadow: 5px 5px 5px #FF0000;
     (text-shadow: 水平阴影 垂直阴影 模糊距离 阴影颜色)
     (原则是:  x轴位置顶左边  y轴位置顶上边  阴影模糊程度  阴影颜色)
-    
+
     // 允许对长的不可分割的单词进行分割并换行到下一行。
     // 属性允许您允许文本强制文本进行换行-即使这意味着会对单词进行拆分
     word-wrap (值)                   描述
     word-wrap: normal;              只在允许的断字点换行(浏览器保持默认处理)
     word-wrap: break-word;          在长单词或URL地址内容进行换行
-    
+
     // 规定非中日韩文本的换行规则。
     // 在恰当的断字点进行换行  word-break 属性规定自动换行的处理方法
     word-break (值)                  描述
     word-break: normal;             使用浏览器默认的换行规则
     word-break: break-all;          允许在单词内换行
     word-break: keep-all;           只能在半角空格或连字符处换行
-    
+
     // 属性规定当文本溢出包含元素时发生的事情
     text-overflow (值)               描述   一般这个属性要和 overflow:hidden; white-space: nowrap; 搭配使用
     text-overflow: clip;            修剪文本
     text-overflow: ellipsis;        显示省略符号来代表被修剪的文本
     text-overflow: "string";        使用给定的字符串来代表被修剪的文本
     text-overflow: inherit;         继承父级(默认不进行处理)
-    
+
     // 属性设置如何处理元素内的空白 这个属性声明建立布局过程中如何处理元素中的空白符。值 pre-wrap 和 pre-line 是 CSS 2.1 中新增的。
     white-space (值)                 描述
     white-space: normal;            默认。空白会被浏览器忽略。
@@ -722,37 +722,37 @@ https://caniuse.com/
 #region 字体（font）
     font-family:Arial;                      字体样式（太多，不一一列举了）
     font-size:20px;                     字体大小
-    
+
     // 字体加粗
     font-weight:normal; 正常
                :bold;   加粗
-    
+
     // 字体倾斜
-    font-style:none;    正常          
+    font-style:none;    正常
               :italic;  意大利体（但不是倾斜，有效果而已）
               :oblique; 倾斜
-    
+
     // 字体大写与小写
     font-transform:capitalize;          首字母大写，其余小写
                   :uppercase;           全部大写
                   :lowercase;           全部小写
-    
+
     // 字体装饰效果
     text-decoration:underline;          下划线
                    :overline;           顶划线
                    :line-through;       删除线
                    :blink;              闪烁
     text-decoration:underline overline line-through /*三种共用*/
-    
+
     // 字体的首行缩进
     text-indent:2em                     首行缩进
-	
+
 	// 段落中的字间距是 25 像素：
 	word-spacing:25px;
-	
+
 	// 文字间距 2 像素
 	letter-spacing:2px
-    
+
 #endregion
 
 #region @font-face 引用web服务器字体
@@ -761,11 +761,11 @@ https://caniuse.com/
         通过CSS3,web设计师可以使用它们喜欢的任意字体
         当您找到活购买到希望使用的字体时,可将该字体文件存放到web服务器上,它会在需要时被自动下载到用户的计算机上
         您"自己的"的字体是在CSS3 @font-face 规则中定义的:
-        
+
         Firefox、Chrome、Safari 以及 Opera 支持 .ttf (True Type Fonts) 和 .otf (OpenType Fonts) 类型的字体。
         Internet Explorer 9+ 支持新的 @font-face 规则，但是仅支持 .eot 类型的字体 (Embedded OpenType)。
         注释: Internet Explorer 8 以及更早的版本不支持新的 @font-face 规则。
-        
+
         使用您需要的字体:
         在新的 @font-face 规则中,您必须首先定义字体的名称(比如myFirstFont),然后指向改字体文件
         如需为HTML元素使用字体,请通过font-family 属性来引用字体的名称(myFirstFont);
@@ -777,7 +777,7 @@ https://caniuse.com/
             src:url('Sansation_Light.ttf'),
                 url('Sansation_Light.eot'); /* IE9+ */
         }
-        
+
         @font-face {
             // 当使用这种粗体字体的时候,您必须为粗体文本添加另一个包含描述符的@font-face
             // 文件 "Sansation_Bold.ttf" 是另一个字体文件，它包含了 Sansation 字体的粗体字符。
@@ -792,7 +792,7 @@ https://caniuse.com/
 
     div { // 在CSS中使用 @font-face 规则
         font-family:myFirstFont;
-        
+
         // font-weight: bold;
     }
 
@@ -833,30 +833,30 @@ https://caniuse.com/
     使用了自动方式时，实际宽度可能并不是“width”属性的设置值，因为它会根据单元格中的内容多少进行调整。
     而在固定方式下，表格的水平布局不依赖于单元格的内容，而明确地由“width”属性制定。
         如果取值为“auto”就意味着使用“自动方式”进行表格的布局。
-    
+
     如果要使用固定方式，就需要对表格设置它的“table-layout”属性。
         将它设置为“fixed”即为固定方式；设置为“auto”时则为自动方式。浏览器默认使用自动方式
 2、设置单元格的边框
     当表格中的单元格边框之间需要合并，不需要分离
     作用是使边框使用重合模式，实现相邻单元格之间的边框是重合在一起的
-    使用这条语句: 
+    使用这条语句:
     border-collapse:collapse;
     放置的位置是表格所在的“选择器”中
 3、相邻边框的合并
     每个单元格都可以设置各自的边框颜色、样式和宽度等属性，那么相邻边框在合并时将以谁为准？
-    CSS 2 的规范中定义如下: 
+    CSS 2 的规范中定义如下:
     (1) 如果边框的“border-style”设置为“hidden”
         那么它的优先级高于“任何”其他相冲突的边框。
         任何边框只要有该设置，其他的边框的设置就都将无效。
-        
+
     (2) 如果边框的属性中有“none”
         那么它的优先级时最低的。
         只有在该边重合的所有元素的边框属性都是“none”时，该边框才会被省略。
-        
+
     (3) 如果重合的边框中没有被设置为“hidden”的，并且至少有一个不是“none”
         那么重合的边框中粗的优先于细的。
         如果几个边框的“border-width”相同，
-        那么样式的优先次序由高到低能一次为: 
+        那么样式的优先次序由高到低能一次为:
         “double”、
             “solid”、
                 “dashed”、
@@ -889,20 +889,20 @@ https://caniuse.com/
 #endregion
 
 #region Tab面板
-    网页的Tab面板菜单分为两种: 
+    网页的Tab面板菜单分为两种:
     1、本地方式，不需要响应服务器
         切换各个Tab页中的内容时并不刷新浏览器窗口，
         说明各个页中的内容实际装载到页面上，只是被隐藏起来了。
     2、需要响应服务器，相当于一个新的页面。
         切换各个Tab页中的内容时，会刷新浏览器窗口，
         实际上就是更换了一个新的HTML页面
-    
+
     要实现前者的效果，必须通过JavaScript的配合，仅通过CSS来实现是比较困难的，而且实现的功能非常有限。
-    
+
     实际上，也有一些网站使用Ajax技术，可以实现切换到某一页之后，在动态地从服务器上获取数据，
         局部刷新Tab页内的区域，而整个页面的其他部分则不需要重新从服务器获取数据。
-    
-    思路是: 
+
+    思路是:
         先做一个菜单，用来“选择”
         在做内容框架，设置里面的样式。
             如果是动态地话，选择从服务器动态获取内容就行了。
@@ -913,10 +913,10 @@ https://caniuse.com/
     <div></div>                     容器标记，块级元素（它包含的原色会自动换行）
     <span></span>                   容器标记，行内元素（它的前后不会换行）
     <a></a>                         链接标记，用于超链接
-    
+
     <ul></ul>                       列表框标记，用于放置<li>标记
     <li></li>                       列表标记，用于列出内容
-    
+
     <dl></dl>                       定义列表，用法类似于ul,li，主要相当于<ul>
     <dt></dt>                       定义标题，主要相当于<li>
     <dd></dd>                       定义描述，主要相当于<li>
@@ -933,7 +933,7 @@ https://caniuse.com/
                 <dd>南京大学</dd>
                 <dd>东南大学</dd>
         </dl>
-    
+
     <table></table>                 表格
         <caption></caption>         表格外部标题
         <col></col>                 每一对这个标记对应于表格中的一列，一般全部放置在<thead>标记的上面，主要用于单独设置一列
@@ -949,20 +949,20 @@ https://caniuse.com/
 
     /** transform 了解:
         通过CSS3转换,我们能够对元素进行移动、缩放、转动、拉长、拉伸
-        
+
         转换是使元素改变形状、尺寸、位置的一种效果
-        
+
         浏览器支持:
         Internet Explorer 10、Firefox 以及 Opera 支持 transform 属性。
         Chrome 和 Safari 需要前缀 -webkit-。
         注释: Internet Explorer 9 需要前缀 -ms-。
-        
+
         浏览器支持:
         Internet Explorer 10 和 Firefox 支持 3D 转换。
         Chrome 和 Safari 需要前缀 -webkit-。
         Opera 仍然不支持 3D 转换（它只支持 2D 转换）。
     */
-    
+
     #region 所有转换属性:
     属性                          描述
     transform                   { //向元素应用 2D 或 3D 转换。
@@ -972,41 +972,41 @@ https://caniuse.com/
             /** 定义和用法
                 transform-origin 属性允许您改变被转换元素的位置。
                 2D 转换元素能够改变元素 x 和 y 轴。3D 转换元素还能改变其 Z 轴。
-                
+
                 注释: 该属性必须与 transform 属性一同使用。
             */
             // 语法:
             transform-origin: x-axis y-axis z-axis;
-            
+
             值                   描述
-            x-axis              定义视图被置于 X 轴的何处。可能的值: 
+            x-axis              定义视图被置于 X 轴的何处。可能的值:
                                 left
                                 center
                                 right
                                 length
                                 %
-            y-axis              定义视图被置于 Y 轴的何处。可能的值: 
+            y-axis              定义视图被置于 Y 轴的何处。可能的值:
                                 top
                                 center
                                 bottom
                                 length
                                 %
-            z-axis              定义视图被置于 Z 轴的何处。可能的值: 
+            z-axis              定义视图被置于 Z 轴的何处。可能的值:
                                 length
         }
     }
     transform-style             { //规定被嵌套元素如何在 3D 空间中显示。
-        
+
         // Firefox 支持 transform-style 属性。
         // Chrome、Safari 和 Opera 支持替代的 -webkit-transform-style 属性。
-        
+
         (实例代码:) { // 使被转换的子元素保留其3D转换
             -webkit-transform: rotateY(60deg);  /* Safari 和 Chrome */
             -webkit-transform-style: preserve-3d;   /* Safari 和 Chrome */
             transform: rotateY(60deg);
             transform-style: preserve-3d;
         }
-        
+
         /// 用法和定义:
         // transform-style 属性规定如何在 3D 空间中呈现被嵌套的元素。
         // 注释: 该属性必须与 transform 属性一同使用。
@@ -1019,25 +1019,25 @@ https://caniuse.com/
     perspective-origin          { //规定 3D 元素的底部位置。
     }
     backface-visibility         { //定义元素在不面对屏幕时是否可见。
-        
-        (实例代码:) {// 隐藏被旋转的 div 元素的背面: 
+
+        (实例代码:) {// 隐藏被旋转的 div 元素的背面:
             -webkit-backface-visibility:hidden; /* Chrome 和 Safari */
             -moz-backface-visibility:hidden;    /* Firefox */
             -ms-backface-visibility:hidden;     /* Internet Explorer */
             backface-visibility:hidden;
         }
-        
+
         /// 浏览器支持
         // 只有 Internet Explorer 10+ 和 Firefox 支持 backface-visibility 属性。
         // Opera 15+、Safari 和 Chrome 支持替代的 -webkit-backface-visibility 属性。
-        
+
         backface-visibility: visible;   // 背面是可见的
         backface-visibility: hidden;    // 背面是不可见的
     }
     #endregion
-    
+
     #region 2D transform 方法
-    
+
     函数                          描述
     matrix(n,n,n,n,n,n)             定义 2D 转换，使用六个值的矩阵。
     translate(x,y)                  定义 2D 转换，沿着 X 和 Y 轴移动元素。
@@ -1050,15 +1050,15 @@ https://caniuse.com/
     skew(x-angle,y-angle)           定义 2D 倾斜转换，沿着 X 和 Y 轴。
     skewX(angle)                    定义 2D 倾斜转换，沿着 X 轴。
     skewY(angle)                    定义 2D 倾斜转换，沿着 Y 轴。
-    
+
     #endregion
-    
+
     #region 3D transform 方法
-    
+
     函数                          描述
     matrix3d(n,n,n,n,n,n,
     n,n,n,n,n,n,n,n,n,n)            定义 3D 转换，使用 16 个值的 4x4 矩阵。
-    
+
     translate3d(x,y,z)              定义 3D 转化。
     translateX(x)                   定义 3D 转化，仅使用用于 X 轴的值。
     translateY(y)                   定义 3D 转化，仅使用用于 Y 轴的值。
@@ -1070,17 +1070,18 @@ https://caniuse.com/
     rotate3d(x,y,z,angle)           定义 3D 旋转。
     rotateX(angle)                  定义沿 X 轴的 3D 旋转。
     rotateY(angle)                  定义沿 Y 轴的 3D 旋转。
-    rotateZ(angle)                  定义沿 Z 轴的 3D 旋转。
+    rotateZ(angle)
+      定义沿 Z 轴的 3D 旋转。
     perspective(n)                  定义 3D 转换元素的透视视图。
-    
+
     #endregion
-    
+
     // 一些具体transform方法的实例:
-    transform: translate('x','y') { // 元素从其当前位置移动 
+    transform: translate('x','y') { // 元素从其当前位置移动
         // 通过 translate() 方法，元素从其当前位置移动，
         // 根据给定的 left（x 坐标） 和 top（y 坐标） 位置参数
         // 移动的基点是: 上 左 边方向:  (允许负值)
-        
+
         -ms-transform: translate(50px,100px);       /* IE 9 */
         -webkit-transform: translate(50px,100px);   /* Safari and Chrome */
         -o-transform: translate(50px,100px);        /* Opera */
@@ -1091,7 +1092,7 @@ https://caniuse.com/
     transform: rotate('angle') { // 元素顺时针旋转给定的角度
         // 通过 rotate() 方法，元素顺时针旋转给定的角度。允许负值，元素将逆时针旋转。
         // 单位 deg 为角度的意思,使用 rotate() 方法时,必须使用此单位
-        
+
         -ms-transform: rotate(30deg);       /* IE 9 */
         -webkit-transform: rotate(30deg);   /* Safari and Chrome */
         -o-transform: rotate(30deg);        /* Opera */
@@ -1100,8 +1101,8 @@ https://caniuse.com/
         // 值 rotate(30deg) 把元素顺时针旋转 30 度。
     }
     transform: scale('x','y') { // 元素的尺寸会增加或减少
-        // 通过 scale() 方法，元素的尺寸会增加或减少，根据给定的宽度（X 轴）和高度（Y 轴）参数: 
-        
+        // 通过 scale() 方法，元素的尺寸会增加或减少，根据给定的宽度（X 轴）和高度（Y 轴）参数:
+
         -ms-transform: scale(2,4);  /* IE 9 */
         -webkit-transform: scale(2,4);  /* Safari 和 Chrome */
         -o-transform: scale(2,4);   /* Opera */
@@ -1110,8 +1111,8 @@ https://caniuse.com/
         // 值 scale(2,4) 把宽度转换为原始尺寸的 2 倍，把高度转换为原始高度的 4 倍。
     }
     transform: skew() { // 元素翻转给定的角度(实际上是可以显示拉伸的效果)
-        // 通过 skew() 方法，元素翻转给定的角度，根据给定的水平线（X 轴）和垂直线（Y 轴）参数: 
-        
+        // 通过 skew() 方法，元素翻转给定的角度，根据给定的水平线（X 轴）和垂直线（Y 轴）参数:
+
         -ms-transform: skew(30deg,20deg);   /* IE 9 */
         -webkit-transform: skew(30deg,20deg);   /* Safari and Chrome */
         -o-transform: skew(30deg,20deg);    /* Opera */
@@ -1121,16 +1122,16 @@ https://caniuse.com/
     }
     transform: matrix() { // matrix()方法把所有2D转换方法组合在一起
         // matrix() 方法需要六个参数，包含数学函数，允许您: 旋转、缩放、移动以及倾斜元素。
-        
-        
-        //如何使用 matrix 方法将 div 元素旋转 30 度: 
+
+
+        //如何使用 matrix 方法将 div 元素旋转 30 度:
         -ms-transform:matrix(0.866,0.5,-0.5,0.866,0,0);     /* IE 9 */
         -moz-transform:matrix(0.866,0.5,-0.5,0.866,0,0);    /* Firefox */
         -webkit-transform:matrix(0.866,0.5,-0.5,0.866,0,0); /* Safari and Chrome */
         -o-transform:matrix(0.866,0.5,-0.5,0.866,0,0);      /* Opera */
         transform:matrix(0.866,0.5,-0.5,0.866,0,0);
     }
-    
+
 #endregion
 
 #region CSS3 过渡 (transition) ★
@@ -1138,13 +1139,13 @@ https://caniuse.com/
     /** CSS3 过渡,了解:
         通过CSS3,我们可以在不使用Flash动画或JavaScript的情况下
         当元素从一种样式变换为另一种样式时为元素添加效果
-        
+
         浏览器支持:
         Internet Explorer 10、Firefox、Chrome 以及 Opera 支持 transition 属性。
         Safari 需要前缀 -webkit-。
         注释: Internet Explorer 9 以及更早的版本，不支持 transition 属性。
         注释: Chrome 25 以及更早的版本，需要前缀 -webkit-。
-        
+
         如何工作?
         CSS3 过渡是元素从一种样式逐渐改变为另一种的效果
         要实现这一点,必须规定两项内容:
@@ -1161,7 +1162,7 @@ https://caniuse.com/
     // 注释: 如果时长为规定,则不会有过渡效果,因为默认值是0
     // 效果开始于指定的CSS属性改变值时,CSS属性改变的典型时间是鼠标指针位于元素上时:
     // 注释: 当指针移出元素时,它会逐渐变回原来的样式
-    
+
     /// 多项改变
     // 如需向多个样式添加过渡效果,请添加多个属性,由逗号隔开:
     (实际案例代码:) { // 向宽度,高度和转换添加过渡效果:
@@ -1170,9 +1171,9 @@ https://caniuse.com/
         -o-transition: width 2s, height 2s,-o-transform 2s;
         transition: width 2s, height 2s, transform 2s;
     }
-    
+
     #region 所有的过渡属性
-    
+
     属性                              描述
     transition                      { //简写属性，用于在一个属性中设置四个过渡属性。
     }
@@ -1181,7 +1182,7 @@ https://caniuse.com/
     transition-duration             { //定义过渡效果花费的时间。默认是 0。
     }
     transition-timing-function      { //规定过渡效果的时间曲线。默认是 "ease"。
-        
+
         /// 不同的值:
         值                           描述
         linear                      规定以相同速度开始至结束的过渡效果（等于 cubic-bezier(0,0,1,1)）。
@@ -1190,7 +1191,7 @@ https://caniuse.com/
         ease-out                    规定以慢速结束的过渡效果（等于 cubic-bezier(0,0,0.58,1)）。
         ease-in-out                 规定以慢速开始和结束的过渡效果（等于 cubic-bezier(0.42,0,0.58,1)）。
         cubic-bezier(n,n,n,n)       在 cubic-bezier 函数中定义自己的值。可能的值是 0 至 1 之间的数值。
-        
+
         (实例代码范本:) { // 下面是五个不同值的五个不同的div元素
             #div1 {transition-timing-function: linear;}
             #div2 {transition-timing-function: ease;}
@@ -1216,7 +1217,7 @@ https://caniuse.com/
             #div4 {-o-transition-timing-function: ease-out;}
             #div5 {-o-transition-timing-function: ease-in-out;}
         }
-        
+
         (实例代码范本:) { // 与上面的效果相同 但通过cubic-bezier来规定速度曲线
             #div1 {transition-timing-function: cubic-bezier(0,0,1,1;}
             #div2 {transition-timing-function: cubic-bezier(0.25,0.1,0.25,1);}
@@ -1242,11 +1243,11 @@ https://caniuse.com/
             #div4 {-o-transition-timing-function: cubic-bezier(0,0,0.58,1);}
             #div5 {-o-transition-timing-function: cubic-bezier(0.42,0,0.58,1);}
         }
-        
+
     }
     transition-delay                { //规定过渡效果何时开始。默认是 0。
     }
-        
+
     #endregion
 
 #endregion
@@ -1254,7 +1255,7 @@ https://caniuse.com/
 #region CSS3 动画 (@keyframes 规则)
     /**
         通过CSS3,我们能够创建动画,这可以在许多网页中取代动画图片,Flash以及JavaScript
-        
+
         CSS3 @keyframes 规则
         如需在CSS3中创建动画,您需要学习@keyframes规则
         @keyframes规则用户创建动画,在@keyframes中规定某项CSS样式,
@@ -1269,10 +1270,10 @@ https://caniuse.com/
 	这段代码的几个参数解释：
 		width = device-width：宽度等于当前设备的宽度
 		height = device-height：高度等于当前设备的高度
-		initial-scale：初始的缩放比例（默认设置为1.0）  
-		minimum-scale：允许用户缩放到的最小比例（默认设置为1.0）    
-		maximum-scale：允许用户缩放到的最大比例（默认设置为1.0）   
-		user-scalable：用户是否可以手动缩放（默认设置为no，因为我们不希望用户放大缩小页面）  
+		initial-scale：初始的缩放比例（默认设置为1.0）
+		minimum-scale：允许用户缩放到的最小比例（默认设置为1.0）
+		maximum-scale：允许用户缩放到的最大比例（默认设置为1.0）
+		user-scalable：用户是否可以手动缩放（默认设置为no，因为我们不希望用户放大缩小页面）
 	准备工作2：加载兼容文件JS
 	因为IE8既不支持HTML5也不支持CSS3 Media，所以我们需要加载两个JS文件，来保证我们的代码实现兼容效果：
 		<!--[if lt IE 9]>
@@ -1288,7 +1289,7 @@ https://caniuse.com/
 	不过我最近又发现了一个更给力的写法：
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
 	怎么这段代码后面加了一个chrome=1，这个Google Chrome Frame（谷歌内嵌浏览器框架GCF），如果有的用户电脑里面装了这个chrome的插件，就可以让电脑里面的IE不管是哪个版本的都可以使用Webkit引擎及V8引擎进行排版及运算，无比给力，不过如果用户没装这个插件，那这段代码就会让IE以最高的文档模式展现效果。这段代码我还是建议你们用上，不过不用也是可以的。
-	 
+
 	进入CSS3 Media写法
 	我们先来看下下面这段代码，估计很多人在响应式的网站CSS很经常看到类似下面的这段代码：
 		@media screen and (max-width: 960px){
@@ -1297,28 +1298,28 @@ https://caniuse.com/
 			}
 		}
 	这个应该算是一个media的一个标准写法，上面这段CSS代码意思是：当页面小于960px的时候执行它下面的CSS.这个应该没有太大疑问。
-	 
+
 	应该有人会发现上面这段代码里面有个screen，他的意思是在告知设备在打印页面时使用衬线字体，在屏幕上显示时用无衬线字体。但是目前我发现很多网站都会直接省略screen,因为你的网站可能不需要考虑用户去打印时，你可以直接这样写：
 		@media (max-width: 960px){
 			body{
 				background: #000;
 			}
 		}
-	 
+
 	CSS2 Media用法
 	其实并不是只有CSS3才支持Media的用法，早在CSS2开始就已经支持Media，具体用法，就是在HTML页面的head标签中插入如下的一段代码：
 		<link rel="stylesheet" type="text/css" media="screen" href="style.css">
-	 
+
 	上面其实是CSS2实现的衬线用法，那CSS2的media难道就只能支持上面这一个功能吗？答案当然不是，他还有很多用法。
-	 
+
 	例如我们想知道现在的移动设备是不是纵向放置的显示屏，可以这样写：
 		<link rel="stylesheet" type="text/css" media="screen and (orientation:portrait)" href="style.css">
-	 
+
 	我们把第一段的代码也用CSS2来实现，让它一样可以让页面宽度小于960的执行指定的样式文件：
 		<link rel="stylesheet" type="text/css" media="screen and (max-width:960px)" href="style.css">
-	 
+
 	既然CSS2可以实现CSS的这个效果为什么不用这个方法呢，很多人应该会问，但是上面这个方法，最大的弊端是他会增加页面http的请求次数，增加了页面负担，我们用CSS3把样式都写在一个文件里面才是最佳的方法。
-	 
+
 	回归CSS3 Media
 	上面我们大概讲了下CSS2的媒体查询用法，现在我们重新回到CSS3的媒体查询，在第一段代码上面我用的是小于960px的尺寸的写法，那现在我们来实现等于960px尺寸的代码：
 		@media screen and (max-device-width:960px){
@@ -1326,14 +1327,14 @@ https://caniuse.com/
 				background:red;
 			}
 		}
-	 
+
 	然后就是当浏览器尺寸大于960px时候的代码了：
 		@media screen and (min-width:960px){
 			body{
 				background:orange;
 			}
 		}
-	 
+
 	我们还可以混合使用上面的用法：
 		@media screen and (min-width:960px) and (max-width:1200px){
 			body{
@@ -1341,7 +1342,7 @@ https://caniuse.com/
 			}
 		}
 	上面的这段代码的意思是当页面宽度大于960px小于1200px的时候执行下面的CSS。
-	 
+
 	Media所有参数汇总
 	以上就是我们最常需要用到的媒体查询器的三个特性，大于，等于，小于的写法。媒体查询器的全部功能肯定不止这三个功能，下面是我总结的它的一些参数用法解释：
 		width:浏览器可视宽度。
@@ -1370,34 +1371,34 @@ https://caniuse.com/
 	@media screen and (min-width:1200px){
 		#page{ width: 1100px; }#content,.div1{width: 730px;}#secondary{width:310px}
 	}
-	 
+
 	1100分辨率（大于960px，小于1199px）
 	@media screen and (min-width: 960px) and (max-width: 1199px) {
 		#page{ width: 960px; }#content,.div1{width: 650px;}#secondary{width:250px}select{max-width:200px}
 	}
-	 
+
 	880分辨率（大于768px，小于959px）
 	@media screen and (min-width: 768px) and (max-width: 959px) {
 		#page{ width: 900px; }#content,.div1{width: 620px;}#secondary{width:220px}select{max-width:180px}
 	}
-	 
+
 	720分辨率（大于480px，小于767px）
 	@media only screen and (min-width: 480px) and (max-width: 767px){
 		#page{ width: 450px; }#content,.div1{width: 420px;position: relative; }#secondary{display:none}#access{width: 450px; }#access a {padding-right:5px}#access a img{display:none}#rss{display:none}#branding #s{display:none}
 	}
-	 
+
 	440分辨率以下（小于479px）
 	@media only screen and (max-width: 479px) {
 		#page{ width: 300px; }#content,.div1{width: 300px;}#secondary{display:none}#access{width: 330px;} #access a {padding-right:10px;padding-left:10px}#access a img{display:none}#rss{display:none}#branding #s{display:none}#access ul ul a{width:100px}
 	}
-	 
+
 	[css] view plain copy
 	在CODE上查看代码片派生到我的代码片
-		/* 竖屏 */  
-		@media screen and (orientation: portrait) and (max-width: 720px) { 对应样式 }  
-		  
-		/* 横屏 */  
-		@media screen and (orientation: landscape) { 对应样式 }  
+		/* 竖屏 */
+		@media screen and (orientation: portrait) and (max-width: 720px) { 对应样式 }
+
+		/* 横屏 */
+		@media screen and (orientation: landscape) { 对应样式 }
 
 	上面的代码中用到了screen ，他的意思是在告知设备在打印页面时使用衬线字体，在屏幕上显示时用无衬线字体。但是目前我发现很多网站都会直接省略screen,因为你的网站可能不需要考虑用户去打印时。
 
@@ -1416,7 +1417,7 @@ https://caniuse.com/
 	1680*1050（16：10 | 15.4寸、20.0寸）
 	1920*1200 (23寸）
 	通过上面的电脑屏蔽及尺寸的例表上我们得到了几个宽度
-	1024  1280  1366  1440  1680  1920  
+	1024  1280  1366  1440  1680  1920
 	CSS代码
 	@media (min-width: 1024px){
 		body{font-size: 18px}
@@ -1426,16 +1427,16 @@ https://caniuse.com/
 	} /*>=1024的设备*/
 	@media (min-width: 1280px) {
 		body{font-size: 22px;}
-	} 
+	}
 	@media (min-width: 1366px) {
 		body{font-size: 24px;}
 	}
 	@media (min-width: 1440px) {
 		body{font-size: 25px !important;}
-	} 
+	}
 	@media (min-width: 1680px) {
 		body{font-size: 28px;}
-	} 
+	}
 	@media (min-width: 1920px) {
 		body{font-size: 33px;}
 	}
