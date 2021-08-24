@@ -23,6 +23,7 @@
 * [SQLite Browser 数据库浏览器](https://sqlitebrowser.org/)
 * [LaTeX - texlive 环境下载 - 官网](http://www.tug.org/texlive/)
 * [LaTeX - texlive TeX Live ISO Images](https://mirror.bjtu.edu.cn/ctan/systems/texlive/Images/)
+* [Navicat - 数据库连接工具](https://navicat.com.cn/products)
 
 #### 工作
 

@@ -17,6 +17,7 @@ pandoc .\README.md -o out.doc
     另外, 转换出来的格式一般使用 .doc 格式 使用 Web板式阅读 可以达到很好的效果
 
 ## 参考学习链接
+
 * [官网](http://www.markdown.cn/)
 * [在线编辑器 - StackEdit.io](https://stackedit.io/)
 * [PC软件 - Typora](https://typora.io/)
@@ -27,5 +28,4 @@ pandoc .\README.md -o out.doc
 * [GitHub上README.md的简单介绍](https://www.cnblogs.com/shiy/p/6526868.html)
 * [Cmd Markdown 公式指导手册](https://www.zybuluo.com/codeep/note/163962)
 * [一篇文章教会你如何在Markdown文档中插入数学公式](https://zhuanlan.zhihu.com/p/158156773)
-* [教程向: 在 VSCode 中用 Markdown 做「数字化」学习笔记](https://zhuanlan.zhihu.com/p/366596107)
-
+* [Markdown-Notes-Pack - 教程向: 在 VSCode 中用 Markdown 做「数字化」学习笔记](https://zhuanlan.zhihu.com/p/366596107)
