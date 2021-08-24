@@ -10,7 +10,9 @@
     // 以像素为单位控制字体大小。
     "editor.fontSize": 16,
     // 在一定数量的等宽字符后显示垂直标尺。输入多个值，显示多个标尺。若数组为空，则不绘制标尺。
-    "editor.rulers": [120],
+    "editor.rulers": [
+        120
+    ],
     // 控制折行的方式。on: 将在视区宽度处换行。
     "editor.wordWrap": "on",
     // 控制编辑器在空白字符上显示符号的方式。selection: 仅在选定文本上呈现空白字符。
@@ -71,9 +73,16 @@
     "files.trimTrailingWhitespace": true,
     // 启用后，保存文件时将删除在最终新行后的所有新行。
     "files.trimFinalNewlines": true,
-
     // 自定义控件相关设置
     "diffEditor.renderSideBySide": false,
+    // markdown 插件的展示主题
+    "markdown-preview-enhanced.previewTheme": "atom-dark.css",
+    // 自动粘贴生成图片的路径设置
+    "pasteImage.path": "${currentFileNameWithoutExt}_image",
+    // 关闭单词检查
+    "cSpell.enabled": false,
+    // 关闭Json的架构下载
+    "json.schemaDownload.enable": false,
     "compile-hero.typescript-output-directory": "./tsoutdir",
     "compile-hero.generate-minified-html": true,
     "compile-hero.generate-minified-javascript": true,
@@ -81,17 +90,12 @@
     "explorer.confirmDragAndDrop": false,
     "debug.onTaskErrors": "abort",
     "extensions.ignoreRecommendations": false,
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
     "leetcode.endpoint": "leetcode-cn",
     "leetcode.hint.configWebviewMarkdown": false,
     "leetcode.workspaceFolder": "d:\\_Test_\\LeetCodeLearn",
     "leetcode.hint.commentDescription": true,
     "leetcode.defaultLanguage": "csharp",
-    "markdown-preview-enhanced.previewTheme": "atom-dark.css",
-    "pasteImage.path": "${currentFileNameWithoutExt}_image",
 }
