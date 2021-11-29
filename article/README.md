@@ -5,3 +5,4 @@
 ## 链接
 
 * [Lorefree ebooks](https://ebook2.lorefree.com/)
+* [三字经](https://www.sanzijing.org/)
