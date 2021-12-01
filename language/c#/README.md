@@ -32,3 +32,6 @@
 * [[小北De编程手记] : Lesson 02 玩转 xUnit.Net 之 基本UnitTest & 数据驱动](https://www.cnblogs.com/NorthAlan/p/5188391.html)
 * [23 种设计模式的通俗解释，虽然有点污，但是秒懂](https://mp.weixin.qq.com/s/y0hWLr9f_AfXUdhNcy-h7Q)
 * [C# 代码注释规范文档](https://www.cnblogs.com/mq0036/p/6540194.html)
+* [官网 - C# 发展历史](https://docs.microsoft.com/zh-cn/dotnet/csharp/whats-new/csharp-version-history)
+* [C#版本与.NET版本对应关系以及各版本的特性](https://www.cnblogs.com/MingsonZheng/p/11273700.html)
+* [官网 - C# 语言规范](https://docs.microsoft.com/zh-cn/dotnet/csharp/language-reference/language-specification/introduction)
