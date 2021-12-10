@@ -12,6 +12,7 @@
 
 * [官网地址在线版使用地址](https://draw.io)
 * [官网地址在线版使用地址](https://app.diagrams.net/)
+* [开源GitHub - 开源源代码](https://github.com/jgraph/drawio)
 * [开源GitHub - 客户端发布下载地址](https://github.com/jgraph/drawio-desktop/releases)
 * [drawio中添加数学公式](https://www.cnblogs.com/mrlayfolk/p/12846162.html)
 * [VSCode非官方支持编辑插件](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
