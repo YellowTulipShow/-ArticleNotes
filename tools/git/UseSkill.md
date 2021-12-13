@@ -174,3 +174,18 @@ git log --author="_your_name_" --pretty=tformat: --numstat | awk '{ add += $1; s
 输出结果：added lines: 38861, removed lines: 22916, total lines: 15945
 ```
 * [来源:博客地址](https://blog.csdn.net/cyf15238622067/article/details/82980782)
+
+## 关于git：我怎么知道分支是否已经合并为master？
+
+```shell
+列出合并为master的分支
+git branch --merged master
+
+列出合并到HEAD的分支(即当前分支的尖端)
+git branch --merged
+
+列出尚未合并的分支
+git branch --no-merged
+```
+
+* [关于git：我怎么知道分支是否已经合并为master？](https://www.codenong.com/226976/)
