@@ -24,6 +24,12 @@ echo "%WorkDir%\\XXXXXX.exe"
 :: (内容注释)
 ```
 
+## 打开 cmd 命令行 并执行后续命令
+
+```bat
+start cmd /k "cd C:\\Software\\DownImages && echo 开始"
+```
+
 ## 链接学习
 
 * [window bat 文件运行中文乱码](https://www.cnblogs.com/Marydon20170307/p/9321495.html)
