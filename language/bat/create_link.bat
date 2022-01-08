@@ -1,12 +1,14 @@
+chcp 65001
 @echo off
-::ÉèÖÃ³ÌĞò»òÎÄ¼şµÄÍêÕûÂ·¾¶£¨±ØÑ¡£©
-set Program=D:\Program Files (x86)\¸ñÊ½¹¤³§.4.2.0\FormatFactory.exe
-::ÉèÖÃ¿ì½İ·½Ê½Ãû³Æ£¨±ØÑ¡£©
-set LnkName=¸ñÊ½¹¤³§v4.2.0
-::ÉèÖÃ³ÌĞòµÄ¹¤×÷Â·¾¶£¬Ò»°ãÎª³ÌĞòÖ÷Ä¿Â¼£¬´ËÏîÈôÁô¿Õ£¬½Å±¾½«×ÔĞĞ·ÖÎöÂ·¾¶
+
+::è®¾ç½®ç¨‹åºæˆ–æ–‡ä»¶çš„å®Œæ•´è·¯å¾„ï¼ˆå¿…é€‰ï¼‰
+set Program=D:\Program Files (x86)\æ ¼å¼å·¥å‚.4.2.0\FormatFactory.exe
+::è®¾ç½®å¿«æ·æ–¹å¼åç§°ï¼ˆå¿…é€‰ï¼‰
+set LnkName=æ ¼å¼å·¥å‚v4.2.0
+::è®¾ç½®ç¨‹åºçš„å·¥ä½œè·¯å¾„ï¼Œä¸€èˆ¬ä¸ºç¨‹åºä¸»ç›®å½•ï¼Œæ­¤é¡¹è‹¥ç•™ç©ºï¼Œè„šæœ¬å°†è‡ªè¡Œåˆ†æè·¯å¾„
 set WorkDir=
-::ÉèÖÃ¿ì½İ·½Ê½ÏÔÊ¾µÄËµÃ÷£¨¿ÉÑ¡£©
-set Desc=¸ñÊ½¹¤³§v4.2.0
+::è®¾ç½®å¿«æ·æ–¹å¼æ˜¾ç¤ºçš„è¯´æ˜ï¼ˆå¯é€‰ï¼‰
+set Desc=æ ¼å¼å·¥å‚v4.2.0
 if not defined WorkDir call:GetWorkDir "%Program%"
 (echo Set WshShell=CreateObject("WScript.Shell"^)
 echo strDesKtop=WshShell.SPEcialFolders("DesKtop"^)
@@ -16,7 +18,7 @@ echo oShellLink.WorkingDirectory="%WorkDir%"
 echo oShellLink.Windowstyle=1
 echo oShellLink.Description="%Desc%"
 echo oShellLink.Save)>makelnk.vbs
-echo ×ÀÃæ¿ì½İ·½Ê½´´½¨³É¹¦£¡
+echo æ¡Œé¢å¿«æ·æ–¹å¼åˆ›å»ºæˆåŠŸï¼
 makelnk.vbs
 del /f /q makelnk.vbs
 exit
