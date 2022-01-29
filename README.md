@@ -28,3 +28,17 @@
 * [Git](./tools/git)
 * [Sublime Text](./tools/sublime_text)
 * [VS Code](./tools/vscode)
+
+## 捐赠
+
+如果觉得对您有帮助, 给作者一点鼓励
+
+支付宝付款码:
+<img style="width: 300px;"
+    src="https://ytsimg.gitee.io/blog/ReceiptQRCode_Alipay.jpg"
+    alt="https://ytsimg.gitee.io/blog/ReceiptQRCode_Alipay.jpg" />
+
+微信付款码:
+<img style="width: 300px;"
+    src="https://ytsimg.gitee.io/blog/ReceiptQRCode_WeChat.jpg"
+    alt="https://ytsimg.gitee.io/blog/ReceiptQRCode_WeChat.jpg" />
