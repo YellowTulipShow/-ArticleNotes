@@ -1,0 +1,29 @@
+《数据结构与算法分析》 C语言描述
+[著] Mark Allen Weiss
+[译] 冯舜玺
+机械工业出版社
+
+《数据库系统概念》
+[著] Abraham Silberschatz / Henry F. Korth / S. Sudarshan
+[译者] 杨冬青 / 马秀莉 / 唐世渭
+机械工业出版社
+
+《现代操作系统》
+[著] Andrew S·Tanenbaum
+[译] 陈向群 / 马洪兵
+机械工业出版社
+
+《计算机网络》
+[著] James F. Kurose / Keith W. Ross
+[译] 陈鸣
+机械工业出版社
+
+《计算机程序的构造和解释》
+[著] Harold Abelson / Gerald Jay Sussman / Julie Sussman
+[译] 裘宗燕
+机械工业出版社
+
+《编译原理》
+[著] Alfred V. Aho / Monica S.Lam / Ravi Sethi / Jeffrey D. Ullman
+[译] 赵建华 / 郑滔 / 戴新宇
+机械工业出版社
