@@ -25,3 +25,4 @@
 * [windows修改PowerShell（命令提示符）默认中文编码方式](https://blog.csdn.net/x356982611/article/details/80285930)
 * [教你怎么在windows上用命令查看和终止进程](https://jingyan.baidu.com/article/19020a0a120677529d284228.html)
 * [Windows自定义右键菜单](https://blog.csdn.net/qq_25166683/article/details/81352868)
+* [在cmd中为命令设置别名以及启动cmd时自动执行bat](https://www.cnblogs.com/fstang/archive/2013/04/06/3002006.html)
