@@ -35,3 +35,4 @@
 * [官网 - C# 发展历史](https://docs.microsoft.com/zh-cn/dotnet/csharp/whats-new/csharp-version-history)
 * [C#版本与.NET版本对应关系以及各版本的特性](https://www.cnblogs.com/MingsonZheng/p/11273700.html)
 * [官网 - C# 语言规范](https://docs.microsoft.com/zh-cn/dotnet/csharp/language-reference/language-specification/introduction)
+* [Install ASP.NET Core and TypeScript](https://www.typescriptlang.org/docs/handbook/asp-net-core.html)

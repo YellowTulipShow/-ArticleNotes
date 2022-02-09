@@ -61,3 +61,4 @@
 * [vscode 编译输出 xml 注释文档](https://www.cnblogs.com/wbblogs/p/9519941.html)
 * [[小北De编程手记] : Lesson 02 玩转 xUnit.Net 之 基本UnitTest & 数据驱动](https://www.cnblogs.com/NorthAlan/p/5188391.html)
 * [.NET Core 配置Configuration杂谈](https://www.cnblogs.com/stulzq/p/8570496.html)
+* [Install ASP.NET Core and TypeScript](https://www.typescriptlang.org/docs/handbook/asp-net-core.html)
