@@ -6,13 +6,13 @@
 npm config set registry http://registry.npm.taobao.org
 ```
 
-## VS Code 配置使用 TypeScript
-
-* [TypeScript tutorial in Visual Studio Code](https://code.visualstudio.com/docs/typescript/typescript-tutorial)
+## 使用Nodel.js Npm 包管理安装使用
 
 ```shell
 npm install -g typescript
 ```
+
+## 测试是否安装完成
 
 ```shell
 tsc --version
@@ -87,7 +87,12 @@ tsc --help
 
 ```
 
+## VS Code 配置使用 TypeScript
+
+* [TypeScript tutorial in Visual Studio Code](https://code.visualstudio.com/docs/typescript/typescript-tutorial)
+
 ## 链接
 
 * [Install ASP.NET Core and TypeScript](https://www.typescriptlang.org/docs/handbook/asp-net-core.html)
 * [TypeScript 编译配置?](https://developer.51cto.com/article/694463.html)
+* [使用Typescript编写和发布npm包](https://www.jianshu.com/p/8fa2c50720e4)
