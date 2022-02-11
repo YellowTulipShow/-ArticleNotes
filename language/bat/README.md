@@ -73,3 +73,6 @@ start explorer %cd%
 * [Windows的cmd中cd指令无法转换路径怎么办？](https://jingyan.baidu.com/article/656db918ec8211e381249ce8.html)
 * [bat中获取当前路径](https://blog.csdn.net/hongkaihua1987/article/details/104560108)
 * [bat递归查找指定文件_批处理脚本遍历指定文件夹下的文件](https://blog.csdn.net/weixin_39974223/article/details/111882228)
+* [Windows开机启动脚本打开应用或文件](https://blog.csdn.net/weixin_35654814/article/details/111829909)
+* [命令创建定时任务及bat脚本](https://blog.csdn.net/qq_31176861/article/details/90901336)
+* [bat脚本创建windows定时任务](https://blog.csdn.net/weixin_43500985/article/details/102586200)
