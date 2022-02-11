@@ -36,3 +36,4 @@
 * [C#版本与.NET版本对应关系以及各版本的特性](https://www.cnblogs.com/MingsonZheng/p/11273700.html)
 * [官网 - C# 语言规范](https://docs.microsoft.com/zh-cn/dotnet/csharp/language-reference/language-specification/introduction)
 * [Install ASP.NET Core and TypeScript](https://www.typescriptlang.org/docs/handbook/asp-net-core.html)
+* [Don't Block on Async Code - 不要阻塞异步代码](https://blog.stephencleary.com/2012/07/dont-block-on-async-code.html)
