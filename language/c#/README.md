@@ -38,3 +38,4 @@
 * [Install ASP.NET Core and TypeScript](https://www.typescriptlang.org/docs/handbook/asp-net-core.html)
 * [Don't Block on Async Code - 不要阻塞异步代码](https://blog.stephencleary.com/2012/07/dont-block-on-async-code.html)
 * [ 使用.NET Core创建Windows服务（一） - 使用官方推荐方式](https://www.cnblogs.com/lwqlun/p/11621186.html)
+* [EF Distinct (IEqualityComparer) Error](https://www.e-learn.cn/topic/183921)
