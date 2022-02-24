@@ -37,3 +37,5 @@ document.getElementById('input').onchange = input_format; // 内容更改时触�
 * [chartjs - 图表插件 - 中文网站](https://chartjs.bootcss.com/)
 * [echarts - 功能极其丰富强大的图标插件 - 中文官网](https://echarts.apache.org/zh/index.html)
 * [echarts - 教程 - 使用 dataset 管理数据](https://echarts.apache.org/zh/tutorial.html#%E4%BD%BF%E7%94%A8%20dataset%20%E7%AE%A1%E7%90%86%E6%95%B0%E6%8D%AE)
+* [JS mousemove事件：鼠标移动事件](http://c.biancheng.net/view/5958.html)
+* [实时获取鼠标在div中的【坐标】](https://www.php.cn/blog/detail/11899.html)
