@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="format-detection" content="telephone=yes"/>
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta content="width=device-width,initial-scale=1,user-scalable=no" name="viewport">
+    <title>自适应字体颜色适用于背景色</title>
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="using/jquery-2.2.4.min.js"></script>
+    <!--
+        根据背景色自适应文本颜色:
+        https://segmentfault.com/a/1190000027086079
+    -->
+</head>
+<body>
+    <style type="text/css">
+        .content {
+            display: block;
+            overflow: hidden;
+            position: relative;
+            font-size: 12px;
+        }
+            .content .item {
+                display: block;
+                overflow: hidden;
+                position: relative;
+                float: left;
+                margin: 1em 1em;
+                padding: 1em 1em;
+                text-align: center;
+            }
+                .content .item.notEqualsFontColor {
+                }
+                .content .item.notEqualsFontColor:before {
+                    font-size: 2em;
+                    content: '不相等的颜色配置';
+                    display: block;
+                    overflow: hidden;
+                    position: relative;
+                    float: left;
+                    padding: 0 1em;
+                    background-color: #000;
+                    color: #fff;
+                    margin-right: 2em;
+                }
+                .content .item .span {
+                    font-size: 2em;
+                }
+                .content .item .span + .span {
+                    margin-left: 1em;
+                }
+    </style>
+    <div id="IDHTML_ContainerContent" class="content"></div>
+    <script type="text/javascript">
+        (function() {
+            var colors = [
+                { bg: '#000000', font: '#fff' },
+                { bg: '#FF0000', font: '#fff' },
+                { bg: '#FF7F00', font: '#000' },
+                { bg: '#FFFF00', font: '#000' },
+                { bg: '#00FFFF', font: '#000' },
+                { bg: '#0000FF', font: '#fff' },
+                { bg: '#8B00FF', font: '#fff' },
+                { bg: '#3D9140', font: '#fff' },
+            ];
+
+            function contrastTextColor(backgroundHexColor) {
+                var hex = backgroundHexColor;
+                // 如果当前传入的参数以 # 开头,去除当前的
+                if (hex.startsWith('#')) {
+                    hex = hex.substring(1);
+                }
+                // 如果当前传入的是 3 位小数值，直接转换为 6 位进行处理
+                if (hex.length === 3) {
+                    hex = [hex[0], hex[0], hex[1], hex[1], hex[2], hex[2]].join('')
+                }
+
+                if (hex.length !== 6) {
+                    throw new Error('Invalid background color.' + backgroundHexColor);
+                }
+
+                var r = parseInt(hex.slice(0, 2), 16);
+                var g = parseInt(hex.slice(2, 4), 16);
+                var b = parseInt(hex.slice(4, 6), 16);
+
+                if ([r,g,b].some(x => Number.isNaN(x))) {
+                    throw new Error('Invalid background color.' + backgroundHexColor);
+                }
+
+                // var textColor = (r * 0.299 + g * 0.587 + b * 0.114) > 186 ? '#000' : '#fff'
+                var textColor = (r * 0.299 + g * 0.587 + b * 0.114) > 116 ? '#000' : '#fff'
+                return textColor
+            }
+
+            var contentEl = $('#IDHTML_ContainerContent');
+            contentEl.empty();
+            for (var i = 0; i < colors.length; i++) {
+                var item = colors[i];
+                var bgColor = item.bg;
+                var fontColor = item.font;
+                var textColor = contrastTextColor(bgColor);
+
+                var itemEl = $(document.createElement('div'));
+                itemEl.addClass('item');
+                if (fontColor !== textColor) {
+                    itemEl.addClass('notEqualsFontColor');
+                }
+                itemEl.attr('data-background-color', bgColor);
+                itemEl.css({ 'background-color': bgColor, });
+                function span(text, textColor) {
+                    var el = $(document.createElement('span'));
+                    el.addClass('span');
+                    el.text(text);
+                    el.attr('data-color', textColor);
+                    el.css({ 'color': textColor, });
+                    return el;
+                }
+                itemEl.append(span(bgColor + ' - 预先定义->' + fontColor, fontColor));
+                itemEl.append(span('自动生成->' + textColor, textColor));
+                contentEl.append(itemEl);
+            }
+        })();
+    </script>
+</body>
+</html>
