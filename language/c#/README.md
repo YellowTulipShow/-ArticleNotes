@@ -39,3 +39,5 @@
 * [Don't Block on Async Code - 不要阻塞异步代码](https://blog.stephencleary.com/2012/07/dont-block-on-async-code.html)
 * [ 使用.NET Core创建Windows服务（一） - 使用官方推荐方式](https://www.cnblogs.com/lwqlun/p/11621186.html)
 * [EF Distinct (IEqualityComparer) Error](https://www.e-learn.cn/topic/183921)
+* [c# - 从实现类中的接口(interface)继承注释？](https://www.coder.work/article/2880204)
+* [建议用于 C# 文档注释的 XML 标记](https://docs.microsoft.com/zh-cn/dotnet/csharp/language-reference/xmldoc/recommended-tags#include)
