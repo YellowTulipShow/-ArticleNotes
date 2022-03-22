@@ -78,7 +78,7 @@
     // markdown 插件的展示主题
     "markdown-preview-enhanced.previewTheme": "atom-dark.css",
     // 自动粘贴生成图片的路径设置
-    "pasteImage.path": "${currentFileNameWithoutExt}_image",
+    "pasteImage.path": "_pasteImage/${currentFileNameWithoutExt}_image",
     // 关闭单词检查
     "cSpell.enabled": false,
     // 关闭Json的架构下载
