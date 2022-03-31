@@ -41,3 +41,4 @@
 * [EF Distinct (IEqualityComparer) Error](https://www.e-learn.cn/topic/183921)
 * [c# - 从实现类中的接口(interface)继承注释？](https://www.coder.work/article/2880204)
 * [建议用于 C# 文档注释的 XML 标记](https://docs.microsoft.com/zh-cn/dotnet/csharp/language-reference/xmldoc/recommended-tags#include)
+* [.NET Core 跨平台执行命令、脚本](https://www.cnblogs.com/stulzq/p/9074965.html)
