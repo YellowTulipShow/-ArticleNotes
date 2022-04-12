@@ -93,6 +93,7 @@ tsc --help
 
 ## 链接
 
+* [TypeScript中文网 · TypeScript——JavaScript的超集](https://www.tslang.cn/index.html)
 * [Install ASP.NET Core and TypeScript](https://www.typescriptlang.org/docs/handbook/asp-net-core.html)
 * [TypeScript 编译配置?](https://developer.51cto.com/article/694463.html)
 * [使用Typescript编写和发布npm包](https://www.jianshu.com/p/8fa2c50720e4)
