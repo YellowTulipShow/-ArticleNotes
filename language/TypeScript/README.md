@@ -97,3 +97,4 @@ tsc --help
 * [Install ASP.NET Core and TypeScript](https://www.typescriptlang.org/docs/handbook/asp-net-core.html)
 * [TypeScript 编译配置?](https://developer.51cto.com/article/694463.html)
 * [使用Typescript编写和发布npm包](https://www.jianshu.com/p/8fa2c50720e4)
+* [RequireJS API](https://www.requirejs-cn.cn/docs/api.html)

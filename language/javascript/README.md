@@ -40,3 +40,4 @@ document.getElementById('input').onchange = input_format; // 内容更改时触�
 * [JS mousemove事件：鼠标移动事件](http://c.biancheng.net/view/5958.html)
 * [实时获取鼠标在div中的【坐标】](https://www.php.cn/blog/detail/11899.html)
 * [TypeScript 实现Dictionary](https://www.helloworld.net/p/7234954829)
+* [RequireJS API](https://www.requirejs-cn.cn/docs/api.html)
