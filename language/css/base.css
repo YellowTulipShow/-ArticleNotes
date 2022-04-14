@@ -51,8 +51,6 @@
         overflow: hidden;
         position: relative;
         z-index: 1;
-        background-image: url(../images/red.jpg);
-        background-repeat: repeat;
     }
     .ModelBox_MAX,
     .ModelBox {
