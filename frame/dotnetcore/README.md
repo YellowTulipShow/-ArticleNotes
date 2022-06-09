@@ -62,4 +62,5 @@
 * [[小北De编程手记] : Lesson 02 玩转 xUnit.Net 之 基本UnitTest & 数据驱动](https://www.cnblogs.com/NorthAlan/p/5188391.html)
 * [.NET Core 配置Configuration杂谈](https://www.cnblogs.com/stulzq/p/8570496.html)
 * [Install ASP.NET Core and TypeScript](https://www.typescriptlang.org/docs/handbook/asp-net-core.html)
-* [ 使用.NET Core创建Windows服务（一） - 使用官方推荐方式](https://www.cnblogs.com/lwqlun/p/11621186.html)
+* [使用.NET Core创建Windows服务（一） - 使用官方推荐方式](https://www.cnblogs.com/lwqlun/p/11621186.html)
+* [使用.NET Core快速开发一个较正规的命令行应用程序](https://www.cnblogs.com/ants/p/8615958.html)
