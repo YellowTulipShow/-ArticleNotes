@@ -66,7 +66,7 @@
         "**/*.js.map": true,
         // 屏蔽 Live Sass Compile 生成文件
         "**/*.min.css": true,
-        "**/*.min.css.map": true,
+        "**/*.min.css.map": true
     },
     // 在读取和写入文件时使用的默认字符集编码。可以按语言对此项进行配置。utf8: UTF-8
     "files.encoding": "utf8",
@@ -101,13 +101,11 @@
     "leetcode.workspaceFolder": "d:\\_Test_\\LeetCodeLearn",
     "leetcode.hint.commentDescription": true,
     "leetcode.defaultLanguage": "csharp",
-
-
     //------------------------------LaTeX 配置----------------------------------
     // 设置是否自动编译
-    "latex-workshop.latex.autoBuild.run":"never",
+    "latex-workshop.latex.autoBuild.run": "never",
     //右键菜单
-    "latex-workshop.showContextMenu":true,
+    "latex-workshop.showContextMenu": true,
     //从使用的包中自动补全命令和环境
     "latex-workshop.intellisense.package.enabled": true,
     //编译出错时设置是否弹出气泡设置
@@ -213,7 +211,7 @@
                 "xelatex",
                 "xelatex"
             ]
-        },
+        }
     ],
     //文件清理。此属性必须是字符串数组
     "latex-workshop.latex.clean.fileTypes": [
@@ -236,7 +234,7 @@
         "*.fls",
         "*.log",
         "*.fdb_latexmk",
-        "*.synctex.gz",
+        "*.synctex.gz"
     ],
     //设置为onFaild 在构建失败后清除辅助文件
     "latex-workshop.latex.autoClean.run": "onFailed",
@@ -244,16 +242,16 @@
     "latex-workshop.latex.recipe.default": "lastUsed",
     // 用于反向同步的内部查看器的键绑定。ctrl/cmd +点击(默认)或双击
     "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
-
-
     //------------------------------ Live Sass Compile 配置 ----------------------------------
-    "liveSassCompile.settings.formats":[{
-        "format": "compact",
-        "extensionName": ".min.css",
-        "savePath": "~",
-    }],
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compact",
+            "extensionName": ".min.css",
+            "savePath": "~"
+        }
+    ],
     "liveSassCompile.settings.excludeList": [
         "**/node_modules/**",
         ".vscode/**"
-    ],
+    ]
 }
