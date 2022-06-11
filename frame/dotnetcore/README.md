@@ -64,3 +64,4 @@
 * [Install ASP.NET Core and TypeScript](https://www.typescriptlang.org/docs/handbook/asp-net-core.html)
 * [使用.NET Core创建Windows服务（一） - 使用官方推荐方式](https://www.cnblogs.com/lwqlun/p/11621186.html)
 * [使用.NET Core快速开发一个较正规的命令行应用程序](https://www.cnblogs.com/ants/p/8615958.html)
+* [官网 - 教程：使用 .NET CLI 创建 .NET 工具](https://docs.microsoft.com/zh-cn/dotnet/core/tools/global-tools-how-to-create)
