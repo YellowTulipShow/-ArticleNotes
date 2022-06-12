@@ -66,3 +66,4 @@
 * [使用.NET Core快速开发一个较正规的命令行应用程序](https://www.cnblogs.com/ants/p/8615958.html)
 * [使用 System.CommandLine 分析命令行](https://docs.microsoft.com/zh-cn/archive/msdn-magazine/2019/march/net-parse-the-command-line-with-system-commandline)
 * [教程：System.CommandLine 入门](https://docs.microsoft.com/zh-cn/dotnet/standard/commandline/get-started-tutorial)
+* [官网 - 教程：使用 .NET CLI 创建 .NET 工具](https://docs.microsoft.com/zh-cn/dotnet/core/tools/global-tools-how-to-create)
