@@ -64,3 +64,5 @@
 * [Install ASP.NET Core and TypeScript](https://www.typescriptlang.org/docs/handbook/asp-net-core.html)
 * [使用.NET Core创建Windows服务（一） - 使用官方推荐方式](https://www.cnblogs.com/lwqlun/p/11621186.html)
 * [使用.NET Core快速开发一个较正规的命令行应用程序](https://www.cnblogs.com/ants/p/8615958.html)
+* [使用 System.CommandLine 分析命令行](https://docs.microsoft.com/zh-cn/archive/msdn-magazine/2019/march/net-parse-the-command-line-with-system-commandline)
+* [教程：System.CommandLine 入门](https://docs.microsoft.com/zh-cn/dotnet/standard/commandline/get-started-tutorial)
