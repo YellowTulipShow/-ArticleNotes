@@ -67,3 +67,7 @@
 * [使用 System.CommandLine 分析命令行](https://docs.microsoft.com/zh-cn/archive/msdn-magazine/2019/march/net-parse-the-command-line-with-system-commandline)
 * [教程：System.CommandLine 入门](https://docs.microsoft.com/zh-cn/dotnet/standard/commandline/get-started-tutorial)
 * [官网 - 教程：使用 .NET CLI 创建 .NET 工具](https://docs.microsoft.com/zh-cn/dotnet/core/tools/global-tools-how-to-create)
+* [PowerShell 技能连载 - 处理文件编码和 BOM](http://blog.vichamp.com/2018/07/25/dealing-with-file-encoding-and-bom/)
+* [PowerShell 数组（Array）](https://blog.csdn.net/kk185800961/article/details/48829215)
+* [.NET Core的打包到一个exe程序](https://www.cnblogs.com/RainFate/p/12093851.html)
+* [.Net Core控制台生成exe能独立运行，依赖文件都单独生成在一个publish文件夹里](https://blog.csdn.net/u011511086/article/details/80419676)
