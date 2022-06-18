@@ -22,11 +22,10 @@ ssh-keygen -t rsa -C "main@yellowtulipshow.site YelloTulipShow"
 ```
 
 执行命令结束后在本地创建了两个文件:
-* **~/.ssh/id_rsa**
+* **`~/.ssh/id_rsa`**
     秘钥文件 不能给人看, 任何人都不行的文件
-* **~/.ssh/id_rsa.pub**
+* **`~/.ssh/id_rsa.pub`**
     公钥文件 可以用于放置在 GitHub 网站
-
 
 ## 配置 SSH
 创建配置文件: `~/config`
