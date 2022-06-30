@@ -44,3 +44,4 @@
 * [建议用于 C# 文档注释的 XML 标记](https://docs.microsoft.com/zh-cn/dotnet/csharp/language-reference/xmldoc/recommended-tags#include)
 * [.NET Core 跨平台执行命令、脚本](https://www.cnblogs.com/stulzq/p/9074965.html)
 * [.net core的Swagger接口文档使用教程（一）：Swashbuckle](https://www.cnblogs.com/shanfeng1000/p/13476831.html)
+* [用.Net Core接入微信公众号开发](https://mp.weixin.qq.com/s/3meMIZI4905sjHEHF7ncGA)
