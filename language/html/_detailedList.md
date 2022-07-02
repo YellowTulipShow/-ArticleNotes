@@ -12,3 +12,4 @@
 * [userAgent 属性](user_agent.html)
 * [视觉效果](visual_effects.html)
 * [自适应字体颜色适用于背景色](adaptive_font_colors_apply_to_background_colors.html)
+* [背景图像高度自适应内容](background_image_highly_adaptive_content/index.html)
