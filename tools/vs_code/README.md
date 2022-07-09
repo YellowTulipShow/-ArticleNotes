@@ -30,7 +30,7 @@
 * vscode-solution-explorer
 * vscode-icons
 * Chinese (Simplified) Language Pack for Visual Studio Code
-* Python
+* [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
 * [.NET Core Test Explorer](https://marketplace.visualstudio.com/items?itemName=formulahendry.dotnet-test-explorer)
 * [Markdown-Notes-Pack](https://marketplace.visualstudio.com/items?itemName=OrangeX4.markdown-notes-pack)
 * [Cmd Markdown 公式指导手册](https://www.zybuluo.com/codeep/note/163962)
