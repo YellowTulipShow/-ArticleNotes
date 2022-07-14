@@ -1,4 +1,4 @@
-# Nginx Web反向代理服务器
+﻿# Nginx Web反向代理服务器
 
 ## 使用
 

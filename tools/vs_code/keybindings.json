@@ -1,4 +1,4 @@
-[
+﻿[
     {
         // 新增: 切换 Tab 键移动焦点
         "key": "ctrl+oem_3 ctrl+tab",

@@ -1,4 +1,4 @@
-# SSH 配置
+﻿# SSH 配置
 
 ## SSH 作用
 用于GitHub SSH协议 可以不设置密码

@@ -1,4 +1,4 @@
-# Linux 使用笔记
+﻿# Linux 使用笔记
 
 ## 修改Bash配置文件: .bashrc
 

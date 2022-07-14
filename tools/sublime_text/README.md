@@ -1,4 +1,4 @@
-# Sublime Text 编辑器
+﻿# Sublime Text 编辑器
 
 ## 配置安装
 

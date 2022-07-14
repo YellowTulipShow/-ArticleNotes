@@ -1,4 +1,4 @@
-# .Net Core
+﻿# .Net Core
 
 ## 常用命令
 

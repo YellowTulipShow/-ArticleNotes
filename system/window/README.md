@@ -1,4 +1,4 @@
-# window 系统常用命令
+﻿# window 系统常用命令
 
 ## Window 系统资源
 * [MSDN 资源网站](https://msdn.itellyou.cn/)

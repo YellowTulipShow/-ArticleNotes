@@ -1,4 +1,4 @@
-#!/bin/bash
+﻿#!/bin/bash
 
 # 获取=> 环境路径
 execute_environment_path=`pwd`

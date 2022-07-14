@@ -1,4 +1,4 @@
-# VS Code 编辑器
+﻿# VS Code 编辑器
 
 ## settings.json 用户配置文件
 

@@ -1,4 +1,4 @@
-# LaTeX
+﻿# LaTeX
 
 LaTeX是一种语言，是一种排版格式，是TeX的一个扩展，因此为了能够使用LaTeX，我们需要先下载TeX的发行版
 

@@ -1,4 +1,4 @@
-@echo off
+﻿@echo off
 ::切换执行环境编码为UTF-8
 @chcp 65001
 ::获取=> 环境路径

@@ -1,4 +1,4 @@
-# Adobe 软件相关内容笔记整理
+﻿# Adobe 软件相关内容笔记整理
 
 ## 参考链接
 * [AI cc 2018安装教程](https://jingyan.baidu.com/article/a17d5285c6da358098c8f284.html)

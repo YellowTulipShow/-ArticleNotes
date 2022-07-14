@@ -1,4 +1,4 @@
-# Putty 登录 Linux
+﻿# Putty 登录 Linux
 
 首先, 需要下载 Putty 软件:
 

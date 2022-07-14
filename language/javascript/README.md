@@ -1,4 +1,4 @@
-# JavaScript JS 脚本语言学习
+﻿# JavaScript JS 脚本语言学习
 
 自定义和搜集的 插件工具: [PluginTools.js](./PluginTools.js)
 

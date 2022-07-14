@@ -1,4 +1,4 @@
-# Java 笔记
+﻿# Java 笔记
 
 ## public、private、protected 修饰符访问权限
 public，protected，private是Java里用来定义成员的访问权限的，另外还有一种是“default”，也就是在成员前不加任何权限修饰符。如：

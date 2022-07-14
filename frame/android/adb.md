@@ -1,4 +1,4 @@
-# ADB
+﻿# ADB
 
 可以在 `Window` 电脑上通过 `ADB` 直接与 `Android` 手机进行关联操作 比如开发手机 `Shell`
 

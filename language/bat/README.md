@@ -1,4 +1,4 @@
-# Window Bat 脚本文件语言
+﻿# Window Bat 脚本文件语言
 
 ## 等待按键代码
 

@@ -1,4 +1,4 @@
-# ECharts 图表制作控件
+﻿# ECharts 图表制作控件
 
 * [官网地址](http://echarts.apache.org/zh/index.html)
 * [GitHub 源码地址](https://github.com/apache/echarts)

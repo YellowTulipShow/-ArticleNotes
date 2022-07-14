@@ -1,4 +1,4 @@
-# 基础: 创建 canvas 环境上下文
+﻿# 基础: 创建 canvas 环境上下文
 
 ```js
 var canvas = document.getElementById('tutorial');

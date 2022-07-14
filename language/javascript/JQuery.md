@@ -1,4 +1,4 @@
-# JQuery
+﻿# JQuery
 
 ## CDN:
 

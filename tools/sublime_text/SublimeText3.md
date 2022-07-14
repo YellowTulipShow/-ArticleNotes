@@ -1,4 +1,4 @@
-# Sublime Text 3 软件使用手册
+﻿# Sublime Text 3 软件使用手册
 
 ## Sublime Text 3 快捷键精华版
 ```

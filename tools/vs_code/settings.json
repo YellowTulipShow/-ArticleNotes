@@ -1,4 +1,4 @@
-{
+﻿{
     // 控制是否在搜索中跟踪符号链接。
     "search.followSymlinks": false,
     // 以逗号分隔的标记列表，其中的标记之前将有额外新行。若为 null，默认包含 "head, body, /html"。
