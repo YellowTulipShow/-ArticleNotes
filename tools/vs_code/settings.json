@@ -253,5 +253,9 @@
     "liveSassCompile.settings.excludeList": [
         "**/node_modules/**",
         ".vscode/**"
-    ]
+    ],
+    // 启用 GitHub Flavored Markdown 表格格式化。
+    "markdown.extension.tableFormatter.enabled": false,
+    // 是否强制将目录中的链接转为小写。
+    "markdown.extension.toc.downcaseLink": false,
 }
