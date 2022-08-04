@@ -31,14 +31,13 @@
 * vscode-icons
 * Chinese (Simplified) Language Pack for Visual Studio Code
 * [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
-* [.NET Core Test Explorer](https://marketplace.visualstudio.com/items?itemName=formulahendry.dotnet-test-explorer)
-* [Markdown-Notes-Pack](https://marketplace.visualstudio.com/items?itemName=OrangeX4.markdown-notes-pack)
-* [Cmd Markdown 公式指导手册](https://www.zybuluo.com/codeep/note/163962)
+* [Markdown All in One - 实现媲美Typora的Markdown编辑体验](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 * [Paste Image - 贴上图片](https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image)
-* [Markmap - Markdown文件转思维导图方式展示](https://marketplace.visualstudio.com/items?itemName=gera2ld.markmap-vscode)
+* [draw.io 流程图绘制插件](https://github.com/hediet/vscode-drawio)
 
 ### 收藏列表
 
+* [.NET Core Test Explorer](https://marketplace.visualstudio.com/items?itemName=formulahendry.dotnet-test-explorer)
 * ESLint
 * Markdownlint
 * SQL Server(mssql)
@@ -47,10 +46,10 @@
 * [Code Runner](https://github.com/formulahendry/vscode-code-runner)
 * [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 * Beautify
-* [draw.io 流程图绘制插件](https://github.com/hediet/vscode-drawio)
 * [T4 Support](https://marketplace.visualstudio.com/items?itemName=zbecknell.t4-support)
 * [TT-Processor](https://marketplace.visualstudio.com/items?itemName=aisoftware.tt-processor)
 * [Compile Hero - 编译各类文件: Sass/Less/Stylus/Pug/Jade/Typescript/Javascript](https://marketplace.visualstudio.com/items?itemName=Wscats.eno)
-* [Markdown All in One - 实现媲美Typora的Markdown编辑体验](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 * [LeetCode](https://marketplace.visualstudio.com/items?itemName=LeetCode.vscode-leetcode)
 * [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
+* [Cmd Markdown 公式指导手册](https://www.zybuluo.com/codeep/note/163962)
+* [Markmap - Markdown文件转思维导图方式展示](https://marketplace.visualstudio.com/items?itemName=gera2ld.markmap-vscode)
