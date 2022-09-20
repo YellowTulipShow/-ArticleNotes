@@ -24,6 +24,7 @@
 * [LaTeX - texlive 环境下载 - 官网](http://www.tug.org/texlive/)
 * [LaTeX - texlive TeX Live ISO Images](https://mirror.bjtu.edu.cn/ctan/systems/texlive/Images/)
 * [Navicat - 数据库连接工具](https://navicat.com.cn/products)
+* [Cron在线表达式生成器](http://cron.ciding.cc/)
 
 #### 工作
 
