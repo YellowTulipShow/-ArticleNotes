@@ -25,6 +25,7 @@
 * [LaTeX - texlive TeX Live ISO Images](https://mirror.bjtu.edu.cn/ctan/systems/texlive/Images/)
 * [Navicat - 数据库连接工具](https://navicat.com.cn/products)
 * [Cron在线表达式生成器](http://cron.ciding.cc/)
+* [Http接口调试工具 - Postwoman](https://zhuanlan.zhihu.com/p/110175762)
 
 #### 工作
 
