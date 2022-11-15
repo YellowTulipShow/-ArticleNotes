@@ -45,3 +45,4 @@
 * [.NET Core 跨平台执行命令、脚本](https://www.cnblogs.com/stulzq/p/9074965.html)
 * [.net core的Swagger接口文档使用教程（一）：Swashbuckle](https://www.cnblogs.com/shanfeng1000/p/13476831.html)
 * [用.Net Core接入微信公众号开发](https://mp.weixin.qq.com/s/3meMIZI4905sjHEHF7ncGA)
+* [VSCode C#插件离线安装OmniSharp,Debugger,Razor](https://blog.csdn.net/maozi_bsz/article/details/101610721)
