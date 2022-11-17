@@ -40,3 +40,4 @@ dos2unix <文件名称路径>
 * [Windows 下的docker 本地文件夹 映射到docker的容器中](https://blog.csdn.net/m0_38044453/article/details/98080461)
 * [执行shell脚本报错“/bin/bash^M: bad interpreter: No such file or directory”](https://blog.csdn.net/li1325169021/article/details/115361901)
 * [DockerToolbox安装docker - Windows 10](https://www.jianshu.com/p/2aa5b05717c6)
+* [阿里云镜像站 - docker-toolbox镜像下载页](https://mirrors.aliyun.com/docker-toolbox/windows/docker-toolbox/)
