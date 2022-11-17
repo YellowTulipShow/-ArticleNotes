@@ -258,4 +258,20 @@
     "markdown.extension.tableFormatter.enabled": false,
     // 是否强制将目录中的链接转为小写。
     "markdown.extension.toc.downcaseLink": false,
+    // 主题选择
+    "workbench.colorTheme": "Visual Studio Dark",
+    // 主题配置颜色
+    "editor.tokenColorCustomizations": {
+        "[Visual Studio Dark]": {
+            "functions": "#dcdcaa",
+            "textMateRules": [
+                {
+                    "scope": "entity.name.type",
+                    "settings": {
+                        "foreground": "#36bea4"
+                    }
+                },
+            ],
+        },
+    },
 }
