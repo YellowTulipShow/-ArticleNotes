@@ -53,3 +53,5 @@
 * [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
 * [Cmd Markdown 公式指导手册](https://www.zybuluo.com/codeep/note/163962)
 * [Markmap - Markdown文件转思维导图方式展示](https://marketplace.visualstudio.com/items?itemName=gera2ld.markmap-vscode)
+* [VS Code自定义代码颜色，看这一篇就够了](https://blog.csdn.net/NEKOic/article/details/118855221)
+* [官网英文版主题修改教程](https://code.visualstudio.com/api/references/theme-color)

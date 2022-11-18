@@ -271,6 +271,18 @@
                         "foreground": "#36bea4"
                     }
                 },
+                {
+                    "scope": "entity.name.type.interface,entity.name.type.enum",
+                    "settings": {
+                        "foreground": "#B8D7A3"
+                    }
+                },
+                {
+                    "scope": "variable.other.enummember",
+                    "settings": {
+                        "foreground": "#fff"
+                    }
+                }
             ],
         },
     },

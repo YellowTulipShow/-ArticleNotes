@@ -41,3 +41,4 @@ dos2unix <文件名称路径>
 * [执行shell脚本报错“/bin/bash^M: bad interpreter: No such file or directory”](https://blog.csdn.net/li1325169021/article/details/115361901)
 * [DockerToolbox安装docker - Windows 10](https://www.jianshu.com/p/2aa5b05717c6)
 * [阿里云镜像站 - docker-toolbox镜像下载页](https://mirrors.aliyun.com/docker-toolbox/windows/docker-toolbox/)
+* [windows 10 安装docker](https://zhuanlan.zhihu.com/p/397311465)
