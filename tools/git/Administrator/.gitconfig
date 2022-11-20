@@ -10,3 +10,4 @@
     helper = store
 [core]
     quotepath = false
+    autocrlf = false
