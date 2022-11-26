@@ -76,6 +76,12 @@ $ git commit --amend
 
 ## 常用代码
 
+## 一行命令处理/拉取/更新/提交
+
+```shell
+git pull origin master && git add . && git commit -m "修改" && git push origin master
+```
+
 ### 测试与代码服务器是否连通
 
 GitHub

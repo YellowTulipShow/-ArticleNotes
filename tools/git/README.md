@@ -208,3 +208,4 @@ Dec | December   | 十二月
 * [Git Hook开发实践总结](https://blog.csdn.net/blueheart20/article/details/102855642)
 * [Learn Git Branching](https://learngitbranching.js.org/)
 * [Git教程](https://www.yiibai.com/git)
+* [配置 Git 处理行结束符](https://docs.github.com/cn/get-started/getting-started-with-git/configuring-git-to-handle-line-endings)
