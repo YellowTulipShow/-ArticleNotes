@@ -286,4 +286,13 @@
             ],
         },
     },
+    // 配置默认格式化插件: prettier
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // prettier 插件自定义配置
+    "prettier.bracketSameLine": true,
+    "prettier.printWidth": 120,
+    "prettier.singleAttributePerLine": true,
+    "prettier.tabWidth": 4,
 }

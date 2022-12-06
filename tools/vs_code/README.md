@@ -55,3 +55,4 @@
 * [Markmap - Markdown文件转思维导图方式展示](https://marketplace.visualstudio.com/items?itemName=gera2ld.markmap-vscode)
 * [VS Code自定义代码颜色，看这一篇就够了](https://blog.csdn.net/NEKOic/article/details/118855221)
 * [官网英文版主题修改教程](https://code.visualstudio.com/api/references/theme-color)
+* [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
