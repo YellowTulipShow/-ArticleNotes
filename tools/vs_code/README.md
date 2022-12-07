@@ -56,3 +56,7 @@
 * [VS Code自定义代码颜色，看这一篇就够了](https://blog.csdn.net/NEKOic/article/details/118855221)
 * [官网英文版主题修改教程](https://code.visualstudio.com/api/references/theme-color)
 * [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+* [Sass](https://marketplace.visualstudio.com/items?itemName=Syler.sass-indented)
+* [Easy Sass](https://marketplace.visualstudio.com/items?itemName=spook.easysass)
+    * [VSCode自动编译scss文件](https://blog.csdn.net/drawlessonsfrom/article/details/115424706)
+    * [vs code中的Easy Sass插件配置项说明](https://blog.csdn.net/HYEHYEHYE/article/details/118522929)
