@@ -30,3 +30,4 @@ pandoc .\README.md -o out.doc
 * [一篇文章教会你如何在Markdown文档中插入数学公式](https://zhuanlan.zhihu.com/p/158156773)
 * [Markdown-Notes-Pack - 教程向: 在 VSCode 中用 Markdown 做「数字化」学习笔记](https://zhuanlan.zhihu.com/p/366596107)
 * [markdown如何打印拼音](https://blog.csdn.net/enthan809882/article/details/109355697)
+* [Mermaid从入门到入土——Markdown进阶语法](https://zhuanlan.zhihu.com/p/355997933)
