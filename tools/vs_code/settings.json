@@ -295,4 +295,5 @@
     "prettier.printWidth": 120,
     "prettier.singleAttributePerLine": true,
     "prettier.tabWidth": 4,
+    "hediet.vscode-drawio.theme": "min",
 }
