@@ -65,6 +65,7 @@
 * [百度网盘](https://pan.baidu.com/download)
 * [PanDownload - 百度网盘下载器](http://pandownload.com/)
 * [非常好用的免费在线文件转换器](https://www.freeconvert.com/)
+* [AI工具: 图片去背景 - 免费 - 非常好用](https://magicstudio.com/backgrounderaser/editor)
 
 
 # 手机软件APP目录
