@@ -51,6 +51,24 @@ CROSS APPLY sys.dm_exec_query_plan(qs.plan_handle) qp
 order by qs.creation_time desc
 ```
 
+```sql
+Select TOP 1000
+       ST.text AS '执行的SQL语句',
+       QS.execution_count AS '执行次数',
+       QS.total_elapsed_time AS '耗时',
+       QS.total_logical_reads AS '逻辑读取次数',
+       QS.total_logical_writes AS '逻辑写入次数',
+       QS.total_physical_reads AS '物理读取次数',
+       QS.creation_time AS '执行时间' ,
+       QS.*
+FROM   sys.dm_exec_query_stats QS
+       CROSS APPLY
+sys.dm_exec_sql_text(QS.sql_handle) ST
+-- Where  QS.creation_time BETWEEN '2020-07-01 00:00:00' AND '2020-09-02 11:00:00'
+ORDER BY
+     QS.creation_time DESC
+```
+
 ### 查询表结构
 
 * [访问链接](https://www.cnblogs.com/davidhou/p/6474002.html)
