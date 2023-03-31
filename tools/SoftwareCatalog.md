@@ -35,6 +35,7 @@
 * [WPS - 官网](https://www.wps.cn/)
 * [WPS - 腾讯软件中心](https://pc.qq.com/search.html#!keyword=WPS)
 * [Microsoft Office]()
+* [libreOffice - 免费开源Office套件替代产品](https://www.libreoffice.org/)
 
 #### 沟通
 
@@ -53,10 +54,14 @@
 
 * [QQ音乐](https://y.qq.com/download/download.html)
 * [腾讯视频](https://v.qq.com/)
-* [浏览器中解锁加密的音乐文件](https://ix64.github.io/unlock-music/)
+* [需墙: 可在浏览器中解锁加密的音乐文件,qq音乐等](https://unlock-music.dev)
+    * [源码](https://git.unlock-music.dev/um)
+    * [Web - Demo](https://demo.unlock-music.dev)
+* [PotPlayer-免费开源视频播放器](http://potplayer.tv/?lang=zh_CN)
 
 #### 工具
 
+* [7-zip压缩包](https://sparanoid.com/lab/7z/)
 * [护眼宝](http://www.huyanbao.com/)
 * [Everything - Window快速检索文件名称的工具](https://www.voidtools.com/zh-cn/support/everything/)
 * [鲁大师](https://www.ludashi.com/)
