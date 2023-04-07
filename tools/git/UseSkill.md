@@ -1,5 +1,17 @@
 ﻿# 使用技巧
 
+## 合并分支.冲突解决
+
+采用当前分支的版本:
+```shell
+git checkout --ours <...>
+```
+
+采用合并分支的版本:
+```shell
+git checkout --theirs <...>
+```
+
 ## 配置
 
 ### 使用 Notepad++ 取代 Git Bash 的默认Vim编辑器
