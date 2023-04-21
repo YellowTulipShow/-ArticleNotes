@@ -7,9 +7,9 @@ set execute_environment_path=%cd%
 cd /d %~dp0
 
 git pull origin master
-git status
 git add .
 git commit -m "update data"
+git status
 git push origin master
 git logs
 echo "执行完毕!"
