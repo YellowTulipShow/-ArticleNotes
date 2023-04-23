@@ -1,51 +1,5 @@
 ﻿# Docker 环境容器
 
-## 常用操作
-
-### 远程镜像拉取
-
-```shell
-docker image pull <容器实例地址:版本号>
-```
-
-### 映射创建容器:
-```shell
-docker run -itd --name="<容器实例别名>" -v <本机路径Linux格式>:<容器中路径Linux格式> <Image镜像名称> /bin/bash
-
-docker run -itd --name="<容器实例别名>" -v <本机路径Linux格式>:<容器中路径Linux格式> <Image镜像名称>
-```
-
-### 启动容器
-```shell
-docker start <容器实例别名>
-```
-
-### 关闭容器
-```shell
-docker kill <容器实例别名>
-```
-
-### 进入已开启的容器中
-```shell
-docker exec -it <容器实例别名> /bin/bash
-```
-
-### 查看所有容器
-```shell
-docker ps --all
-docker container ls --all
-```
-
-### 删除容器
-```shell
-docker container rm <容器实例别名>
-```
-
-### 把dos格式的文件(Window系统使用)转换为unix格式的文件(Linux系统使用)
-```shell
-dos2unix <文件名称路径>
-```
-
 ## 链接
 
 * [阮一峰的网络日志 - Docker 入门教程](https://ruanyifeng.com/blog/2018/02/docker-tutorial.html)
@@ -54,3 +8,5 @@ dos2unix <文件名称路径>
 * [DockerToolbox安装docker - Windows 10](https://www.jianshu.com/p/2aa5b05717c6)
 * [阿里云镜像站 - docker-toolbox镜像下载页](https://mirrors.aliyun.com/docker-toolbox/windows/docker-toolbox/)
 * [windows 10 安装docker](https://zhuanlan.zhihu.com/p/397311465)
+* [Windows 10 (4G内存）专业版安装docker提示Not enough memory to start Docker的问题](https://www.cnblogs.com/pikaqiu12/p/13548402.html)
+* [vue3-环境搭建(docker版本)](https://juejin.cn/post/7168876290400452621)

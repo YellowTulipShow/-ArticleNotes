@@ -4,3 +4,4 @@
 * [官网 - 中文](https://cn.vuejs.org/)
 * [GitHub - 开源源码地址](https://github.com/vuejs/vue)
 * [Element，一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的桌面端组件库](https://element.eleme.cn/#/zh-CN)
+* [vue3-环境搭建(docker版本)](https://juejin.cn/post/7168876290400452621)
