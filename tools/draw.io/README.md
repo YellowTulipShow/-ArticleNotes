@@ -6,7 +6,11 @@
 
 支持离线编辑, 粘贴截图, 自定义绘制图案, 非常强大!!!
 
-支持数学公式: 将原 **\$xxx\$** 格式 改为 **\`xxx\`** 使用
+## 支持数学公式
+
+```text
+\(公式内容\)
+```
 
 ## 使用链接
 
@@ -16,3 +20,4 @@
 * [开源GitHub - 客户端发布下载地址](https://github.com/jgraph/drawio-desktop/releases)
 * [drawio中添加数学公式](https://www.cnblogs.com/mrlayfolk/p/12846162.html)
 * [VSCode非官方支持编辑插件](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
+* [【drawio笔记】在drawio中添加数学公式](https://blog.csdn.net/u012028275/article/details/113727696)
