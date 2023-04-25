@@ -10,3 +10,6 @@ LaTeX是一种语言，是一种排版格式，是TeX的一个扩展，因此为
 * [LaTeX编译参考文献“I found no \\citation commands---while reading file”问题](https://blog.csdn.net/ya6543/article/details/112542915)
 * [LaTeX 单页文档，用 \\maketitle 的同时如何去除页码？](https://www.zhihu.com/question/313667025)
 * [.tex文件中不支持中文内容+CTeX fontset 'fandol' is unavailable...](https://blog.csdn.net/hnjzsyjyj/article/details/116382426)
+* [LaTeX符号大全-基于lshort-zh-cn](https://blog.csdn.net/wangmeitingaa/article/details/88825621)
+* [LaTex字体加粗的方法](https://blog.csdn.net/weixin_45459911/article/details/108534044)
+* [如何用LaTeX打出不同颜色的公式？](https://zhuanlan.zhihu.com/p/268435915)
