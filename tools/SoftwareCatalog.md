@@ -17,7 +17,7 @@
 * [Microsoft Visual Studio 2017/2019](https://visualstudio.microsoft.com/zh-hans/downloads/)
 * [Microsoft SQL Server Management Studio](https://docs.microsoft.com/zh-cn/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
 * [Android Studio](https://developer.android.google.cn/studio/)
-* [FileZilla](https://filezilla-project.org/)
+* [FileZilla - FTP服务器文件上传工具](https://filezilla-project.org/)
 * [.Net Core && .NET Framework Download](https://dotnet.microsoft.com/download)
 * [Web 请求模拟器](https://www.postman.com/)
 * [SQLite Browser 数据库浏览器](https://sqlitebrowser.org/)
