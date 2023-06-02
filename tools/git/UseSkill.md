@@ -12,6 +12,15 @@ git checkout --ours <...>
 git checkout --theirs <...>
 ```
 
+## 取消跟踪 但是不删除文件
+
+
+1. `git rm --cached logs/xx.log`
+2. 然后更新 `.gitignore` 忽略掉目标文件，
+3. 最后 `git commit -m "xxxx"`
+
+
+
 ## 配置
 
 ### 使用 Notepad++ 取代 Git Bash 的默认Vim编辑器
