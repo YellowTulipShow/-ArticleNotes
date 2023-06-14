@@ -16,3 +16,4 @@
 
 * [23 种设计模式的通俗解释，虽然有点污，但是秒懂](https://mp.weixin.qq.com/s/y0hWLr9f_AfXUdhNcy-h7Q)
 * [制表符](http://www.fhdq.net/ts/49.html)
+* [Refactoring.Guru - 友好的设计模式学习网站](https://refactoringguru.cn/design-patterns)
