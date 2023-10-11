@@ -12,6 +12,11 @@ git checkout --ours <...>
 git checkout --theirs <...>
 ```
 
+合并中断
+```shell
+git merge --abort
+```
+
 ## 取消跟踪 但是不删除文件
 
 
