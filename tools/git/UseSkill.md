@@ -1,5 +1,11 @@
 ﻿# 使用技巧
 
+## 只合并指定commit
+
+```shell
+git cherry-pick <...>
+```
+
 ## 合并分支.冲突解决
 
 采用当前分支的版本:
@@ -23,8 +29,6 @@ git merge --abort
 1. `git rm --cached logs/xx.log`
 2. 然后更新 `.gitignore` 忽略掉目标文件，
 3. 最后 `git commit -m "xxxx"`
-
-
 
 ## 配置
 
