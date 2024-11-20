@@ -26,6 +26,7 @@
 
 * C/C++
 * [C#](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
+* [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
 * C# XML Documentation Comments
 * vscode-solution-explorer
 * vscode-icons
