@@ -39,3 +39,4 @@ ssh ubuntu@58.87.71.34
 * [通过外网访问内网的服务器（完美部署上线，超级详细）](https://blog.csdn.net/u010905359/article/details/84989831)
 * [通过外网访问内网服务器（绝对成功）](https://blog.csdn.net/jinzhichaoshuiping/article/details/45751671)
 * [Windows系统重装Linux系统](https://blog.csdn.net/qq2523208472/article/details/83684838)
+* [为Ubuntu 20.04 设置静态IP简明教程（和把大象装冰箱一样简单）](https://cloud.tencent.com/developer/article/1933335)
