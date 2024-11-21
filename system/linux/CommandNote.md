@@ -1,5 +1,16 @@
 ﻿# Linux 命令笔记
 
+## 挂载 SMB 共享目录
+
+```shell
+mount -t cifs //IP/路径 /mnt/挂载点 -o username=用户名,password=密码,vers=1.0
+```
+
+编辑 `vim /etc/fstab` 最后添加开机自动挂载
+```sh
+//IP/路径 /mnt/挂载点 cifs defaults,username=用户名,password=密码,vers=1.0
+```
+
 ## 注册一个服务
 
 ```shell
