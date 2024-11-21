@@ -16,6 +16,10 @@ systemctl status XXXX.service
 systemctl stop XXXX.service
 // 开启服务
 systemctl start XXXX.service
+// 开启开机自启动
+systemctl enable XXXX.service
+// 关闭开机自启动
+systemctl disable XXXX.service
 ```
 
 ## 系统信息

@@ -5,7 +5,7 @@ Wants=network.target
  
 [Service]
 Type=simple
-ExecStart=/XXX/frpc -c /XXX/frpc.toml
+ExecStart=/XXX/frps -c /XXX/frps.toml
 Restart=always
  
 [Install]
