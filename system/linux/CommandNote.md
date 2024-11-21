@@ -1,5 +1,45 @@
 ﻿# Linux 命令笔记
 
+## 服务相关操作
+
+```shell
+// 查看服务状态
+systemctl status XXXX.service
+// 停用服务
+systemctl stop XXXX.service
+// 开启服务
+systemctl start XXXX.service
+```
+
+## 系统信息
+
+```shell
+// 打印发行版的具体信息，包括发行版名称、版本号、代号等。
+lsb_release -a
+```
+
+## 磁盘文件空间大小
+
+```shell
+// 查看磁盘空间占用情况
+df
+
+// 查看目录/文件大小
+du
+# 查看当前目录大小
+du -sh
+# 返回该目录/文件的大小
+du -sh [目录/文件]
+# 查看当前文件夹下的所有文件大小（包含子文件夹）
+du -h
+# 查看指定文件夹下的所有文件大小（包含子文件夹）
+du -h [目录/文件]
+# 返回当前文件夹的总M数
+du -sm
+# 返回指定文件夹/文件总M数
+du -sm [文件夹/文件]
+```
+
 ## 文件和目录
 
 ```shell
