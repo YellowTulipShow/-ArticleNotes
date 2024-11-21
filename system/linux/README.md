@@ -40,3 +40,4 @@ ssh ubuntu@58.87.71.34
 * [通过外网访问内网服务器（绝对成功）](https://blog.csdn.net/jinzhichaoshuiping/article/details/45751671)
 * [Windows系统重装Linux系统](https://blog.csdn.net/qq2523208472/article/details/83684838)
 * [为Ubuntu 20.04 设置静态IP简明教程（和把大象装冰箱一样简单）](https://cloud.tencent.com/developer/article/1933335)
+* [VSCode远程连接服务器(密码连接&秘钥连接)](https://zhuanlan.zhihu.com/p/671431475)

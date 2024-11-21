@@ -1,0 +1,12 @@
+[Unit]
+Description=frpc
+After=network.target syslog.target
+Wants=network.target
+ 
+[Service]
+Type=simple
+ExecStart=/XXX/frpc -c /XXX/frpc.toml
+Restart=always
+ 
+[Install]
+WantedBy=multi-user.target
