@@ -1,5 +1,12 @@
 ﻿# Linux 命令笔记
 
+## 下载文件
+
+```shell
+curl http:xxx.xxx
+wget http:xxx.xxx
+```
+
 ## 服务相关操作
 
 ```shell
@@ -16,6 +23,10 @@ systemctl start XXXX.service
 ```shell
 // 打印发行版的具体信息，包括发行版名称、版本号、代号等。
 lsb_release -a
+
+// 查看服务器对应架构
+arch
+    x86_64 对应 XXX_linux_amd64.tar.gz
 ```
 
 ## 磁盘文件空间大小
