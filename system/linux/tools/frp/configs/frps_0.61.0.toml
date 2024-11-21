@@ -2,7 +2,7 @@ bindPort = 7000
 
 [auth]
 method = "token"
-token = "zrq1854652835eidjgkduejdjdd"
+token = "XXXXXX"
 
 [transport]
 tls.force = true
