@@ -1,0 +1,12 @@
+[Unit]
+Description=frpc
+After=network.target syslog.target
+Wants=network.target
+ 
+[Service]
+Type=simple
+ExecStart=/var/yts/extendsTools/frp_0.61.0_linux_amd64/frpc -c /var/yts/extendsTools/frp_0.61.0_linux_amd64/frpc.toml
+Restart=always
+ 
+[Install]
+WantedBy=multi-user.target

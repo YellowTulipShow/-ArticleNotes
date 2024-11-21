@@ -1,0 +1,16 @@
+serverAddr = "101.37.33.74"
+serverPort = 7000
+
+[auth]
+method = "token"
+token = "zrq1854652835eidjgkduejdjdd"
+
+[transport]
+tls.enable = true
+
+[[proxies]]
+name = "ImageShowProgram"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 63950
+remotePort = 7002
