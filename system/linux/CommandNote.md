@@ -1,5 +1,43 @@
 ﻿# Linux 命令笔记
 
+## 挂载 SMB 共享目录
+
+```shell
+mount -t cifs //IP/路径 /mnt/挂载点 -o username=用户名,password=密码,vers=1.0
+```
+
+编辑 `vim /etc/fstab` 最后添加开机自动挂载
+```sh
+//IP/路径 /mnt/挂载点 cifs defaults,username=用户名,password=密码,vers=1.0
+```
+
+## 注册一个服务
+
+```shell
+touch xxx.service
+# 创建并写入文件内容
+vim xxx.service
+````
+如:
+```sh
+[Unit]
+Description= XXX # 服务米哦啊哈苏
+
+[Service]
+Type=simple
+ExecStart=./xxx 执行的命令
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```shell
+# 移动或创建链接到服务目录下
+mv xxx.service /etc/systemd/system/xxx.service # 移动
+ln xxx.service /etc/systemd/system/xxx.service # 建立硬链接
+```
+
 ## 下载文件
 
 ```shell
