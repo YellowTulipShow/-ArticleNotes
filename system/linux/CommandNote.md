@@ -11,7 +11,29 @@ mount -t cifs //IP/路径 /mnt/挂载点 -o username=用户名,password=密码,v
 //IP/路径 /mnt/挂载点 cifs defaults,username=用户名,password=密码,vers=1.0
 ```
 
-## 注册一个服务
+## 下载文件
+
+```shell
+curl http:xxx.xxx
+wget http:xxx.xxx
+```
+
+## 服务相关操作
+
+```shell
+// 查看服务状态
+systemctl status XXXX.service
+// 停用服务
+systemctl stop XXXX.service
+// 开启服务
+systemctl start XXXX.service
+// 开启开机自启动
+systemctl enable XXXX.service
+// 关闭开机自启动
+systemctl disable XXXX.service
+```
+
+### 注册一个服务
 
 ```shell
 touch xxx.service
@@ -36,28 +58,6 @@ WantedBy=multi-user.target
 # 移动或创建链接到服务目录下
 mv xxx.service /etc/systemd/system/xxx.service # 移动
 ln xxx.service /etc/systemd/system/xxx.service # 建立硬链接
-```
-
-## 下载文件
-
-```shell
-curl http:xxx.xxx
-wget http:xxx.xxx
-```
-
-## 服务相关操作
-
-```shell
-// 查看服务状态
-systemctl status XXXX.service
-// 停用服务
-systemctl stop XXXX.service
-// 开启服务
-systemctl start XXXX.service
-// 开启开机自启动
-systemctl enable XXXX.service
-// 关闭开机自启动
-systemctl disable XXXX.service
 ```
 
 ## 系统信息
@@ -242,8 +242,8 @@ tar -xvf archive.tar 释放一个包
 tar -xvf archive.tar -C /tmp 将压缩包释放到 /tmp目录下
 tar -cvfj archive.tar.bz2 dir1 创建一个bzip2格式的压缩包
 tar -xvfj archive.tar.bz2 解压一个bzip2格式的压缩包
-tar -cvfz archive.tar.gz dir1 创建一个gzip格式的压缩包
-tar -xvfz archive.tar.gz 解压一个gzip格式的压缩包
+tar -zcvf archive.tar.gz dir1 创建一个gzip格式的压缩包
+tar -zxvf archive.tar.gz 解压一个gzip格式的压缩包
 zip file1.zip file1 创建一个zip格式的压缩包
 zip -r file1.zip file1 file2 dir1 将几个文件和目录同时压缩成一个zip格式的压缩包
 unzip file1.zip 解压一个zip格式压缩包

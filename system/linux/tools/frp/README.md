@@ -1,13 +1,5 @@
 # Frp 内网穿透
 
-
-
-
-
-## 开机自启
-/etc/systemd/system/frps.service
-
-
 ## 链接
 
 * [frp实现内网穿透Linux-＞Linux](https://blog.csdn.net/weixin_49764009/article/details/122018688)
