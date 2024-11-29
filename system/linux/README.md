@@ -42,3 +42,4 @@ ssh ubuntu@58.87.71.34
 * [为Ubuntu 20.04 设置静态IP简明教程（和把大象装冰箱一样简单）](https://cloud.tencent.com/developer/article/1933335)
 * [VSCode远程连接服务器(密码连接&秘钥连接)](https://zhuanlan.zhihu.com/p/671431475)
 * [Systemd 指令](https://www.cnblogs.com/zwcry/p/9602756.html)
+* [vsftpd 操作手册 - 完整版](https://www.cnblogs.com/HOsystem/p/16629572.html)
