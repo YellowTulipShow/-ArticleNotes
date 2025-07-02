@@ -218,3 +218,84 @@ LEFT JOIN -- 索引及主键信息
     --WHERE O.name=N'tablename' -- 如果只查询指定表,加上此条件
 ORDER BY O.name,C.column_id
 ```
+
+### 查询SQL Server数据库中的所有级联约束并导出为SQL脚本
+
+方法一：使用系统视图查询
+```sql
+-- 查询所有外键约束及其级联操作设置
+SELECT
+    obj.name AS '约束名称',
+    sch1.name + '.' + tab1.name AS '主表',
+    col1.name AS '主表列',
+    sch2.name + '.' + tab2.name AS '引用表',
+    col2.name AS '引用表列',
+    CASE WHEN fk.delete_referential_action = 1 THEN 'ON DELETE CASCADE'
+         WHEN fk.delete_referential_action = 2 THEN 'ON DELETE SET NULL'
+         WHEN fk.delete_referential_action = 3 THEN 'ON DELETE SET DEFAULT'
+         ELSE '' END AS '删除操作',
+    CASE WHEN fk.update_referential_action = 1 THEN 'ON UPDATE CASCADE'
+         WHEN fk.update_referential_action = 2 THEN 'ON UPDATE SET NULL'
+         WHEN fk.update_referential_action = 3 THEN 'ON UPDATE SET DEFAULT'
+         ELSE '' END AS '更新操作'
+FROM
+    sys.foreign_keys AS fk
+INNER JOIN
+    sys.objects AS obj ON obj.object_id = fk.object_id
+INNER JOIN
+    sys.tables AS tab1 ON tab1.object_id = fk.referenced_object_id
+INNER JOIN
+    sys.schemas AS sch1 ON tab1.schema_id = sch1.schema_id
+INNER JOIN
+    sys.tables AS tab2 ON tab2.object_id = fk.parent_object_id
+INNER JOIN
+    sys.schemas AS sch2 ON tab2.schema_id = sch2.schema_id
+INNER JOIN
+    sys.foreign_key_columns AS fkc ON fk.object_id = fkc.constraint_object_id
+INNER JOIN
+    sys.columns AS col1 ON col1.object_id = fkc.referenced_object_id AND col1.column_id = fkc.referenced_column_id
+INNER JOIN
+    sys.columns AS col2 ON col2.object_id = fkc.parent_object_id AND col2.column_id = fkc.parent_column_id
+WHERE
+    fk.delete_referential_action <> 0 OR fk.update_referential_action <> 0
+ORDER BY
+    '主表', '引用表';
+```
+
+
+方法二：生成可重用的SQL脚本
+```sql
+-- 生成所有外键约束的创建脚本（包含级联设置）
+SELECT
+    'ALTER TABLE ' + QUOTENAME(SCHEMA_NAME(fk.schema_id)) + '.' + QUOTENAME(OBJECT_NAME(fk.parent_object_id)) +
+    ' ADD CONSTRAINT ' + QUOTENAME(fk.name) +
+    ' FOREIGN KEY (' +
+    STUFF((
+        SELECT ', ' + QUOTENAME(c.name)
+        FROM sys.foreign_key_columns AS fkc
+        INNER JOIN sys.columns AS c ON fkc.parent_object_id = c.object_id AND fkc.parent_column_id = c.column_id
+        WHERE fkc.constraint_object_id = fk.object_id
+        FOR XML PATH('')), 1, 2, '') +
+    ') REFERENCES ' + QUOTENAME(SCHEMA_NAME(ro.schema_id)) + '.' + QUOTENAME(ro.name) +
+    ' (' +
+    STUFF((
+        SELECT ', ' + QUOTENAME(c.name)
+        FROM sys.foreign_key_columns AS fkc
+        INNER JOIN sys.columns AS c ON fkc.referenced_object_id = c.object_id AND fkc.referenced_column_id = c.column_id
+        WHERE fkc.constraint_object_id = fk.object_id
+        FOR XML PATH('')), 1, 2, '') + ')' +
+    CASE WHEN fk.delete_referential_action = 1 THEN ' ON DELETE CASCADE'
+         WHEN fk.delete_referential_action = 2 THEN ' ON DELETE SET NULL'
+         WHEN fk.delete_referential_action = 3 THEN ' ON DELETE SET DEFAULT'
+         ELSE '' END +
+    CASE WHEN fk.update_referential_action = 1 THEN ' ON UPDATE CASCADE'
+         WHEN fk.update_referential_action = 2 THEN ' ON UPDATE SET NULL'
+         WHEN fk.update_referential_action = 3 THEN ' ON UPDATE SET DEFAULT'
+         ELSE '' END + ';' AS '创建外键SQL'
+FROM
+    sys.foreign_keys AS fk
+INNER JOIN
+    sys.objects AS ro ON ro.object_id = fk.referenced_object_id
+WHERE
+    fk.delete_referential_action <> 0 OR fk.update_referential_action <> 0;
+```
