@@ -10,7 +10,6 @@
     <script type="text/javascript">
         // 六艺十式数据
         var datas_SixArtsTenTypes = [];
-        // 加载数据
         (function () {
             datas_SixArtsTenTypes.push({
                 name: "第一式 墙壁俯卧撑",
@@ -1033,6 +1032,16 @@
         var data_dailyTraining_ThreeSecrets = [];
         (function () {
 
+            var target = [];
+            target = [
+                "练习1次，每次10秒",
+                "练习2次，每次5秒",
+                "至此，你的脊柱已经进行了充分的热身",
+                "可以练习下面的内容了。",
+            ];
+            function get_target() {
+                return [...target];
+            }
             data_dailyTraining_ThreeSecrets.push({
                 name: "第一式 短桥式",
                 action: "平躺在地，双脚平放在地上，与你的髋部相距6~8英寸（15.24~20.32厘米）。这是起始姿势。通过双脚下压，髋部与背部离地，直到只有肩部和双脚支撑身体。在此，你的大腿与躯干应该成一条直线。这是支撑姿势（见下图）。保持此姿势，尽量平缓呼吸，达到规定时间。然后反向动作，慢慢回到起始姿势。",
@@ -1040,6 +1049,7 @@
                 imgs: [
                     { url: "1.png", dec: "通过双脚下压，髋部与背部离地，直到只有肩部和双脚支撑身体。在此，你的大腿与躯干应该成一条直线。", },
                 ],
+                target: get_target(),
             });
 
             data_dailyTraining_ThreeSecrets.push({
@@ -1049,6 +1059,7 @@
                 imgs: [
                     { url: "2.png", dec: "手掌下压，同时向上推髋部，直到双腿和躯干成一条直线。下颚上抬，眼睛望着天花板。", },
                 ],
+                target: get_target(),
             });
 
             data_dailyTraining_ThreeSecrets.push({
@@ -1058,23 +1069,26 @@
                 imgs: [
                     { url: "3.png", dec: "通过双手下压，向上推举髋部，后背形成弓形，直到你的头部与身体完全脱离床铺。眼睛看着身后的墙壁。", },
                 ],
+                target: get_target(),
             });
 
             data_dailyTraining_ThreeSecrets.push({
                 name: "第四式 顶桥式",
-                action: "平 躺 在 地 上 ， 双 脚 分 开 ， 与 肩 同 宽 ， 距 髋 部 6~8 英 寸（15.24~20.32厘米）。双手放置在头部两侧，肘部指向上方，手掌平放在地上，手指朝向脚趾。尽量抬高髋部，使身体离开地面。在这一动作过程中，头部保持与地面接触，并且向后转，直到头顶触地。切记，要使用两臂的力量推起身体，颈部只是略略辅助保持平衡。这是支撑姿势（见下图）。在支撑过程中尽量使呼吸平缓。然后慢慢降低身体。",
+                action: "平躺在地上，双脚分开，与肩同宽，距髋部6~8英寸（15.24~20.32厘米）。双手放置在头部两侧，肘部指向上方，手掌平放在地上，手指朝向脚趾。尽量抬高髋部，使身体离开地面。在这一动作过程中，头部保持与地面接触，并且向后转，直到头顶触地。切记，要使用两臂的力量推起身体，颈部只是略略辅助保持平衡。这是支撑姿势（见下图）。在支撑过程中尽量使呼吸平缓。然后慢慢降低身体。",
                 progress: "顶桥式与《囚徒健身》中详述的动态的半桥略有不同。在这一式中，我让你像使用杠杆一样使用头部，与反颈桥（详见第十章）类似，只是强度略小。由于你的头部一直保持与地面接触，所以，这一桥式的锻炼效果没有标准桥式那样显著，而且施加在肩袖上的压力也略小。顶桥式因此成为完美的过渡练习。",
                 imgs: [
                     { url: "4.png", dec: "尽量抬高髋部，使身体离开地面。在这一动作过程中，头部保持与地面接触，并且向后转，直到头顶触地。", },
                 ],
+                target: get_target(),
             });
 
             data_dailyTraining_ThreeSecrets.push({
                 name: "第五式 标准桥式",
                 action: "平 躺 在 地 上 ， 双 脚 分 开 ， 与 肩 同 宽 ， 距 髋 部 6~8 英 寸（15.24~20.32厘米）。双手放置在头部两侧，肘部指向上方，手掌平放在地上，手指朝向脚趾。尽量抬高髋部，使身体离开地面。允许头部在两臂间向后倾斜，这样你就可以看到背后的墙壁了。继续靠两臂和双腿推动身体，直到身体尽可能地形成弓形，然后调整身体至相对舒适的位置。这是支撑姿势（见下图）。在支撑过程中尽量使呼吸平缓。然后慢慢降低身体。",
                 imgs: [
-                    { url: "5.png", dec: "", },
+                    { url: "5.png", dec: "尽量抬高髋部，使身体离开地面。允许头部在两臂间向后倾斜，这样你就可以看到背后的墙壁了。", },
                 ],
+                target: get_target(),
             });
 
 
@@ -1083,6 +1097,11 @@
 
 
 
+            target = [
+                "练习4次，每次5秒",
+                "你的脊柱与髋部已经热血灌注，关节也灵活自由。",
+                "此乃练习扭转式的最佳时机。",
+            ];
             data_dailyTraining_ThreeSecrets.push({
                 name: "第一式 曲腿式",
                 action: "为了练习此式，你需要找一把带扶手的坚固的椅子。如果在健身房里，你也可以使用双杠。两臂伸直（或略微弯曲）抓住椅子扶手以支撑上身，膝盖向上提。在动作顶部，你的大腿至少应与地面平行（见下图）。随着时间的推移，这一式将变得更加容易，那时你可以尝试把膝盖抬得更高，以便更好地进行主动拉伸。最终，你将能够把膝盖提到靠近胸部的位置。在整个动作过程中，双脚、双腿应保持并拢，并保持正常呼吸。",
@@ -1090,6 +1109,7 @@
                 imgs: [
                     { url: "6.png", dec: "两臂伸直（或略微弯曲）抓住椅子扶手以支撑上身，膝盖向上提。在动作顶部，你的大腿至少应与地面平行。", },
                 ],
+                target: get_target(),
             });
 
             data_dailyTraining_ThreeSecrets.push({
@@ -1099,6 +1119,7 @@
                 imgs: [
                     { url: "7.png", dec: "两臂伸直（或略微弯曲）抓住椅子扶手以支撑上身，膝盖向上提。在动作顶部，你的大腿至少应该与地面平行。然后，伸直双腿，直到它们伸直并锁定。这意味着你的双脚会下沉，双腿形成倾斜的对角线。", },
                 ],
+                target: get_target(),
             });
 
             data_dailyTraining_ThreeSecrets.push({
@@ -1108,6 +1129,7 @@
                 imgs: [
                     { url: "8.png", dec: "双腿并拢，适当弯曲。两臂伸直，支撑整个身体，下压，直到髋部和双脚离地，只有平放的双手与地面接触。", },
                 ],
+                target: get_target(),
             });
 
             data_dailyTraining_ThreeSecrets.push({
@@ -1117,6 +1139,7 @@
                 imgs: [
                     { url: "9.png", dec: "把伸直的腿收回，用另一条腿重复此动作，练习相同时间。随着你单腿伸出能坚持的时间不断变长，完成动作也更加轻松，你可以慢慢把弯曲的那条腿也伸出去。", },
                 ],
+                target: get_target(),
             });
 
             data_dailyTraining_ThreeSecrets.push({
@@ -1124,25 +1147,29 @@
                 action: "坐在地上，两手放在髋部两侧。双腿并拢，伸直，脚趾向上。伸直手臂，手掌下压，支撑起整个身体，直到你的髋部和双腿离地，只有平放的双手触地。双腿应该至少与地面平行（见下图1）。与地面上练习的其他各式相同，在刚开始练习时，可以垫几本书或用拳头着地（见下图2），这样会更容易些。如果对你来说直角式难度太低，那么，你可以慢慢抬起保持伸直状态的双腿（称为锐角式），以此增加拉伸度。在整个过程中，正常呼吸，内脏保持紧绷（所有举腿的式都应该做到这一点）。。",
                 imgs: [
                     { url: "10.png", dec: "伸直手臂，手掌下压，支撑起整个身体，直到你的髋部和双腿离地，只有平放的双手触地。双腿应该至少与地面平行。", },
+                ],
+                progress_imgs: [
                     { url: "11.png", dec: "与地面上练习的其他各式相同，在刚开始练习时，可以垫几本书或用拳头着地", },
                 ],
+                target: get_target(),
             });
 
 
 
 
-
-
-
-
+            target = [
+                "练习1次，每次20秒（每侧）",
+                "这就是你的灵活性训练—一气呵成。",
+            ];
             data_dailyTraining_ThreeSecrets.push({
                 name: "第一式 直腿扭转式",
                 action: "双腿并拢向前伸直，坐在地板上。弯曲一条腿，将同侧的这只脚置于另一条腿的膝盖内侧并平放在地板上。相对那侧的肩部向屈腿一侧扭转，并且肘部在弯曲那条腿的膝盖外侧。颈部和头部可以随躯干自然转动。把另一侧手放在身后，手臂伸直，然后以伸直的这只手臂支撑身体（见下图）。保持该姿势一定的时间，试着尽可能地自然呼吸。换另一侧练习相同时间。",
                 progress: "这一基本的扭转式，大多数没有严重伤病或残疾之人都可以做到。学习这一扭转式对于日后练习各种扭转式都是必要的。由于手臂的支撑与伸直的大腿，这一扭转式还比较温和。保持该姿势一段时间，就是解放髋部、背部、上背部、肩部等处的硬结和消除僵硬的理想方式。还有另外一个好处，即伸直的那只手臂的肱二头肌还可以得到一些柔韧性锻炼。此练习对那些想要挑战更难扭转式的身体僵硬的举重者来说可谓一剂良药。",
                 imgs: [
-                    { url: "image.png", dec: "图图图图图", },
-                    { url: "image.png", dec: "图图图图图", },
+                    { url: "12.png", },
+                    { url: "13.png", },
                 ],
+                target: get_target(),
             });
 
             data_dailyTraining_ThreeSecrets.push({
@@ -1150,9 +1177,10 @@
                 action: "两腿伸直，坐在地板上。一条腿弯曲，把脚平放在另一条腿的膝盖外侧。然后，弯曲另一条腿，直到脚跟与髋部接触。将最初弯曲的腿相对那侧的肩部向抬起的膝盖扭转，要确保同侧的肘部在膝盖外侧。把另一只手放在身后，手臂伸直以支撑身体。颈部随躯干自然转动，看向斜后方（见下图）。保持该姿势一定的时间，试着尽可能地自然呼吸。换另一侧练习相同时间。",
                 progress: "这一式比上一式略难。腿部弯曲并向内摆动会拉伸纵贯大腿和髋部（股四头肌、阔筋膜张肌、臀中肌等等）的肌肉。由于所有侧链上的肌肉都相互连接（所以使用了“链”这个词），就更提升了拉伸效果。练习该扭转式，腰部、脊柱上部、肩部都会受益。切记要以力量来引导拉伸，不要有任何勉强。",
                 imgs: [
-                    { url: "image.png", dec: "图图图图图", },
-                    { url: "image.png", dec: "图图图图图", },
+                    { url: "14.png", },
+                    { url: "15.png", },
                 ],
+                target: get_target(),
             });
 
             data_dailyTraining_ThreeSecrets.push({
@@ -1160,9 +1188,10 @@
                 action: "两腿伸直坐在地板上。一条腿弯曲，把脚平放在另一条腿的膝盖外侧。然后，弯曲另一条腿，直到脚跟与髋部接触，腿应紧贴地板。将最初弯曲的腿相对那侧的肩部向抬起的膝盖扭转，然后将手顺势放在小腿外侧，与胫骨平行，直到手指触到脚背。把另一只手放在身后，手臂伸直，安全支撑身体。旋转颈部向后看（见下图）。保持该姿势一定的时间，试着尽可能地自然呼吸。换另一侧练习相同时间。",
                 progress: "我认为这一式是掌握标准扭转式的中级练习，如果你能坚持20秒并且保持自然呼吸，那么，你就已经到达中等水平了。贴着小腿的手臂姿势，需要灵活的脊柱进行的高强度扭转——你已经开始进步了。此时颈部也能获得锻炼。如果你能轻而易举地以标准姿势完成这一动作，那就可以展望下一步了，即把背后那只手从地板上拿起，围绕躯干，形成环形。",
                 imgs: [
-                    { url: "image.png", dec: "图图图图图", },
-                    { url: "image.png", dec: "图图图图图", },
+                    { url: "16.png", },
+                    { url: "17.png", },
                 ],
+                target: get_target(),
             });
 
             data_dailyTraining_ThreeSecrets.push({
@@ -1170,9 +1199,10 @@
                 action: "练习该动作时，你需要外物的帮忙——长度在30厘米左右的东西都可以（毛巾是再好不过的选择）。两腿伸直坐在地板上，先做半扭转式动作。与胫骨平行的那只手抓住毛巾。向后移动这只抓着毛巾的手，使之位于肘部下方。另一只手则环绕躯干伸到后面，抓住毛巾。刚开始的时候需要练习一段时间才能做到。抓住毛巾之后，便旋转颈部向后看（见下图）。保持该姿势一定的时间，试着尽可能地自然呼吸。换另一侧练习相同时间。",
                 progress: "从难度来说，这一扭转式处于半扭转式和完全扭转式之间。之前，身后那只手臂都要接触地板，但现在却要环绕躯干。这就迫使训练者更加用力扭转，并且比之前更加拉伸上肢带和侧链。升级易如反掌——感觉轻松的话，就尝试让双手更接近一点儿。看似难如登天，但终究它们会相遇！",
                 imgs: [
-                    { url: "image.png", dec: "图图图图图", },
-                    { url: "image.png", dec: "图图图图图", },
+                    { url: "18.png", },
+                    { url: "19.png", },
                 ],
+                target: get_target(),
             });
 
             data_dailyTraining_ThreeSecrets.push({
@@ -1180,13 +1210,55 @@
                 action: "两腿伸直，坐在地板上。一条腿弯曲，把脚平放在另一条腿的膝盖外侧。然后，弯曲另一条腿，直到脚跟与髋部接触，腿应紧贴地板。将最初弯曲的腿相对那侧的肩部向抬起的膝盖扭转，与之同侧的手向后放，位于肘部下方。然后，用另一只手环绕住身体，两手手指互相接触，或是以“猴式抓握”（见下图）的方式锁定。挺胸，并旋转颈部向后看。保持该姿势一定的时间，试着尽可能地自然呼吸。换另一侧练习相同时间。",
                 progress: "这一扭转式应该是所有扭转拉伸练习的高级模板。任何人达到这一水平，都会拥有比别人更好的柔韧性。如果你觉得需要，那还可以更进一步，超越这个练习——不仅仅抓住手指。注意：更进一步就会步履维艰，难度将呈指数级上升。我曾经达到过抓住手腕的程度，但那要用上整整一年坚实的训练。",
                 imgs: [
-                    { url: "image.png", dec: "图图图图图", },
-                    { url: "image.png", dec: "图图图图图", },
+                    { url: "20.png", },
+                    { url: "21.png", },
                 ],
+                target: get_target(),
             });
 
 
         })();
+
+        // 训练计划
+        var data_TrainingPlan = [];
+        (function () {
+            data_TrainingPlan.push({
+                name: "初试身手",
+                imgs: [
+                    { url: "初试身手.png", dec: "", },
+                ],
+            });
+
+            data_TrainingPlan.push({
+                name: "渐入佳境",
+                imgs: [
+                    { url: "渐入佳境.png", dec: "", },
+                ],
+            });
+
+            data_TrainingPlan.push({
+                name: "炉火纯青",
+                imgs: [
+                    { url: "炉火纯青.png", dec: "", },
+                ],
+            });
+
+            data_TrainingPlan.push({
+                name: "闭关修炼",
+                imgs: [
+                    { url: "闭关修炼.png", dec: "", },
+                ],
+            });
+
+            data_TrainingPlan.push({
+                name: "登峰造极",
+                imgs: [
+                    { url: "登峰造极.png", dec: "", },
+                ],
+            });
+
+        })();
+
 
         function select(arr, map_fun) {
             var rlist = [];
@@ -1207,16 +1279,27 @@
                 let action_str = list_action.join("");
                 return `<td class="action_td">${action_str}</td>`;
             }
+            function imgs_to_tdHtml(imgs, dir_path) {
+                var img_str = "";
+                for (var i_img = 0; i_img < imgs.length; i_img++) {
+                    var img = imgs[i_img];
+                    img_str += `<img src="${dir_path}/${img.url}"/><br/>`;
+                    if (img.dec)
+                        img_str += `<span class="img_span">${img.dec}</span><br/>`;
+                }
+                return `<td>${img_str}</td>`;
+            }
 
             // 悬吊渲染
-            function ToDailyTrainingHTML_Suspension() {
+            function ToDailyTrainingHTML_Suspension(min, max) {
+                min -= 1;
                 var name = "";
                 var action = "";
                 var parse = "";
                 var target = "";
                 var imgs = "";
 
-                for (var i_region = 0; i_region < 8; i_region++) {
+                for (var i_region = min; i_region < max; i_region++) {
                     // 悬吊
                     var item = data_dailyTraining_Suspension[i_region];
                     // 名称
@@ -1231,17 +1314,11 @@
                     target += `<td class="target_td">${target_str}</td>`;
 
                     // 配图
-                    var img_str = "";
-                    for (var i_img = 0; i_img < item.imgs.length; i_img++) {
-                        var img = item.imgs[i_img];
-                        img_str += `<img src="./囚徒健身示例图/悬吊/${img.url}"/><br/>`;
-                        img_str += `<span class="img_span">${img.dec}</span><br/>`;
-                    }
-                    imgs += `<td>${img_str}</td>`;
+                    imgs += imgs_to_tdHtml(item.imgs, "./囚徒健身示例图/悬吊");
                 }
                 var table = `
                     <div class="bodyBox">
-                    <table>
+                    <table class="tableSuspension">
                         <tbody>
                             <tr><td class="columnSign">悬吊</td>${name}</tr>
                             <tr><td class="columnSign">目标</td>${target}</tr>
@@ -1274,23 +1351,73 @@
                     if (item.progress)
                         parse += textContent_to_tdHtml(item.progress);
 
+                    // 训练目标
+                    var target_str = item.target.join("<br/>");
+                    target += `<td class="target_td">${target_str}</td>`;
+
                     // 配图
-                    var img_str = "";
-                    for (var i_img = 0; i_img < item.imgs.length; i_img++) {
-                        var img = item.imgs[i_img];
-                        img_str += `<img src="./囚徒健身示例图/三决/${img.url}"/><br/>`;
-                        img_str += `<span class="img_span">${img.dec}</span><br/>`;
-                    }
-                    imgs += `<td>${img_str}</td>`;
+                    imgs += imgs_to_tdHtml(item.imgs, "./囚徒健身示例图/三决");
+
+                    // 解析配图
+                    if (item.progress_imgs)
+                        parse += imgs_to_tdHtml(item.progress_imgs, "./囚徒健身示例图/三决");
                 }
                 var table = `
                     <div class="bodyBox">
                     <table>
                         <tbody>
                             <tr><td class="columnSign">${section_name}</td>${name}</tr>
+                            <tr><td class="columnSign">目标</td>${target}</tr>
                             <tr><td class="columnSign">描述</td>${action}</tr>
                             <tr><td class="columnSign">配图</td>${imgs}</tr>
                             <tr><td class="columnSign">解析</td>${parse}</tr>
+                        </tbody>
+                    </table>
+                    </div>`;
+                return table;
+            }
+
+            // 训练计划
+            function ToHTML_TrainingPlan(min, max) {
+                min -= 1;
+                var name = "";
+                var action = "";
+                var parse = "";
+                var target = "";
+                var imgs = "";
+
+                for (var i_region = min; i_region < max; i_region++) {
+                    var item = data_TrainingPlan[i_region];
+                    // 名称
+                    name += `<td class="name_td">${item.name}</td>`;
+                    // 描述
+                    if (item.action)
+                        action += textContent_to_tdHtml(item.action);
+                    // 解析
+                    if (item.progress)
+                        parse += textContent_to_tdHtml(item.progress);
+
+                    // 训练目标
+                    if (item.target) {
+                        var target_str = item.target.join("<br/>");
+                        target += `<td class="target_td">${target_str}</td>`;
+                    }
+
+                    // 配图
+                    imgs += imgs_to_tdHtml(item.imgs, "./囚徒健身示例图/训练计划");
+
+                    // 解析配图
+                    if (item.progress_imgs)
+                        parse += imgs_to_tdHtml(item.progress_imgs, "./囚徒健身示例图/训练计划");
+                }
+
+
+                var table = `
+                    <div class="bodyBox">
+                    <table class="tableTrainingPlan">
+                        <tbody>
+                            <tr><td class="columnSign">计划</td>${name}</tr>
+                            <tr><td class="columnSign">配图</td>${imgs}</tr>
                         </tbody>
                     </table>
                     </div>`;
@@ -1333,13 +1460,7 @@
                     progress += textContent_to_tdHtml(item.progress);
 
                     // 配图
-                    var img_str = "";
-                    for (var i_img = 0; i_img < item.imgs.length; i_img++) {
-                        var img = item.imgs[i_img];
-                        img_str += `<img src="./囚徒健身示例图/六艺/${img.url}"/><br/>`;
-                        img_str += `<span class="img_span">${img.dec}</span><br/>`;
-                    }
-                    imgs += `<td>${img_str}</td>`;
+                    imgs += imgs_to_tdHtml(item.imgs, "./囚徒健身示例图/六艺");
                 }
                 var table = `
                     <div class="bodyBox">
@@ -1368,16 +1489,21 @@
                 return table;
             }
 
+            html += ToDailyTrainingHTML_Suspension(1, 4);
+            html += ToDailyTrainingHTML_Suspension(5, 8);
+            // html += ToDailyTrainingHTML_Suspension(1, 8);
 
-            html += ToDailyTrainingHTML_Suspension();
             html += ToDailyTrainingHTML_ThreeSecrets(1, '桥式');
             html += ToDailyTrainingHTML_ThreeSecrets(2, '直角式');
             html += ToDailyTrainingHTML_ThreeSecrets(3, '扭转式');
 
+            html += ToHTML_TrainingPlan(1, 1);
             for (var i_type_number = 1; i_type_number <= 6; i_type_number++) {
                 var table_html = ToSixArtsHTML(i_type_number);
                 html += table_html;
             }
+            html += ToHTML_TrainingPlan(2, 3);
+            html += ToHTML_TrainingPlan(4, 5);
             for (var i_type_number = 7; i_type_number <= 10; i_type_number++) {
                 var table_html = ToSixArtsHTML(i_type_number);
                 html += table_html;
@@ -1389,7 +1515,6 @@
     <style type="text/css">
         .bodyBox {
             display: block;
-            overflow: scroll;
             position: relative;
             padding: 2em;
             box-sizing: content-box;
@@ -1411,9 +1536,11 @@
 
         img {
             display: inline-block;
-            /*width: 100%;*/
-            /*max-width: 25em;*/
             width: 16em;
+        }
+
+        .tableTrainingPlan img {
+            width: 64em;
         }
 
         .img_span {
