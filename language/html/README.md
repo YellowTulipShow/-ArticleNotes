@@ -1,7 +1,5 @@
 ﻿# HTML 学习
 
-**[实例列表清单](_detailedList.md)**
-
 ## 需要学习研究的链接:
 
 * [迅优网络 - 官网](http://www.qdxunyou.com/)
