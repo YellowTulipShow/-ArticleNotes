@@ -8,6 +8,24 @@ npm config set registry http://registry.npm.taobao.org
 
 ## 使用Nodel.js Npm 包管理安装使用
 
+
+安装NVM
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+source ~/.bashrc
+nvm --version
+```
+
+安装最新的Node.js
+```
+nvm list-remote # 查看可用版本
+nvm install --lts # 安装最新 LTS 版本
+nvm install 18.19.0 # 安装指定版本
+nvm use 18.19.0 # 切换到指定版本
+node --version
+```
+
+安装 TS
 ```shell
 npm install -g typescript
 ```
@@ -17,6 +35,12 @@ npm install -g typescript
 ```shell
 tsc --version
 tsc --help
+```
+
+## 执行生成代码
+
+```shell
+tsc -p ./tsconfig.json --listFiles
 ```
 
 ## tsconfig.json 全解析
