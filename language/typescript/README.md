@@ -123,3 +123,4 @@ tsc -p ./tsconfig.json --listFiles
 * [使用Typescript编写和发布npm包](https://www.jianshu.com/p/8fa2c50720e4)
 * [RequireJS API](https://www.requirejs-cn.cn/docs/api.html)
 * [TypeScript + jest + VSCode 编写单元测试](https://www.jianshu.com/p/eec5e34ff0c2)
+* [windows下npm安装vue](https://www.cnblogs.com/liluxiang/p/9592003.html)
