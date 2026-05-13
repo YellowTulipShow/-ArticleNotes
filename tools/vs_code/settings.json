@@ -298,4 +298,22 @@
     "prettier.singleAttributePerLine": true,
     "prettier.tabWidth": 4,
     "hediet.vscode-drawio.theme": "min",
+    "dotnet.autoSdkDownload": false,
+    "dotnetAcquisitionExtension.existingDotnetPath": [
+        {
+            "extensions": "visualstudiotoolsforunity.vstuc",
+            "path": "C:\\Program Files\\dotnet\\dotnet.exe",
+        },
+        {
+            // 对应C#插件
+            "extensionId": "ms-dotnettools.csharp",
+            // 指向你本地dotnet.exe的完整路径
+            "path": "C:\\Program Files\\dotnet\\dotnet.exe"
+        },
+        {
+            // 对应C# Dev Kit插件
+            "extensionId": "ms-dotnettools.csdevkit",
+            "path": "C:\\Program Files\\dotnet\\dotnet.exe"
+        }
+    ],
 }
