@@ -25,9 +25,10 @@ winget install Microsoft.WindowsTerminal
 
 手动下载安装包（备用方案）
 如果网络环境无法使用上述包管理器，也可以手动下载安装。
-1. 访问 Windows Terminal 在 GitHub 上的官方发布页面：https://github.com/microsoft/terminal/releases。
+1. 访问 Windows Terminal 在 GitHub 上的官方发布页面：https://github.com/microsoft/terminal/releases
 2. 在 “Assets” 区域，找到以 .msixbundle 结尾的最新版安装包并下载。
 3. 下载后直接双击安装，或者使用 Add-AppxPackage 命令安装：
+4. Microsoft Store 官网商店: https://apps.microsoft.com/detail/9n0dx20hk701?hl=zh-cn&gl=HK
 
 ```bash
 Add-AppxPackage .\Microsoft.WindowsTerminal_Win10_<版本号>.msixbundle
