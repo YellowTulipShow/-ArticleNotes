@@ -11,6 +11,7 @@
 * [Typora](https://typora.io/#download)
 * [TortoiseGit](https://dl.softmgr.qq.com/original/Development/TortoiseGit-2.8.0.0-64bit.msi)
 * [Visual Studio Code](https://code.visualstudio.com/)
+* [手心输入法](https://www.xinshuru.com)
 
 #### 开发
 
