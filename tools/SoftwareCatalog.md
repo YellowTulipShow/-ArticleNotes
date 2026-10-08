@@ -59,6 +59,8 @@
     * [源码](https://git.unlock-music.dev/um)
     * [Web - Demo](https://demo.unlock-music.dev)
 * [PotPlayer-免费开源视频播放器](http://potplayer.tv/?lang=zh_CN)
+* [ShareX - 免费开源录屏软件 (录制声音需要安装捕捉器->配置->动作设置->屏幕录制->屏幕录制选项->安装捕捉器)](https://github.com/ShareX/ShareX)
+
 
 #### 工具
 
