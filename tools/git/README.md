@@ -209,3 +209,4 @@ Dec | December   | 十二月
 * [Learn Git Branching](https://learngitbranching.js.org/)
 * [Git教程](https://www.yiibai.com/git)
 * [配置 Git 处理行结束符](https://docs.github.com/cn/get-started/getting-started-with-git/configuring-git-to-handle-line-endings)
+* [详解 Git 大文件存储（Git LFS）](https://www.cnblogs.com/cangqinglang/p/13097777.html)
