@@ -6,6 +6,23 @@
     logsyts = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset %Cgreen(%ci)' --abbrev-commit -n 10 --author="YellowTulipShow" --author="赵瑞青"
     diffn = diff --name-status
     tags = tag -ln
+    sync-ignore = "!f() { \
+        if [ $# -lt 1 ]; then \
+            echo 'Usage: git sync-ignore <source-branch>'; \
+            exit 1; \
+        fi; \
+        source_branch=\"$1\"; \
+        current_branch=$(git symbolic-ref --short HEAD); \
+        git ls-tree -r --name-only \"$source_branch\" | grep '\\.gitignore$' > .gitignore_list.txt; \
+        while read -r path; do \
+            echo \"Syncing $path from $source_branch to $current_branch\"; \
+            mkdir -p \"$(dirname \"$path\")\"; \
+            git show \"$source_branch:$path\" > \"$path\"; \
+        done < .gitignore_list.txt; \
+        rm .gitignore_list.txt; \
+        echo \"Sync completed. Changes are in working directory of $current_branch\"; \
+        echo \"Run 'git add .' and 'git commit' to save changes\"; \
+    }; f"
 [credential]
     helper = store
 [core]

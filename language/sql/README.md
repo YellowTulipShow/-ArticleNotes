@@ -1,5 +1,20 @@
 ﻿# SQL 数据库操作语句
 
+## 定义参数变量
+
+```sql
+-- 定义
+DECLARE @id int
+DECLARE @name NVARCHAR(MAX)
+
+-- 赋值
+SET @id = 2
+SET @name = '分销'
+
+-- 查询调用
+select * from XXX where ParentId = @id)
+```
+
 ## ALTER TABLE:
 如需在表中添加列,请使用下列语法:
 ```sql

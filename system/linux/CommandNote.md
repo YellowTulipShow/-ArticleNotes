@@ -1,5 +1,106 @@
 ﻿# Linux 命令笔记
 
+## 进程
+
+查询进程与结束进程命令
+```shell
+ps -ef | grep [进程关键字]
+kill -9 [进程号]
+```
+
+## 挂载 SMB 共享目录
+
+```shell
+mount -t cifs //IP/路径 /mnt/挂载点 -o username=用户名,password=密码,vers=1.0
+```
+
+编辑 `vim /etc/fstab` 最后添加开机自动挂载
+```sh
+//IP/路径 /mnt/挂载点 cifs defaults,username=用户名,password=密码,vers=1.0
+```
+
+## 下载文件
+
+```shell
+curl http:xxx.xxx
+wget http:xxx.xxx
+```
+
+## 服务相关操作
+
+```shell
+// 查看服务状态
+systemctl status XXXX.service
+// 停用服务
+systemctl stop XXXX.service
+// 开启服务
+systemctl start XXXX.service
+// 开启开机自启动
+systemctl enable XXXX.service
+// 关闭开机自启动
+systemctl disable XXXX.service
+```
+
+### 注册一个服务
+
+```shell
+touch xxx.service
+# 创建并写入文件内容
+vim xxx.service
+````
+如:
+```sh
+[Unit]
+Description= XXX # 服务米哦啊哈苏
+
+[Service]
+Type=simple
+ExecStart=./xxx 执行的命令
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```shell
+# 移动或创建链接到服务目录下
+mv xxx.service /etc/systemd/system/xxx.service # 移动
+ln xxx.service /etc/systemd/system/xxx.service # 建立硬链接
+```
+
+## 系统信息
+
+```shell
+// 打印发行版的具体信息，包括发行版名称、版本号、代号等。
+lsb_release -a
+
+// 查看服务器对应架构
+arch
+    x86_64 对应 XXX_linux_amd64.tar.gz
+```
+
+## 磁盘文件空间大小
+
+```shell
+// 查看磁盘空间占用情况
+df
+
+// 查看目录/文件大小
+du
+# 查看当前目录大小
+du -sh
+# 返回该目录/文件的大小
+du -sh [目录/文件]
+# 查看当前文件夹下的所有文件大小（包含子文件夹）
+du -h
+# 查看指定文件夹下的所有文件大小（包含子文件夹）
+du -h [目录/文件]
+# 返回当前文件夹的总M数
+du -sm
+# 返回指定文件夹/文件总M数
+du -sm [文件夹/文件]
+```
+
 ## 文件和目录
 
 ```shell
@@ -149,8 +250,8 @@ tar -xvf archive.tar 释放一个包
 tar -xvf archive.tar -C /tmp 将压缩包释放到 /tmp目录下
 tar -cvfj archive.tar.bz2 dir1 创建一个bzip2格式的压缩包
 tar -xvfj archive.tar.bz2 解压一个bzip2格式的压缩包
-tar -cvfz archive.tar.gz dir1 创建一个gzip格式的压缩包
-tar -xvfz archive.tar.gz 解压一个gzip格式的压缩包
+tar -zcvf archive.tar.gz dir1 创建一个gzip格式的压缩包
+tar -zxvf archive.tar.gz 解压一个gzip格式的压缩包
 zip file1.zip file1 创建一个zip格式的压缩包
 zip -r file1.zip file1 file2 dir1 将几个文件和目录同时压缩成一个zip格式的压缩包
 unzip file1.zip 解压一个zip格式压缩包

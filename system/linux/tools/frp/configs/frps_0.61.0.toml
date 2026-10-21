@@ -1,0 +1,14 @@
+bindPort = 7000
+
+[auth]
+method = "token"
+token = "XXXXXX"
+
+[transport]
+tls.force = true
+
+[webServer]
+port = 7001
+addr = "0.0.0.0"
+user = "yts"
+password = "zrq"

@@ -51,6 +51,24 @@ CROSS APPLY sys.dm_exec_query_plan(qs.plan_handle) qp
 order by qs.creation_time desc
 ```
 
+```sql
+Select TOP 1000
+       ST.text AS '执行的SQL语句',
+       QS.execution_count AS '执行次数',
+       QS.total_elapsed_time AS '耗时',
+       QS.total_logical_reads AS '逻辑读取次数',
+       QS.total_logical_writes AS '逻辑写入次数',
+       QS.total_physical_reads AS '物理读取次数',
+       QS.creation_time AS '执行时间' ,
+       QS.*
+FROM   sys.dm_exec_query_stats QS
+       CROSS APPLY
+sys.dm_exec_sql_text(QS.sql_handle) ST
+-- Where  QS.creation_time BETWEEN '2020-07-01 00:00:00' AND '2020-09-02 11:00:00'
+ORDER BY
+     QS.creation_time DESC
+```
+
 ### 查询表结构
 
 * [访问链接](https://www.cnblogs.com/davidhou/p/6474002.html)
@@ -199,4 +217,85 @@ LEFT JOIN -- 索引及主键信息
     AND C.column_id=IDX.column_id
     --WHERE O.name=N'tablename' -- 如果只查询指定表,加上此条件
 ORDER BY O.name,C.column_id
+```
+
+### 查询SQL Server数据库中的所有级联约束并导出为SQL脚本
+
+方法一：使用系统视图查询
+```sql
+-- 查询所有外键约束及其级联操作设置
+SELECT
+    obj.name AS '约束名称',
+    sch1.name + '.' + tab1.name AS '主表',
+    col1.name AS '主表列',
+    sch2.name + '.' + tab2.name AS '引用表',
+    col2.name AS '引用表列',
+    CASE WHEN fk.delete_referential_action = 1 THEN 'ON DELETE CASCADE'
+         WHEN fk.delete_referential_action = 2 THEN 'ON DELETE SET NULL'
+         WHEN fk.delete_referential_action = 3 THEN 'ON DELETE SET DEFAULT'
+         ELSE '' END AS '删除操作',
+    CASE WHEN fk.update_referential_action = 1 THEN 'ON UPDATE CASCADE'
+         WHEN fk.update_referential_action = 2 THEN 'ON UPDATE SET NULL'
+         WHEN fk.update_referential_action = 3 THEN 'ON UPDATE SET DEFAULT'
+         ELSE '' END AS '更新操作'
+FROM
+    sys.foreign_keys AS fk
+INNER JOIN
+    sys.objects AS obj ON obj.object_id = fk.object_id
+INNER JOIN
+    sys.tables AS tab1 ON tab1.object_id = fk.referenced_object_id
+INNER JOIN
+    sys.schemas AS sch1 ON tab1.schema_id = sch1.schema_id
+INNER JOIN
+    sys.tables AS tab2 ON tab2.object_id = fk.parent_object_id
+INNER JOIN
+    sys.schemas AS sch2 ON tab2.schema_id = sch2.schema_id
+INNER JOIN
+    sys.foreign_key_columns AS fkc ON fk.object_id = fkc.constraint_object_id
+INNER JOIN
+    sys.columns AS col1 ON col1.object_id = fkc.referenced_object_id AND col1.column_id = fkc.referenced_column_id
+INNER JOIN
+    sys.columns AS col2 ON col2.object_id = fkc.parent_object_id AND col2.column_id = fkc.parent_column_id
+WHERE
+    fk.delete_referential_action <> 0 OR fk.update_referential_action <> 0
+ORDER BY
+    '主表', '引用表';
+```
+
+
+方法二：生成可重用的SQL脚本
+```sql
+-- 生成所有外键约束的创建脚本（包含级联设置）
+SELECT
+    'ALTER TABLE ' + QUOTENAME(SCHEMA_NAME(fk.schema_id)) + '.' + QUOTENAME(OBJECT_NAME(fk.parent_object_id)) +
+    ' ADD CONSTRAINT ' + QUOTENAME(fk.name) +
+    ' FOREIGN KEY (' +
+    STUFF((
+        SELECT ', ' + QUOTENAME(c.name)
+        FROM sys.foreign_key_columns AS fkc
+        INNER JOIN sys.columns AS c ON fkc.parent_object_id = c.object_id AND fkc.parent_column_id = c.column_id
+        WHERE fkc.constraint_object_id = fk.object_id
+        FOR XML PATH('')), 1, 2, '') +
+    ') REFERENCES ' + QUOTENAME(SCHEMA_NAME(ro.schema_id)) + '.' + QUOTENAME(ro.name) +
+    ' (' +
+    STUFF((
+        SELECT ', ' + QUOTENAME(c.name)
+        FROM sys.foreign_key_columns AS fkc
+        INNER JOIN sys.columns AS c ON fkc.referenced_object_id = c.object_id AND fkc.referenced_column_id = c.column_id
+        WHERE fkc.constraint_object_id = fk.object_id
+        FOR XML PATH('')), 1, 2, '') + ')' +
+    CASE WHEN fk.delete_referential_action = 1 THEN ' ON DELETE CASCADE'
+         WHEN fk.delete_referential_action = 2 THEN ' ON DELETE SET NULL'
+         WHEN fk.delete_referential_action = 3 THEN ' ON DELETE SET DEFAULT'
+         ELSE '' END +
+    CASE WHEN fk.update_referential_action = 1 THEN ' ON UPDATE CASCADE'
+         WHEN fk.update_referential_action = 2 THEN ' ON UPDATE SET NULL'
+         WHEN fk.update_referential_action = 3 THEN ' ON UPDATE SET DEFAULT'
+         ELSE '' END + ';' AS '创建外键SQL'
+FROM
+    sys.foreign_keys AS fk
+INNER JOIN
+    sys.objects AS ro ON ro.object_id = fk.referenced_object_id
+WHERE
+    fk.delete_referential_action <> 0 OR fk.update_referential_action <> 0;
 ```

@@ -7,3 +7,5 @@
 * [Node.js - W3C school](https://www.w3cschool.cn/nodejs/)
 * [NodeJS、NPM安装配置步骤(windows版本)](https://jingyan.baidu.com/article/48b37f8dd141b41a646488bc.html)
 * [NPM 包官网网站](https://www.npmjs.com/)
+* [发布npm的多种方法：npm publish / yarn publish / Github](https://www.jianshu.com/p/f60a8299a564)
+* [windows下npm安装vue](https://www.cnblogs.com/liluxiang/p/9592003.html)
